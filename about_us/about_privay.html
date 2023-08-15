@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<! -------------------- head start -------------------- >
+    <head>
+<! -------------------- title start -------------------- >
+        <title>About Privacy Policy</title>
+<! -------------------- title end -------------------- >
+<! -------------------- links start -------------------- >        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "icon" href = "../logoattittle.jpg" type = "image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<! -------------------- links end -------------------- >        
+<! -------------------- style start -------------------- >        
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: "Segoe UI",Arial,sans-serif;
+                scroll-behavior: smooth;
+            }
+            .body {
+                margin: 0;
+                padding: 0;
+                background-color: white;
+                font-family: Times New Roman, Times, serif;
+                overflow-x: scroll;
+            }
+/* --------------- scrollbar start --------------- */            
+            ::-webkit-scrollbar {
+                width: 12px;
+            }
+            ::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+            }
+            ::-webkit-scrollbar-thumb {
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+                background: #d9d9d9; 
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background-image: linear-gradient(180deg, #e600a6, #7b0099); 
+            }
+/* --------------- scrollbar end --------------- */
+/* --------------- nav start --------------- */            
+            .logodiv {
+                width: 100%;
+                height: 60px;
+                position: relative;
+            }
+            .logodiv .logo {
+                text-decoration: none;
+                float: left;
+                width: 299.5px; 
+                height: 60px; 
+            }
+            .topnav {
+                position: relative;
+                z-index: 99;
+                width: 100%;
+                height: 50px;
+                background-color: #d9d9d9;
+                float: left;
+                box-shadow: 0 3px 7px 0 rgba(0,0,0,0.15);
+                transition: 2s;
+            }
+            .topnav.sticky {
+                position: fixed;
+                top: 0;
+			}
+            .topnav a {
+                float: left;
+                position: relative;
+                color: black;
+                text-align: center;
+                padding: 11.5px 12px;
+                text-decoration: none;
+                font-size: 20px;
+            }
+            .topnav a:hover {
+                border-bottom: 4px solid #7B0099;
+            }
+            .topnav .home {
+                font-size: 25px;
+                padding: 8.5px 10px;
+            }
+            .topnav .home:hover {
+                font-size: 27px;
+                padding: 5px 9px
+            }
+            .topnav .html:hover {
+                font-size: 23px;
+                color: black;
+                padding: 7.5px 8.101px;
+            }
+            .topnav .css:hover {
+                font-size: 23px;
+                color: black;
+                padding: 7.5px 9.478px;
+            }
+            .topnav .js:hover {
+                font-size: 23px;
+                color: black;
+                padding: 7.5px 3.955px;
+            }
+            .topnav .sql:hover {
+                font-size: 23px;
+                color: black;
+                padding: 7.5px 9.382px;
+            }
+            .topnav .php:hover {
+                font-size: 23px;
+                color: black;
+                padding: 7.5px 9.271px;
+            }
+            .topnav .java:hover {
+                font-size: 23px;
+                color: black;
+                padding: 7.5px 8.607px;
+            }
+            .topnav .cpp:hover {
+                font-size: 23px;
+                color: black;
+                padding: 7.5px 9.025px;
+            }
+            .topnav .python:hover {
+                font-size: 23px;
+                color: black;
+                padding: 7.5px 6.226px;
+            }
+            .topnav .htdi:hover {
+                font-size: 23px;
+                color: black;
+                padding: 7.5px 6.08px;
+            }
+            .topnav .tutorials {
+                float: left;
+                position: relative;
+                color: black;
+                padding: 11.5px 12px;
+                font-size: 20px;
+                cursor: pointer;
+                text-align: center;
+                border: none;
+            }
+            .topnav .tutorials:hover {
+                padding: 7.5px 6.605px;
+                font-size: 23px;
+                border-bottom: 4px solid #7b0099;
+            }
+            .topnav .tutorials #down1 {display: inline-block;}
+            .topnav .tutorials.responsive #down1 {display: none;}
+            .topnav .tutorials #up1 {display: none;}
+            .topnav .tutorials.responsive #up1 {display: inline-block;}
+			.topnav .tutorialscontent {
+                display: none;
+                position: absolute;
+                width: 100%;
+                height: 500px;
+                top: 50px;
+                left: 0;
+                box-shadow: 0 3px 7px 0 rgba(0,0,0,0.15);
+                transition: 2s;
+                z-index: 99;
+                background-color: #d9d9d9;
+            }
+            .topnav .tutorialscontent.responsive {display: block;}  
+            .topnav .tutorialscontent .closetutorials {
+                position: absolute;
+                display: inline-block;
+                z-index: 100;
+                top: 8px;
+                right: 20px;
+                padding: 0px 11.82px 5px 11.82px;
+                font-size: 30px;
+                border: none;
+                text-decoration: none;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+                -moz-text-fill-color: transparent;
+                background-image: linear-gradient(45deg, #e600a6, #7b0099);
+                transition:  transform 2s;
+            }
+            .topnav .tutorialscontent .closetutorials:hover {
+                transform: rotate(180deg);
+                -webkit-text-fill-color: #ffffff; 
+                -moz-text-fill-color: #ffffff;
+                background: linear-gradient(45deg, #e600a6, #7b0099);
+            } 
+            .topnav .tutorialscontent .tutorialsrow {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 500px;
+                z-index: 99;
+            }
+            .topnav .tutorialscontent .tutorialsrow .tutorialscolumn {
+                position: relative;
+                float: left;
+                width: 25%;
+                padding: 10px;
+            }
+            .topnav .tutorialscontent .tutorialsrow .tutorialscolumn a {
+                float: none;
+                color: black;
+                padding: 5px 5px 4.5px 0px;
+                text-decoration: none;
+                display: block;
+                font-size: 16px;
+                text-align: left;
+            }
+            .topnav .tutorialscontent .tutorialsrow .tutorialscolumn a:hover {
+                background-color: #d9d9d9;
+                border-left: 3px solid #7B0099;
+                border-bottom: 1px solid #7B0099;
+                font-size: 19px;
+                padding: 0.5px 10px 2.9px 6.5px;
+            }
+            .topnav .tutorialscontent .tutorialsrow .tutorialscolumn:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .topnav .references {
+                float: right;
+                position: relative;
+                color: black;
+                padding: 11.5px 12px;
+                font-size: 20px;
+                cursor: pointer;
+                text-align: center;
+                border: none;
+            }
+            .topnav .references:hover {
+                font-size: 23px;
+                border-bottom: 4px solid #7B0099;
+                padding: 7.5px 2.324px;
+            }
+            .topnav .references #down2 {display: inline-block;}
+            .topnav .references.responsive #down2 {display: none;}
+            .topnav .references #up2 {display: none;}
+            .topnav .references.responsive #up2 {display: inline-block;}
+            .topnav .referencescontent {
+                display: none;
+                position: absolute;
+                width: 100%;
+                height: 500px;
+                top: 50px;
+                left: 0;
+                box-shadow: 0 3px 7px 0 rgba(0,0,0,0.15);
+                transition: 2s;
+                z-index: 99;
+                background-color: #d9d9d9;
+            }
+            .topnav .referencescontent.responsive {display: block;} 
+            .topnav .referencescontent .closereferences {
+                position: absolute;
+                display: inline-block;
+                z-index: 100;
+                top: 8px;
+                right: 20px;
+                padding: 0px 11.82px 5px 11.82px;
+                font-size: 30px;
+                border: none;
+                text-decoration: none;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+                -moz-text-fill-color: transparent;
+                background-image: linear-gradient(45deg, #e600a6, #7b0099);
+                transition:  transform 2s;
+            }
+            .topnav .referencescontent .closereferences:hover {
+                transform: rotate(180deg);
+                -webkit-text-fill-color: #ffffff; 
+                -moz-text-fill-color: #ffffff;
+                background: linear-gradient(45deg, #e600a6, #7b0099);
+            }
+            .topnav .referencescontent .referencesrow {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 500px;
+                z-index: 99;
+            }
+            .topnav .referencescontent .referencesrow .referencescolumn {
+                position: relative;
+                float: left;
+                width: 25%;
+                padding: 10px;
+            }
+            .topnav .referencescontent .referencesrow .referencescolumn a {
+                float: none;
+                color: black;
+                padding: 5px 5px 4.5px 0px;
+                text-decoration: none;
+                display: block;
+                font-size: 16px;
+                text-align: left;
+            }
+            .topnav .referencescontent .referencesrow .referencescolumn a:hover {
+                background-color: #d9d9d9;
+                border-left: 3px solid #7B0099;
+                border-bottom: 1px solid #7B0099;
+                font-size: 19px;
+                padding: 0.5px 10px 2.9px 6.5px;
+            }
+            .topnav .referencescontent .referencesrow .referencescolumn:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+			.topnav .exercises {
+                float: right;
+                position: relative;
+                color: black;
+                padding: 11.5px 12px;
+                font-size: 20px;
+                cursor: pointer;
+                text-align: center;
+                border: none;
+            }
+            .topnav .exercises:hover {
+                font-size: 23px;
+                border-bottom: 4px solid #7B0099;
+                padding: 7.5px 3.75px;
+            }
+            .topnav .exercises #down4 {display: inline-block;}
+            .topnav .exercises.responsive #down4 {display: none;}
+            .topnav .exercises #up4 {display: none;}
+            .topnav .exercises.responsive #up4 {display: inline-block;}
+            .topnav .exercisescontent {
+                display: none;
+                position: absolute;
+                width: 100%;
+                height: 500px;
+                top: 50px;
+                left: 0;
+                box-shadow: 0 3px 7px 0 rgba(0,0,0,0.15);
+                transition: 2s;
+                z-index: 99;
+                background-color: #d9d9d9;
+            }  
+            .topnav .exercisescontent.responsive {display: block;} 
+            .topnav .exercisescontent .closeexercises {
+                position: absolute;
+                display: inline-block;
+                z-index: 100;
+                top: 8px;
+                right: 20px;
+                padding: 0px 11.82px 5px 11.82px;
+                font-size: 30px;
+                border: none;
+                text-decoration: none;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+                -moz-text-fill-color: transparent;
+                background-image: linear-gradient(45deg, #e600a6, #7b0099);
+                transition:  transform 2s;
+            }
+            .topnav .exercisescontent .closeexercises:hover {
+                transform: rotate(180deg);
+                -webkit-text-fill-color: #ffffff; 
+                -moz-text-fill-color: #ffffff;
+                background: linear-gradient(45deg, #e600a6, #7b0099);
+            }
+            .topnav .exercisescontent .exercisesrow {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 500px;
+                z-index: 99;
+            }
+            .topnav .exercisescontent .exercisescolumn {
+                float: left;
+                width: 25%;
+                padding: 10px;
+                background-color: #d9d9d9;
+                height: 400px;
+            }
+            .topnav .exercisescontent .exercisescolumn a {
+                float: none;
+                color: black;
+                padding: 5px 5px 4.5px 0px;
+                text-decoration: none;
+                display: block;
+                font-size: 16px;
+                text-align: left;
+            }
+            .topnav .exercisescontent .exercisescolumn a:hover {
+                background-color: #d9d9d9;
+                border-left: 3px solid #7B0099;
+                border-bottom: 1px solid #7B0099;
+                font-size: 19px;
+                padding: 0.5px 10px 2.9px 6.5px;
+            }
+            .topnav .exercisescontent .exercisescolumn:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+			.topnav .search {
+				float: right;
+                font-size: 20px;
+                padding: 11.5px 12px;
+				margin-right: 10px;
+			}
+			.topnav .search:hover {
+                font-size: 25px;
+                padding: 6.5px 9.681px
+            }
+			.topnav .translate {
+				float: right;
+                font-size: 20px;
+                padding: 11.5px 12px;
+			}
+			.topnav .translate:hover {
+                font-size: 25px;
+                padding: 6.5px 9.861px
+            }
+/* --------------- nav end --------------- */
+/* --------------- leftnav start --------------- */
+			.leftnav {
+				position: absolute;
+				margin-left: 0px;
+                z-index: 98;
+                width: 220px;
+				height: 100%;
+				background-color: #f2f2f2;
+				padding-top: 50px;
+				padding-bottom: 60px;
+			}
+			.leftnav.sticky1 {
+				padding-bottom: 45px;
+            }
+			.leftnav.sticky1.sticky2 {
+				padding-bottom: 30px;
+			}
+			.leftnav.sticky1.sticky2.sticky3{
+				padding-bottom: 15px;
+			}
+			.leftnav.sticky1.sticky2.sticky3.sticky4 {
+                position: fixed;
+                margin-top: -60px !important;
+				padding-bottom: 0px;
+			}
+			.leftnav .leftnavcontent {
+				position: relative;
+				margin: 0;
+				width: 100%;
+				height: 100%;
+				background-color: #f2f2f2;
+                overflow-y: scroll;
+                overflow-x: hidden;
+			}
+            .leftnav .leftnavcontent h3 {
+                text-align: center;
+                padding: 2px;
+            }
+            .leftnav .leftnavcontent a {
+                padding: 3.5px 8px 3.5px 8px;
+                text-decoration: none;
+                font-size: 17px;
+                color: black;
+                display: block;
+            }
+            .leftnav .leftnavcontent a:hover {
+                padding: 0.1px 8px 2.9px 16px;
+                font-size: 20px;
+                color: black;
+                margin-left: 8px;
+                border-left: 4px solid #7B0099;
+                border-bottom: 1px solid #7B0099;
+            }
+/* --------------- leftnav end --------------- */
+/* --------------- main start --------------- */
+			.main {
+                position: relative;
+                padding-left: 220px;
+				width: 100%;
+				height: 500px;
+				padding-top: 40px; 
+				z-index: 0;
+            }
+			.main .maincontent {
+				position: relative;
+				background-color: white;
+				width: 100%;
+				height: 500px;
+			}
+			.main .maincontent .tutorial {
+				position: relative;
+				float: left;
+				background-color: aliceblue;
+				width: 85%;
+				height: 500px;
+			}
+			.main .maincontent .rightnav {
+				position: relative;
+				float: left;
+				background-color: violet;
+				width: 15%;
+				height: 500px;
+			}
+			/* --------------- footer start --------------- */
+            .footertop {
+                margin-top: 50px;
+                width: 100%;
+                height: 72px;
+                position: relative;
+                background-color: #111111;
+            }
+            .footertop.responsive {
+                height: 272px;
+            }
+            .footertop .hr {
+                position: relative;
+                width: 95%;
+                height: 1px;
+                margin: auto;
+                background-image: linear-gradient(90deg, #e600a6, #7b0099);
+            }
+            .footertop .outercolumn{
+                width: 100%;
+                height: 70px;
+                position: relative;
+            }
+            .footertop .outercolumn .column {
+                position: relative;
+                width: 33.33%;
+                float: left;
+                padding: 10px;
+                height: 70px;
+                text-align: center;
+            }
+            .footertop .outercolumn .column .innercolumn {
+                padding: 8.5px;
+            }
+            .footertop .outercolumn .column .innercolumn a{
+                cursor: pointer;
+                text-decoration: none;
+                width: 100%;
+                height: 70px;
+                margin: auto;
+                text-transform: capitalize;
+                font-size: 25px;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+                -moz-text-fill-color: transparent;
+                background-image: linear-gradient(45deg, #e600a6, #7b0099);
+            }
+            .footertop .outercolumn .column .innercolumn a:hover {
+                -webkit-text-fill-color: #ffffff; 
+                -moz-text-fill-color: #ffffff;
+            }
+            .footertop .reporterror {
+                position: relative;
+                display: none;
+                margin: auto;
+                height: 160px;
+                margin: 20px;
+                background-color: #ffffff;
+            }
+            .footertop.responsive .reporterror {
+                display: block;
+            }
+            .footertop .reporterror h2 {
+                position: relative;
+                margin: auto 0px;
+                padding: 10px;
+                width: 100%;
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+            .footertop .reporterror h2 .closereport {
+                position: absolute;
+                top: 8px;
+                right: 20px;
+                padding: 0px 10.82px 5px 10.82px;
+                font-size: 25px;
+                border: none;
+                text-decoration: none;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+                -moz-text-fill-color: transparent;
+                background-image: linear-gradient(45deg, #e600a6, #7b0099);
+                transition:  transform 2s;
+            }
+            .footertop .reporterror h2 .closereport:hover {
+                transform: rotate(180deg);
+                -webkit-text-fill-color: #ffffff; 
+                -moz-text-fill-color: #ffffff;
+                background: linear-gradient(45deg, #e600a6, #7b0099);
+            }
+            .footertop .reporterror p {
+                position: relative;
+                margin: auto 0px;
+                padding: 10px;
+                width: 100%;
+            }
+            .footertop .reporterror .mail {
+                position: relative;
+                margin: 10px;
+                border: none;
+                font-size: 15px;
+            }
+            .footertop .reporterror .tooltip {
+                position: relative;
+                display: inline-block;
+                margin-left: -20px;
+            }
+            .footertop .reporterror .tooltip .copy {
+                cursor: pointer;
+                font-size: 15px;
+                padding: 5px;
+                background-color: #111111;
+                color: white;
+                border-radius: 5px;
+            }
+            .footertop .reporterror .tooltip .tooltiptext {
+                visibility: hidden;
+                width: 140px;
+                background-color: #111111;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px;
+                position: absolute;
+                z-index: 1;
+                bottom: 150%;
+                left: 50%;
+                margin-left: -75px;
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+            .footertop .reporterror .tooltip .tooltiptext::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: #555 transparent transparent transparent;
+            }
+            .footertop .reporterror .tooltip:hover .tooltiptext {
+                visibility: visible;
+                opacity: 1;
+            }
+            .footer {
+                position: relative;
+                width: 100%;
+                height: 371px;
+                background-color: #111111;
+            }
+            .footer .outercolumn {
+                width: 100%;
+                height: 200px;
+                position: relative;
+            }
+            .footer .outercolumn .column { 
+                position: relative;
+                width: 33.33%;
+                float: left;
+                height: 200px;
+                padding: 10px;
+                text-align: center;
+            }
+            .footer .outercolumn .column:nth-child(1) {}
+            .footer .outercolumn .column:nth-child(2) {}
+            .footer .outercolumn .column:nth-child(3) {}
+            .footer .socialmedia {
+                width: 100%;
+                height: 100px;
+                position: relative;
+            }
+            .footer .socialmedia .text {
+                width: 100%;
+                height: 30px;
+                position: relative;
+                color: white;
+                text-align: center;
+                text-transform: capitalize;
+                font-size: 25px;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+                -moz-text-fill-color: transparent;
+                background-image: linear-gradient(45deg, #e600a6, #7b0099);
+            }
+            .footer .socialmedia .icons {
+                width: 100%;
+                height: 70px;
+                position: relative;
+                text-align: center;
+            }
+            .footer .socialmedia .icons .fa {
+                padding: 20px;
+                font-size: 30px;
+                width: 50px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 50%;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+                -moz-text-fill-color: transparent;
+                background-image: linear-gradient(45deg, #e600a6, #7b0099);
+            }
+            .footer .socialmedia .icons .fa .tooltiptext {
+                visibility: hidden;
+                width: auto;
+                background-color: transparent;
+                color: #ffffff;
+                font-size: 15px;
+                margin-left: -20px;
+                text-align: center;
+                border-radius: 5px;
+                padding: 5px 5px;
+                position: absolute;
+                z-index: 1;
+            }
+            .footer .socialmedia .icons .fa:hover .tooltiptext {
+                visibility: visible;
+            }
+            .footer .socialmedia .icons .fa:hover {
+                -webkit-text-fill-color: white; 
+                -moz-text-fill-color: white;
+            }
+            .footer .hr {
+                position: relative;
+                width: 95%;
+                height: 1px;
+                margin: auto;
+                background-image: linear-gradient(90deg, #e600a6, #7b0099);
+            }
+            .footer .bottom {
+                height: 70px;
+                width: 100%;
+                overflow: hidden;
+            }
+            .footer .bottom .column {
+                position: relative;
+                width: 33.33%;
+                float: left;
+                height: 70px;
+            }
+            .footer .bottom .column .innercolumn {
+                width: 100%;
+                float: none;
+                text-align: center;
+                padding: 10px 0;
+            }
+            .footer .bottom .column a .logo {
+                position: relative;
+                text-decoration: none;
+                width: auto; 
+                height: 50px;
+            }
+            .footer .bottom .column:nth-child(2) {
+                position: relative;
+                width: 33.33%;
+                float: left;
+                margin: 15px auto;
+                height: 20px;
+            }
+            .footer .bottom .column a {
+                text-align: center;
+                text-decoration: none;
+                text-transform: capitalize;
+                font-size: 15px;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+                -moz-text-fill-color: transparent;
+                background-image: linear-gradient(45deg, #e600a6, #7b0099);
+            }
+            .footer .bottom .column a:hover {
+                -webkit-text-fill-color: white; 
+                -moz-text-fill-color: white;
+            }
+            .footer .bottom .column:nth-child(3) {
+                position: relative;
+                width: 33.33%;
+                float: left;
+                margin: 15px 0px;
+                height: 20px;
+            }
+            .footer .bottom .column .verticalline {
+                display: inline-block;
+                height: 15px;
+                width: 2px;
+                background-image: linear-gradient(45deg, #e600a6, #7b0099);
+                margin: 0 3px;
+            }
+			/* --------------- footer end --------------- */
+/* --------------- main end --------------- */
+/* --------------- responsive start --------------- */
+/* --------------- responsive end --------------- */            
+        </style>
+<! -------------------- style end -------------------- >
+    </head>
+<! -------------------- head end -------------------- >        
+<! -------------------- body start -------------------- >    
+    <body class="body">
+<! -------------------- nav start -------------------- >
+        <div class="logodiv">
+            <a href="../rk_fundamentals.html"><img class="logo" src="../logo.jpg"></a>
+        </div>
+        <nav class="topnav" id="topnavid">    
+            <a href="../rk_fundamentals.html" class="home" title="HOME"><i class="fa fa-home"></i></a>
+            <a href="../html/default.html" class="html" title="HTML Tutorial">HTML</a>
+            <a href="../css/default.html" class="css" title="CSS Tutorial">CSS</a>
+            <a href="../js/default.html" class="js" title="JavScript Tutorial">JAVASCRIPT</a>
+            <a href="../sql/default.html" class="sql" title="SQL Tutorial">SQL</a>
+            <a href="../php/default.html" class="php" title="PHP Tutorial">PHP</a>
+            <a href="../java/default.html" class="java" title="Java Tutorial">JAVA</a>
+            <a href="../cpp/default.html" class="cpp" title="C++ Tutorial">C++</a>
+            <a href="../python/default.html" class="python" title="Python Tutorial">PYTHON</a>
+            <a href="../how_to_do_it/default.html" class="htdi" title="How To Do It">HOW TO</a>
+            <a class="tutorials" id="tutorialsid" title="Tutorials" onclick="starttutorials(), closereferences(), closeexercises()">MORE
+				<i class="fa fa-caret-down" id="down1"></i>
+				<i class="fa fa-caret-up" id="up1"></i>
+			</a>
+			<div id="tutorialscontentid" class="tutorialscontent">
+				<a href="javascript:void(0)" class="closetutorials" onclick=closetutorials()>&times;</a>
+				<div class="tutorialsrow">
+					<div id="tutorialscolumnid" class="tutorialscolumn">
+                    	<h3>HTML and CSS</h3>
+						<a href="../html/default.html">Learn HTML</a>
+						<a href="../css/default.html">Learn CSS</a>
+	                    <a href="../bs/default.html">Learn BootStrap</a>
+						<a href="../sass/default.html">Learn Sass</a>
+	                    <a href="../colors/default.html">Learn Colors</a>
+						<a href="../icons/default.html">Learn Icons</a>
+						<a href="../graphics/default.html">Learn Graphics</a>
+						<a href="../how_to_do_it/default.html">How to do it</a>
+						<a href="../bns/default.html" title="Learn Binary Number System">Learn BNS</a>
+					</div>
+					<div id="tutorialscolumnid" class="tutorialscolumn">
+						<h3>JavaScript</h3>
+	                    <a href="../js/default.html">Learn JavaScript</a>
+						<a href="../jquery/default.html">Learn JQuery</a>
+						<a href="../react/default.html">Learn React</a>
+						<a href="../angularjs/default.html">Learn AngularJS</a>
+						<a href="../json/default.html">Learn JSON</a>
+	                    <a href="../ajax/default.html">Learn AJAX</a>
+						<h3>Server Side</h3>
+						<a href="../sql/default.html">Learn SQL</a>
+	                    <a href="../php/default.html">Learn PHP</a>
+						<a href="../asp/default.html">Learn ASP</a>
+						<a href="../nodejs/default.html">Learn Node.JS</a>
+	                    <a href="../jsp/default.html">Learn JSP</a>
+					</div>
+					<div id="tutorialscolumnid" class="tutorialscolumn">
+	                    <h3>Programing</h3>
+						<a href="../java/default.html">Learn Java</a>
+						<a href="../c/default.html">Learn C</a>
+						<a href="../python/default.html">Learn Python</a>
+						<a href="../cpp/default.html">Learn C++</a>
+	                    <a href="../vb/default.html" title="Learn Visual Basic">Learn VB</a>
+						<a href="../vbnet/default.html" title="Visual Basic .NET">Learn VB .NET</a>
+	                    <a href="../c_sharp/default.html" title="Learn C#">Learn C Sharp</a>
+	                    <a href="../objective-c/default.html">Learn Objactive-C</a>
+	                    <a href="../ruby/default.html">Learn Ruby</a>
+						<a href="../assembly/default.html">Learn Assembly</a>
+	                </div>
+					<div id="tutorialscolumnid" class="tutorialscolumn">
+						<h3>XML</h3>
+						<a href="../xml/default.html">Learn XML</a>
+						<a href="../xml/xml_ajax/default.html">Learn XML AJAX</a>
+						<a href="../xml/xml_dom/default.html">Learn XML DOM</a>
+						<a href="../xml/xml_dtd/default.html">Learn XML DTD</a>
+						<a href="../xml/xml_schema/default.html">Learn XML Schema</a>
+                    	<a href="../xml/xslt/default.html">Learn XSLT</a>
+                    	<a href="../xml/xpath/default.html">Learn XPath</a>
+                    	<a href="../xml/xquery/default.html">Learn XQuery</a>
+                	</div>
+            	</div>    
+			</div>
+			<a class="search" title="Search RK"><i class="fa fa-search"></i></a>
+			<a class="translate" title="Translate RK"><i class="fa fa-globe"></i></a>
+			<a class="exercises" id="exercisesid" onclick="startexercises(), closetutorials(), closereferences()">EXERCISES
+				<i class="fa fa-caret-down" id="down4"></i>
+				<i class="fa fa-caret-up" id="up4"></i>
+			</a> 
+			<div id="exercisescontentid" class="exercisescontent">
+				<a href="javascript:void(0)" class="closeexercises" onclick=closeexercises()>&times;</a>
+				<div class="exercisesrow">
+					<div id="exercisescolumnid" class="exercisescolumn">
+						<h3>Exercises</h3>
+						<a href="../html/exercises.html">HTML Exercises</a>
+						<a href="../css/exercises.html">CSS Exercises</a>
+						<a href="../bs/exercises.html">BootStrap Exercises</a>
+						<a href="../js/exercises.html">JavaScript Exercises</a>
+						<a href="../jquery/exercises.html">JQuery Exercises</a>
+						<a href="../sql/exercises.html">SQL Exercises</a>
+						<a href="../php/exercises.html">PHP Exercises</a>
+					</div>
+					<div id="exercisescolumnid" class="exercisescolumn">
+						<h3>&nbsp;</h3>
+						<a href="../java/exercises.html">JAVA Exercises</a>
+						<a href="../c/exercises.html">C Exercises</a>
+						<a href="../python/exercises.html">Python Exercises</a>
+						<a href="../cpp/exercises.html">C++ Exercises</a>
+						<a href="../vb/exercises.html" title="Visual Basics Exercise">VB Exercises</a>
+						<a href="../vbnet/exercises.html" title="Visual Basics .NET Exercise">VB .NET Exercises</a>
+						<a href="../c_sharp/exercises.html" title="C# Exercise">C Sharp Exercises</a>
+						<a href="../xml/exercises.html">XML Exercises</a>
+					</div>
+					<div id="exercisescolumnid" class="exercisescolumn">
+						<h3>Quizzes</h3>
+						<a href="../html/quiz.html">HTML Quiz</a>
+						<a href="../css/quiz.html">CSS Quiz</a>
+						<a href="../bs/quiz.html">BootStrap Quiz</a>
+						<a href="../js/quiz.html">JavaScript Quiz</a>
+						<a href="../jquery/quiz.html">JQuery Quiz</a>
+						<a href="../sql/quiz.html">SQL Quiz</a>
+						<a href="../php/quiz.html">PHP Quiz</a>
+					</div>
+					<div id="exercisescolumnid" class="exercisescolumn">
+						<h3>&nbsp;</h3>
+						<a href="../java/quiz.html">JAVA Quiz</a>
+						<a href="../c/quiz.html">C Quiz</a>
+						<a href="../python/quiz.html">Python Quiz</a>
+						<a href="../cpp/quiz.html">C++ Quiz</a>
+						<a href="../vb/quiz.html" title="Visual Basics Quiz">VB Quiz</a>
+						<a href="../vbnet/quiz.html" title="Visual Basics .NET Quiz">VB .NET Quiz</a>
+						<a href="../c_sharp/quiz.html" title="C# Quiz">C Sharp Quiz</a>
+						<a href="../xml/quiz.html">XML Quiz</a>
+					</div>
+				</div>
+			</div>
+			<a class="references" id="referencesid" onclick="startreferences(), closetutorials(), closeexercises()">REFERENCES
+				<i class="fa fa-caret-down" id="down2"></i>
+				<i class="fa fa-caret-up" id="up2"></i>
+			</a>
+			<div id="referencescontentid" class="referencescontent">
+				<a href="javascript:void(0)" class="closereferences" onclick=closereferences()>&times;</a>
+            	<div class="referencesrow">
+                	<div id="referencescolumnid" class="referencescolumn">
+                    	<h3>HTML and CSS</h3>
+                    	<a href="../html/html_ref/default.html">HTML Tag Reference</a>
+                    	<a href="../css/css_ref/default.html">CSS Reference</a>
+                    	<a href="../bs/bs_ref/default.html">Bootstrap Reference</a>
+                    	<a href="../sass/sass_ref/default.html">Sass Reference</a>
+                    	<a href="../icons/icons_ref/default.html">Icon Reference</a>
+                    	<a href="../graphics/graphics_ref/default.html">Graphics Reference</a>
+                	</div>
+                	<div id="referencescolumnid" class="referencescolumn">
+						<h3>JavaScript</h3>
+                    	<a href="../js/js_ref/default.html">JavaScript Reference</a>
+                    	<a href="../js/js_ref/default.html">HTML DOM Reference</a>
+                    	<a href="../jquery/jquery_ref/default.html">JQuery Reference</a>
+                    	<a href="../angularjs/angularjs_ref/default.html">AngularJS Reference</a>
+                    	<h3>Server Side</h3>
+                    	<a href="../sql/sql_ref/default.html">SQL Reference</a>
+						<a href="../php/php_ref/default.html">PHP Reference</a>
+                    	<a href="../asp/asp_ref/default.html">ASP Reference</a>
+                	</div>
+                	<div id="referencescolumnid" class="referencescolumn">
+						<h3>JavaScript</h3>
+                    	<a href="../java/java_ref/default.html">Java Reference</a>
+                    	<a href="../../python/python_ref/default.html">Python Reference</a>
+                    	<h3>XML</h3>
+                    	<a href="../xml/xml_ref/default.html">XML Reference</a>
+                    	<a href="../xml/xml_schema/xml_schema_ref/default.html">XML Schema Reference</a>
+                    	<a href="../xml/xslt/xslt_ref/default.html">XSLT Reference</a>
+                	</div>
+                	<div id="referencescolumnid" class="referencescolumn">
+                    	<h3>Character Sets</h3>
+                    	<a href="../character_sets/default.html">HTML Character Sets</a>
+                    	<a href="../character_sets/character_sets_ref/html_ascii.html">HTML ASCII</a>
+                    	<a href="../character_sets/character_sets_ref/html_ansi.html">HTML ANSI</a>
+                    	<a href="../character_sets/character_sets_ref/html_iso-8859-1.html">HTML ISO-8859-1</a>
+                    	<a href="../character_sets/character_sets_ref/html_symbols.html">HTML Symbols</a>
+                    	<a href="../character_sets/character_sets_ref/html_utf-8.html">HTML UTF-8</a>
+					</div>
+				</div>    
+			</div>
+        </nav>
+<! -------------------- nav end -------------------- >
+<! -------------------- sidenav start -------------------- >
+		<div class="leftnav" id="leftnavid">
+			<div class="leftnavcontent">
+				<h3>HTML and CSS</h3>
+                    <a href="html.html">Learn HTML</a>
+                    <a href="css.html">Learn CSS</a>
+                    <a href="w3css.html">Learn W3.CSS</a>
+                    <a href="bs.html">Learn BootStrap</a>
+                    <a href="colors.html">Learn Colors</a>
+                    <a href="icons.html">Learn Icons</a>
+                    <a href="graphics.html">Learn Graphics</a>
+                    <a href="how.html">How to do it</a>
+                    <a href="sass.html">Learn Sass</a>
+                    <h3>JavaScript</h3>
+                    <a href="js.html">Learn JavaScript</a>
+                    <a href="jq.html">Learn JQuery</a>
+                    <a href="react.html">Learn React</a>
+                    <a href="ajs.html">Learn AngularJS</a>
+                    <a href="json.html">Learn JSON</a>
+                    <a href="ajax.html">Learn AJAX</a>
+                    <a href="w3js.html">Learn W3.JS</a>
+                    <h3>Server Side</h3>
+                    <a href="sql.html">Learn SQL</a>
+                    <a href="php.html">Learn PHP</a>
+                    <a href="asp.html">Learn ASP</a>
+                    <a href="njs.html">Learn Node.JS</a>
+                    <a href="jsp.html">Learn JSP</a>
+                    <h3>Programing</h3>
+                    <a href="java.html">Learn Java</a>
+                    <a href="c.html">Learn C</a>
+                    <a href="python.html">Learn Python</a>
+                    <a href="cpp.html">Learn C++</a>
+                    <a href="vb.html">Learn Visual Basic</a>
+                    <a href="vbnet.html" title="Learn Visual Basic.NET">Learn VB.NET</a>
+                    <a href="c#.html">Learn C Sharp (C#)</a>
+                    <a href="objectivec.html">Learn Objactive-C</a>
+                    <a href="alp.html" title="Assembly Language programming">Learn ALP</a>
+                    <h3>XML</h3>
+                    <a href="xml.html">Learn XML</a>
+                    <a href="xmlajax.html">Learn XML AJAX</a>
+                    <a href="xmldom.html">Learn XML DOM</a>
+                    <a href="xmldtd.html">Learn XML DTD</a>
+                    <a href="xmlschema">Learn XML Schema</a>
+                    <a href="xslt.html">Learn XSLT</a>
+                    <a href="xpath.html">Learn XPath</a>
+                    <a href="xq.html">Learn XQuery</a>
+                    <h3>Additional</h3>
+                    <a href="web.html">Web Development</a>
+                    <a href="bns.html">Binary Number System</a>
+			</div>
+		</div>
+<! -------------------- sidenav end -------------------- >
+<! -------------------- main start -------------------- >
+		<div class="main">
+			<div class="maincontent">
+				<div class="tutorial"></div>
+				<div class="rightnav"></div>
+			</div>
+			<! -------------------- footer start -------------------- >
+			<footer>
+				<div class="footertop" id="footertopid">
+					<div class="hr"></div>
+					<div class="outercolumn">
+						<div class="column">                        
+							<div class="innercolumn">
+								<a onclick="report()">report error</a>
+							</div>
+						</div>
+						<div class="column">
+							<div class="innercolumn">
+								<a href="../about_us/default.html">about</a>
+							</div>
+						</div>
+						<div class="column">
+							<div class="innercolumn">
+								<a onclick="topFunction()" class="top">Go to top</a>
+							</div>
+						</div>
+					</div>    
+					<div class="hr"></div>
+					<div class="reporterror">
+						<h2>reporrt error <a href="javascript:void(0)" class="closereport" onclick="report()">&times;</a></h2>
+						<p>If you want to report an error, or if you want to make a suggestion, do not hesitate to send us an e-mail:</p>
+						<input type="text" value="mailid@gamil.com" class="mail" id="mailid">
+						<div class="tooltip">    
+							<a onclick="copytext()" onmouseout="outFunc()" class="copy">
+								<span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+								Copy
+							</a>
+						</div>    
+					</div>
+				</div>
+				<div class="footer">
+					<div class="outercolumn">
+						<div class="column"></div>
+						<div class="column"></div>
+						<div class="column"></div>
+					</div>
+					<div class="socialmedia">
+						<div class="text"><i class="fa fa-handshake-o"></i>&nbsp;connest with us&nbsp;<i class="fa fa-handshake-o"></i></div>
+						<div class="icons">
+							<a href="#" class="fa fa-facebook"><span class="tooltiptext">FB ID</span></a>
+							<a href="#" class="fa fa-twitter"><span class="tooltiptext">TWITTER ID</span></a>
+							<a href="#" class="fa fa-instagram"><span class="tooltiptext">INSTA ID</span></a>
+							<a href="#" class="fa fa-youtube-play"><span class="tooltiptext">YT ID</span></a>
+							<a href="#" class="fa fa-envelope"><span class="tooltiptext">GMAIL ID</span></a>
+							<a href="#" class="fa fa-phone"><span class="tooltiptext">Contact</span></a>
+						</div>
+					</div>
+					<div class="hr"></div>
+					<div class="bottom">
+						<div class="column">
+							<div class="innercolumn">
+								<a href="../rk_fundamentals.html"><img class="logo" src="../logo.jpg"></a>
+							</div>
+						</div>    
+						<div class="column">
+							<div class="innercolumn">
+								<a href="../about_us/about_copyright.html">copyright &copy; 2020 RK Fundamentals</a>
+							</div>
+						</div>
+						<div class="column">
+							<div class="innercolumn">
+								<a href="../about_us/about_copyright.html">Terms of Use</a>
+								<div class="verticalline"></div>
+								<a href="../about_us/about_privay.html">Privacy Policy</a>
+							</div>
+						</div>
+					</div>
+				</div>
+        	</footer>
+			<! -------------------- footer end -------------------- >
+		</div>
+<! -------------------- main end -------------------- >
+<! -------------------- script start -------------------- >
+		<script>
+			/* ---------- onscroll start ---------- */
+			window.onscroll = function() {myFunction()};
+			var myTopnav = document.getElementById("topnavid");
+			var myLeftnav = document.getElementById("leftnavid");
+			var sticky = myTopnav.offsetHeight;
+			function myFunction() {
+				if (window.pageYOffset >= sticky) {
+					myTopnav.classList.add("sticky");
+					myLeftnav.classList.add("sticky4");
+				} else {
+					myTopnav.classList.remove("sticky");
+					myLeftnav.classList.remove("sticky4");
+				}
+				if (window.pageYOffset >= sticky/4) {
+					myLeftnav.classList.add("sticky1");
+				} else {
+					myLeftnav.classList.remove("sticky1");
+				}
+				if (window.pageYOffset >= sticky/2) {
+					myLeftnav.classList.add("sticky2");
+				} else {
+					myLeftnav.classList.remove("sticky2");
+				}
+				if (window.pageYOffset >= sticky/1.333) {
+					myLeftnav.classList.add("sticky3");
+				} else {
+					myLeftnav.classList.remove("sticky3");
+				}
+			}
+			/* ---------- onscroll end ---------- */
+			/* ---------- nav start ---------- */                
+			function starttutorials() {
+				var x = document.getElementById("tutorialsid");
+				var y = document.getElementById("tutorialscontentid");
+                if (x.className === "tutorials") {
+					x.className += " responsive";
+                } else {
+                    x.className = "tutorials";
+                }
+                if (y.className === "tutorialscontent") {
+                    y.className += " responsive";
+                } else {
+                    y.className = "tutorialscontent";
+                }
+            }
+            function closetutorials() {
+                var x = document.getElementById("tutorialsid");
+                var y = document.getElementById("tutorialscontentid");
+                if (x.className === "tutorials responsive") {
+                    x.className = "tutorials";
+                }
+                if (y.className === "tutorialscontent responsive") {
+                    y.className = "tutorialscontent";
+                }
+            }
+            function startreferences() {
+                var x = document.getElementById("referencesid");
+                var y = document.getElementById("referencescontentid");
+                if (x.className === "references") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "references";
+                }
+                if (y.className === "referencescontent") {
+                    y.className += " responsive";
+                } else {
+                    y.className = "referencescontent";
+                }
+            }
+            function closereferences() {
+                var x = document.getElementById("referencesid");
+                var y = document.getElementById("referencescontentid");
+                if (x.className === "references responsive") {
+                    x.className = "references";
+                }
+                if (y.className === "referencescontent responsive") {
+                    y.className = "referencescontent";
+                }
+            }
+			function startexercises() {
+                var x = document.getElementById("exercisesid");
+                var y = document.getElementById("exercisescontentid");
+                if (x.className === "exercises") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "exercises";
+                }
+                if (y.className === "exercisescontent") {
+                    y.className += " responsive";
+                } else {
+                    y.className = "exercisescontent";
+                }
+            }
+            function closeexercises() {
+                var x = document.getElementById("exercisesid");
+                var y = document.getElementById("exercisescontentid");
+                if (x.className === "exercises responsive") {
+                    x.className = "exercises";
+                }
+                if (y.className === "exercisescontent responsive") {
+                    y.className = "exercisescontent";
+                }
+            }
+            /* ---------- nav end ---------- */
+            /* ---------- report start ---------- */
+            function report() {
+                var x = document.getElementById("footertopid");
+                if (x.className === "footertop") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "footertop";
+                }
+            }
+            function copytext() {
+                /* Get the text field */
+                var copyText = document.getElementById("mailid");
+                /* Select the text field */
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+                /* Copy the text inside the text field */
+                document.execCommand("copy");
+                /* Alert the copied text */
+                var tooltip = document.getElementById("myTooltip");
+                tooltip.innerHTML = "Copied: " + copyText.value;
+            }
+            function outFunc() {
+                var tooltip = document.getElementById("myTooltip");
+                tooltip.innerHTML = "Copy to clipboard";
+            }
+            /* ---------- report end ---------- */
+            /* ---------- go to top start ---------- */
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+            /* ---------- go to top end ---------- */
+        </script>
+<! -------------------- script end -------------------- >        
+    </body>
+</html>

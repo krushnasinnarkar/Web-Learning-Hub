@@ -1,0 +1,41 @@
+.code {
+	background-color: #161616;
+	color: #E6E1DC;
+	display: block;
+	padding: 10px;
+}
+.doctype, .important, .function, .brackets, .text {
+	color: #E6E1DC;
+}
+pre {
+	margin: 0;
+	display: inline;
+	border-left: 1px solid #666666;
+}
+.comment {
+	color: #555555;
+}
+.tag {
+	color: #BE53E6;
+}
+.attribute {
+	color: #6d79de;
+}
+.operators {
+	color: #FF308F;
+}
+.string, .attributevalue, .numeric, .keywords {
+	color: #ffa45e;
+}
+.sector {
+	color: #1EDAFB;
+}
+.property, .value {
+	color: #999999;
+}
+.functionname {
+	color: #00AEEF;
+}
+.variables {
+	color: #997744;
+}

@@ -1,0 +1,1436 @@
+* {
+	box-sizing: border-box;
+	font-family: "Segoe UI",Arial,sans-serif;
+	scroll-behavior: smooth;
+}
+.body {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	font-family: Times New Roman, Times, serif;
+	overflow-x: hidden;
+	background-image: url(files/files_images/background.svg);
+}
+/* --------------- scrollbar start --------------- */ 
+::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+}
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: #d9d9d9; 
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:hover {background-image: linear-gradient(0deg, #e600a6, #7b0099);}
+/* --------------- scrollbar end --------------- */
+/* --------------- nav start --------------- */
+.topnav {
+	top: 0;
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	height: 65px;
+	background-color: #d9d9d9;
+}
+.topnav.sticky {
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.4);
+	transition: 2s;
+}
+.topnav a .logo {
+	text-decoration: none;
+	float: left;
+	width: 237.5px; 
+	height: 47.5px; 
+	margin: 8.8px 0px 8.7px 10px;
+}
+.topnav .dropdown {
+	padding-top: 10px;
+	float: right;
+	width: auto;
+}
+.topnav .dropdown .tutorials {
+	float: left;
+	position: relative;
+	background-color: inherit;
+	font-family: Times New Roman, Times, serif;
+	color: black;
+	padding: 16px 16px;
+	font-size: 20px;
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	border: none;
+	outline: none;
+}
+.topnav .dropdown .tutorials:hover {
+	padding: 12.5px 6.5px;
+	font-size: 23px;
+}
+.topnav .dropdown .tutorials #down1 {display: inline-block;}
+.topnav .dropdown .tutorials.responsive #down1 {display: none;}
+.topnav .dropdown .tutorials #up1 {display: none;}
+.topnav .dropdown .tutorials.responsive #up1 {display: inline-block;}
+.topnav .dropdown .tutorials .border {
+	display: none;
+	position: absolute;
+	width: 159.19px;
+	height: 4px;
+	margin-left: -6.462px;
+	margin-top: 12.5px;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.topnav .dropdown .tutorials:hover .border {display: block;}
+.topnav .dropdown .tutorialscontent {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 470px;
+	top: 65px;
+	left: 0;
+	box-shadow: 0 3px 7px 0 rgba(0,0,0,0.5);
+	transition: 2s;
+	z-index: 99;
+	background-color: #d9d9d9;
+}
+.topnav .dropdown .tutorialscontent.responsive {display: block;}  
+.topnav .dropdown .tutorialscontent .closetutorials {
+	position: absolute;
+	display: inline-block;
+	z-index: 100;
+	top: 8px;
+	right: 20px;
+	padding: 0px 11.82px 5px 11.82px;
+	font-size: 30px;
+	border: none;
+	text-decoration: none;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+	transition:  transform 2s;
+}
+.topnav .dropdown .tutorialscontent .closetutorials:hover {
+	transform: rotate(180deg);
+	-webkit-text-fill-color: #ffffff; 
+	-moz-text-fill-color: #ffffff;
+	background: linear-gradient(90deg, #e600a6, #7b0099);
+} 
+.topnav .dropdown .tutorialscontent .tutorialsrow {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 500px;
+	z-index: 99;
+}
+.topnav .dropdown .tutorialscontent .tutorialsrow .tutorialscolumn {
+	position: relative;
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+.topnav .dropdown .tutorialscontent .tutorialsrow .tutorialscolumn a {
+	float: none;
+	color: black;
+	padding: 4px 0px 4px 0px;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	text-align: left;
+}
+.topnav .dropdown .tutorialscontent .tutorialsrow .tutorialscolumn a:hover {
+	font-size: 19px;
+	border: none;
+	padding: 0.5px 0px 2.5px 6.5px;
+	transition: box-shadow .25s ease-out;
+	box-shadow: -3px 3px 3px 0 rgba(0,0,0,0.3);
+}
+.topnav .dropdown .tutorialscontent .tutorialsrow .tutorialscolumn:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.topnav .dropdown .references {
+	float: left;
+	background-color: inherit;
+	font-family: Times New Roman, Times, serif;
+	color: black;
+	padding: 16px 16px;
+	font-size: 20px;
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	margin: 0;
+	border: none;
+	outline: none;
+}
+.topnav .dropdown .references:hover {
+	font-size: 23px;
+	padding: 12.5px 5.3px;
+}
+.topnav .dropdown .references #down2 {display: inline-block;}
+.topnav .dropdown .references.responsive #down2 {display: none;}
+.topnav .dropdown .references #up2 {display: none;}
+.topnav .dropdown .references.responsive #up2 {display: inline-block;}
+.topnav .dropdown .references .border {
+	display: none;
+	position: absolute;
+	width: 173.92px;
+	height: 4px;
+	margin-left: -5.299px;
+	margin-top: 12.5px;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.topnav .dropdown .references:hover .border {display: block;}
+.topnav .dropdown .referencescontent {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 470px;
+	top: 65px;
+	left: 0;
+	box-shadow: 0 3px 7px 0 rgba(0,0,0,0.5);
+	transition: 2s;
+	z-index: 99;
+	background-color: #d9d9d9;
+}
+.topnav .dropdown .referencescontent.responsive {display: block;} 
+.topnav .dropdown .referencescontent .closereferences {
+	position: absolute;
+	display: inline-block;
+	z-index: 100;
+	top: 8px;
+	right: 20px;
+	padding: 0px 11.82px 5px 11.82px;
+	font-size: 30px;
+	border: none;
+	text-decoration: none;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+	transition:  transform 2s;
+}
+.topnav .dropdown .referencescontent .closereferences:hover {
+	transform: rotate(180deg);
+	-webkit-text-fill-color: #ffffff; 
+	-moz-text-fill-color: #ffffff;
+	background: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.topnav .dropdown .referencescontent .referencesrow {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 500px;
+	z-index: 99;
+}
+.topnav .dropdown .referencescontent .referencesrow .referencescolumn {
+	position: relative;
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+.topnav .dropdown .referencescontent .referencesrow .referencescolumn a {
+	float: none;
+	color: black;
+	padding: 4px 0px 4px 0px;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	text-align: left;
+}
+.topnav .dropdown .referencescontent .referencesrow .referencescolumn a:hover {
+	font-size: 19px;
+	border: none;
+	padding: 0.5px 0px 2.5px 6.5px;
+	transition: box-shadow .25s ease-out;
+	box-shadow: -3px 3px 3px 0 rgba(0,0,0,0.3);
+}
+.topnav .dropdown .referencescontent .referencesrow .referencescolumn:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.topnav .dropdown .examples {
+	float: left;
+	background-color: inherit;
+	font-family: Times New Roman, Times, serif;
+	color: black;
+	padding: 16px 16px;
+	font-size: 20px;
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	margin: 0;
+	border: none;
+	outline: none;
+}  
+.topnav .dropdown .examples:hover {
+	font-size: 23px;
+	padding: 12.5px 6.9px;
+}
+.topnav .dropdown .examples #down3 {display: inline-block;}
+.topnav .dropdown .examples.responsive #down3 {display: none;}
+.topnav .dropdown .examples #up3 {display: none;}
+.topnav .dropdown .examples.responsive #up3 {display: inline-block;}
+.topnav .dropdown .examples .border {
+	display: none;
+	position: absolute;
+	width: 154.09px;
+	height: 4px;
+	margin-left: -6.898px;
+	margin-top: 12.5px;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.topnav .dropdown .examples:hover .border {display: block;}
+.topnav .dropdown .examplescontent {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 470px;
+	top: 65px;
+	left: 0;
+	box-shadow: 0 3px 7px 0 rgba(0,0,0,0.5);
+	transition: 2s;
+	z-index: 99;
+	background-color: #d9d9d9;
+}
+.topnav .dropdown .examplescontent.responsive {display: block;} 
+.topnav .dropdown .examplescontent .closeexamples {
+	position: absolute;
+	display: inline-block;
+	z-index: 100;
+	top: 8px;
+	right: 20px;
+	padding: 0px 11.82px 5px 11.82px;
+	font-size: 30px;
+	border: none;
+	text-decoration: none;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+	transition:  transform 2s;
+}
+.topnav .dropdown .examplescontent .closeexamples:hover { 
+	transform: rotate(180deg);
+	-webkit-text-fill-color: #ffffff; 
+	-moz-text-fill-color: #ffffff;
+	background: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.topnav .dropdown .examplescontent .examplesrow {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 500px;
+	z-index: 99;
+}
+.topnav .dropdown .examplescontent .examplesrow .examplescolumn {
+	float: left;
+	width: 25%;
+	padding: 10px;
+	position: relative;
+}
+.topnav .dropdown .examplescontent .examplesrow .examplescolumn a {
+	float: none;
+	color: black;
+	padding: 4px 0px 4px 0px;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	text-align: left;
+}
+.topnav .dropdown .examplescontent .examplesrow .examplescolumn a:hover {
+	font-size: 19px;
+	border: none;
+	padding: 0.5px 0px 2.5px 6.5px;
+	transition: box-shadow .25s ease-out;
+	box-shadow: -3px 3px 3px 0 rgba(0,0,0,0.3);
+}
+.topnav .dropdown .examplescontent .examplesrow .examplescolumn:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.topnav .dropdown .exercises {
+	float: left;
+	background-color: inherit;
+	font-family: Times New Roman, Times, serif;
+	color: black;
+	padding: 16px 16px;
+	font-size: 20px;
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	margin: 0;
+	border: none;
+	outline: none;
+}
+.topnav .dropdown .exercises:hover {
+	font-size: 23px;
+	padding: 12.5px 6.7px;
+}
+.topnav .dropdown .exercises #down4 {display: inline-block;}
+.topnav .dropdown .exercises.responsive #down4 {display: none;}
+.topnav .dropdown .exercises #up4 {display: none;}
+.topnav .dropdown .exercises.responsive #up4 {display: inline-block;}
+.topnav .dropdown .exercises .border {
+	display: none;
+	position: absolute;
+	width: 154.97px;
+	height: 4px;
+	margin-left: -6.7005px;
+	margin-top: 12.5px;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.topnav .dropdown .exercises:hover .border {display: block;}
+.topnav .dropdown .exercisescontent {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 470px;
+	top: 65px;
+	left: 0;
+	box-shadow: 0 3px 7px 0 rgba(0,0,0,0.5);
+	transition: 2s;
+	z-index: 99;
+	background-color: #d9d9d9;
+}  
+.topnav .dropdown .exercisescontent.responsive {display: block;} 
+.topnav .dropdown .exercisescontent .closeexercises {
+	position: absolute;
+	display: inline-block;
+	z-index: 100;
+	top: 8px;
+	right: 20px;
+	padding: 0px 11.82px 5px 11.82px;
+	font-size: 30px;
+	border: none;
+	text-decoration: none;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+	transition:  transform 2s;
+}
+.topnav .dropdown .exercisescontent .closeexercises:hover {
+	transform: rotate(180deg);
+	-webkit-text-fill-color: #ffffff; 
+	-moz-text-fill-color: #ffffff;
+	background: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.topnav .dropdown .exercisescontent .exercisesrow .exercisesrow {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 500px;
+	z-index: 99;
+}
+.topnav .dropdown .exercisescontent .exercisesrow .exercisescolumn {
+	float: left;
+	width: 25%;
+	padding: 10px;
+	position: relative;
+}
+.topnav .dropdown .exercisescontent .exercisesrow .exercisescolumn a {
+	float: none;
+	color: black;
+	padding: 4px 0px 4px 0px;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	text-align: left;
+}
+.topnav .dropdown .exercisescontent .exercisesrow .exercisescolumn a:hover {
+	font-size: 19px;
+	border: none;
+	padding: 0.5px 0px 2.5px 6.5px;
+	transition: box-shadow .25s ease-out;
+	box-shadow: -3px 3px 3px 0 rgba(0,0,0,0.3);
+}
+.topnav .dropdown .exercisescontent .exercisesrow .exercisescolumn:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.topnav .dropdown .wrk{
+	color: black;
+	float: left;
+	text-align: center;
+	font-family: Times New Roman, Times, serif;
+	padding: 16px 16px;
+	text-decoration: none;
+	font-size: 20px;
+}
+.topnav .dropdown .wrk:hover {
+	font-size: 23px;
+	padding: 12.5px 9.5px;
+}
+.topnav .dropdown .wrk .border {
+	display: none;
+	position: absolute;
+	width: 120.98px;
+	height: 4px;
+	margin-left: -9.353px;
+	margin-top: 12.5px;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.topnav .dropdown .wrk:hover .border {display: block;}
+.topnav .dropdown .aboutus{
+	color: black;
+	float: left;
+	text-align: center;
+	font-family: Times New Roman, Times, serif;
+	margin-right: 5px;
+	padding: 16px 16px;
+	text-decoration: none;
+	font-size: 20px;
+}
+.topnav .dropdown .aboutus:hover {
+	font-size: 23px;
+	padding: 12.5px 8.5px;
+}
+.topnav .dropdown .aboutus .border {
+	display: none;
+	position: absolute;
+	width: 130.97px;
+	height: 4px;
+	margin-left: -8.5005px;
+	margin-top: 12.5px;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.topnav .dropdown .aboutus:hover .border {display: block;}
+.topnav .menu {
+	background-color: #d9d9d9;
+	display: none;
+	cursor: pointer;
+	float: left;
+	margin: 10.5px 20px;
+}
+.topnav .menu .bar1, .topnav .menu .bar2, .topnav .menu .bar3 {
+	width: 30px;
+	height: 4px;
+	background-color: #333;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+.change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 5px);
+	transform: rotate(-45deg) translate(-9px, 5px);
+}
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -5px);
+	transform: rotate(45deg) translate(-8px, -5px);
+}
+/* --------------- nav end --------------- */
+/* --------------- main start --------------- */
+/* ---------- Topsection start ---------- */
+.main .topsection .gradient1 {
+	z-index: 0;
+	position: relative;
+	background-image: linear-gradient(180deg, #d6d6d6, #e6e6e6, #ffffff);
+	box-shadow: 0 3px 7px 5px rgba(0,0,0,0.5);
+	width: 100%;
+	height: 580px;
+	border-bottom-right-radius: 200px;
+	border-bottom-left-radius: 25px;
+}
+.main .topsection .gradient1 .overgradient1 {
+	position: relative;
+	width: 50%;
+	top: 60px;
+	float: left;
+	height: 520px;	            
+}
+.main .topsection .gradient1 .overgradient1 .overgradient11 {
+	position: relative;
+	margin: auto;
+	top: 20px;
+	width: 90%;
+	height: 480px;
+}
+.main .topsection .gradient1 .overgradient1 .overgradient11 .text1 {
+	position: relative;
+	top: 50px;
+	font-size: 37px;
+	font-weight: 700;
+	padding: 20px 0px;
+	color: #7b0099;
+	text-transform: capitalize;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.main .topsection .gradient1 .overgradient1 .overgradient11 .text2 {
+	position: relative;
+	top: 30px;
+	font-size: 20px;
+	font-weight: 300;
+	padding: 10px 0px;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.main .topsection .gradient1 .overgradient1 .overgradient11 .next {
+	position: relative;
+	top: 60px;
+	margin-left: 25px;
+	cursor: pointer;
+}
+.next .text {
+	position: relative;
+	padding: 5px 0 5px 10px;
+	text-decoration: none;
+	font-size: 22px;
+	color: white;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+	transition: 1s;
+	box-shadow: 6px 6px 0 black;
+	transform: skewX(-15deg);
+}
+.next .text:hover {
+	transition: 0.5s;
+	box-shadow: 8px 8px 2px 0 rgba(0,0,0,0.3);
+}
+.next .text span:nth-child(2) {
+	transition: 0.5s;
+	margin-right: 0px;
+}
+.next .text:hover  span:nth-child(2) {
+	transition: 0.5s;
+	margin-right: 20px;
+}
+.next .text span {
+	-ms-transform: skewx(25deg);
+	transform: skewX(25deg);
+}
+.next .text span:nth-child(2) {
+	width: 20px;
+	margin-left: 15px;
+	position: relative;
+	top: -3px;
+}
+.next .text span svg {vertical-align: middle;}
+.next .text span svg path.one {
+	transition: 0.4s;
+	transform: translateX(-60%);
+}
+.next .text span svg path.two {
+	transition: 0.5s;
+	transform: translateX(-30%);
+}
+.next .text:hover span svg path.three {animation: color_anim 1s infinite 0.2s;}
+.next .text:hover span svg path.one {
+	transform: translateX(0%);
+	animation: color_anim 1s infinite 0.6s;
+}
+.next .text:hover span svg path.two {
+	transform: translateX(0%);
+	animation: color_anim 1s infinite 0.4s;
+}
+@keyframes color_anim {
+	0% {fill: white;}
+	50% {fill: #7b0099;}
+	100% {fill: white;}
+}
+.main .topsection .gradient1 .overgradient2 {
+	position: relative;
+	width: 50%;
+	top: 60px;
+	float: right;
+	height: 520px;
+}
+.main .topsection .gradient1 .overgradient2 .overgradient21 {
+	position: relative;
+	margin: auto;
+	top: 20px;
+	width: 90%;
+	height: 480px;
+}
+.main .topsection .gradient2 {
+	z-index: -1;
+	position: relative;
+	margin-top: -200px;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+	box-shadow: 0 3px 7px 5px rgba(0,0,0,0.5);
+	height: 245px;
+}
+/* ---------- Topsection end ---------- */
+/* ---------- Swiper start ---------- */
+:root {--swiper-theme-color:black;}
+.main .swiper-container h1 {
+	font-size: 50px;
+	padding-top: 30px;
+	text-align: center;
+	cursor: default;
+	text-transform: capitalize;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(0deg, #e600a6, #7b0099);
+}
+.main .swiper-container .swiper-wrapper .swiper-slide {width: 400px;}
+.main .swiper-container .swiper-wrapper .swiper-slide .card {
+	position: relative;
+	background-color: #bbbbc4;
+	color: #404040;
+	width: 400px;
+	height: 500px;
+	margin: auto;
+}
+.main .swiper-container .swiper-wrapper .swiper-slide .card .card-header {
+	position: relative;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+}
+.main .swiper-container .swiper-wrapper .swiper-slide .card .card-header a {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 60px;
+}
+.main .swiper-container .swiper-wrapper .swiper-slide .card .card-header a:hover {
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.main .swiper-container .swiper-wrapper .swiper-slide .card .card-content {
+	padding: 30px;
+	font-size: 15px;
+	box-sizing: border-box;
+}
+.main .swiper-container .swiper-wrapper .swiper-slide .card .card-content a {
+	display: flex;
+	margin: 10px 0 0;
+	padding: 8px 15px;
+	text-decoration: none;
+	border: 3px solid #666666;
+	border-radius: 21.5px;
+	margin-bottom: 5px;
+	color: #404040;
+	font-weight: 600;
+}
+.main .swiper-container .swiper-wrapper .swiper-slide .card .card-content a:hover {
+	border-color: white;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+}
+/* ---------- Swiper end ---------- */
+/* ---------- tutorials by category start ---------- */
+.tutbycat {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+.tutbycat .title {
+	font-size: 40px;
+	margin: auto;
+	margin-top: 30px;
+	text-align: center;
+	cursor: default;
+	text-transform: capitalize;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(0deg, #e600a6, #7b0099);
+}
+.tutbycat .headingcontainer {
+	position: relative;
+	width: 25%;
+	height: 400px;
+	float: left;
+}
+.tutbycat .headingcontainer .heading {
+	margin: 20px;
+	overflow: auto;
+	width: -webkit-fill-available;
+	height: -webkit-fill-available;
+	background-image: linear-gradient(0deg, #e600a6, #7b0099);
+	box-shadow: -5px 10px 5px 1px rgba(0,0,0,0.7);
+	color: white;
+	text-align: center;
+}
+.tutbycat .headingcontainer .heading h1 {
+	padding: 10px;
+	font-size: 28px;
+	margin: 0;
+	text-transform: capitalize;
+}
+.tutbycat .headingcontainer .heading h1 a {
+	text-decoration: none;
+	color: white;
+}
+.tutbycat .headingcontainer .heading p {
+	padding: 10px;
+	text-align: justify;
+	margin: 0;
+	font-size: 15px;
+}
+.tutbycat .list {
+	position: relative;
+	width: 75%;
+	height: 400px;
+	padding: 30px;
+	margin-bottom: 25px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+.tutcards {display: inline-flex;} 
+.tutcard {
+	background-color: #bbbbc4;
+	color: #404040;
+	width: 250px;
+	height: 340px;
+	border-radius: 16px;
+	box-shadow: -12px 0 10px 0px rgba(0,0,0,0.8); 
+}
+.tutcard:not(:first-child) {
+	margin-left: -64px;
+	box-shadow: -16px 0 15px 0px rgba(0,0,0,0.8);
+}
+.tutcard:hover {
+	transition: 0.2s;
+	transform: translateY(-16px);
+}
+.tutcard:hover ~ .tutcard {
+	transform: translatex(60px)
+}
+.tutbycat .list .tutcards .tutcard .tutname {
+	display: block;
+	color: #404040;
+	text-decoration: none;
+	padding: 15px 15px 5px 15px;
+	font-weight: 600;
+	font-size: 32px;
+	cursor: pointer;
+}
+.tutbycat .list .tutcards .tutcard .tutname:hover {
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.tutbycat .list .tutcards .tutcard .intro {
+	font-size: 15px;
+	padding: 5px 15px 5px 15px;
+}
+.tutbycat .list .tutcards .tutcard .intro p {margin: 0;}
+.tutbycat .list .tutcards .tutcard .links {padding: 10px;}
+.tutbycat .list .tutcards .tutcard .links a {
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	border: 3px solid #666666;
+	border-radius: 21.5px;
+	margin-bottom: 5px;
+	color: #404040;
+	font-weight: 600;
+}
+.tutbycat .list .tutcards .tutcard .links a:hover {
+	border-color: white;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+}
+/* ---------- tutorials by category end ---------- */
+/* --------------- main end --------------- */
+/* --------------- footer start --------------- */
+.footertop {
+	margin-top: 25px;
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.footertop.responsive {
+	height: auto;
+}
+.footertop .hr {
+	position: relative;
+	width: 95%;
+	height: 1px;
+	margin: auto;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.footertop .outercolumn{
+	width: 100%;
+	height: 70px;
+	position: relative;
+}
+.footertop .outercolumn .column {
+	position: relative;
+	width: 33.33%;
+	float: left;
+	padding: 10px;
+	height: auto;
+	text-align: center;
+}
+.footertop .outercolumn .column .innercolumn {padding: 8.5px;}
+.footertop .outercolumn .column .innercolumn a{
+	cursor: pointer;
+	text-decoration: none;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	text-transform: capitalize;
+	font-size: 25px;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.footertop .outercolumn .column .innercolumn a:hover {
+	-webkit-text-fill-color: #ffffff; 
+	-moz-text-fill-color: #ffffff;
+}
+.footertop .reporterror {
+	position: relative;
+	display: none;
+	margin: auto;
+	margin: 20px;
+	background-color: #ffffff;
+}
+.footertop.responsive .reporterror {display: block;}
+.footertop .reporterror h2 {
+	position: relative;
+	margin: auto 0px;
+	padding: 10px;
+	width: 100%;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+.footertop .reporterror h2 .closereport {
+	position: absolute;
+	top: 8px;
+	right: 20px;
+	padding: 0px 10.82px 5px 10.82px;
+	font-size: 25px;
+	border: none;
+	text-decoration: none;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+	transition:  transform 2s;
+}
+.footertop .reporterror h2 .closereport:hover {
+	transform: rotate(180deg);
+	-webkit-text-fill-color: #ffffff; 
+	-moz-text-fill-color: #ffffff;
+	background: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.footertop .reporterror p {
+	position: relative;
+	margin: auto 0px;
+	padding: 10px;
+	width: 100%;
+}
+.footertop .reporterror .mail {
+	position: relative;
+	margin: 10px;
+	border: none;
+	font-size: 15px;
+}
+.footertop .reporterror .tooltip {
+	position: relative;
+	display: inline-block;
+	margin-left: -20px;
+}
+.footertop .reporterror .tooltip .copy {
+	cursor: pointer;
+	font-size: 15px;
+	padding: 5px;
+	background-color: #111111;
+	color: white;
+	border-radius: 5px;
+}
+.footertop .reporterror .tooltip .tooltiptext {
+	visibility: hidden;
+	width: 140px;
+	background-color: #111111;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -75px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+.footertop .reporterror .tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+.footertop .reporterror .tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+.footer {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+.footer .outercolumn {
+	width: 100%;
+	height: 200px;
+	position: relative;
+}
+.footer .outercolumn .column { 
+	position: relative;
+	width: 33.33%;
+	float: left;
+	height: 200px;
+	padding: 10px;
+	text-align: center;
+}
+.footer .outercolumn .column:nth-child(1) {}
+.footer .outercolumn .column:nth-child(2) {}
+.footer .outercolumn .column:nth-child(3) {}
+.footer .socialmedia {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.footer .socialmedia .text {
+	width: 100%;
+	height: auto;
+	position: relative;
+	color: white;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 25px;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.footer .socialmedia .icons {
+	width: 100%;
+	height: auto;
+	position: relative;
+	text-align: center;
+}
+.footer .socialmedia .icons .fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.footer .socialmedia .icons .fa .tooltiptext {
+	visibility: hidden;
+	width: auto;
+	background-color: transparent;
+	color: #ffffff;
+	font-size: 15px;
+	margin-left: -20px;
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px 5px;
+	position: absolute;
+	z-index: 1;
+}
+.footer .socialmedia .icons .fa:hover .tooltiptext {visibility: visible;}
+.footer .socialmedia .icons .fa:hover {
+	-webkit-text-fill-color: white; 
+	-moz-text-fill-color: white;
+}
+.footer .hr {
+	position: relative;
+	width: 95%;
+	height: 1px;
+	margin: auto;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.footer .bottom {
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+}
+.footer .bottom .column {
+	position: relative;
+	width: 33.33%;
+	float: left;
+	height: auto;
+}
+.footer .bottom .column .innercolumn {
+	width: 100%;
+	float: none;
+	text-align: center;
+	padding: 10px 0;
+}
+.footer .bottom .column a .logo {
+	position: relative;
+	text-decoration: none;
+	width: auto; 
+	height: 50px;
+}
+.footer .bottom .column:nth-child(2) {margin: 15px 0;}
+.footer .bottom .column a {
+	text-align: center;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 15px;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.footer .bottom .column a:hover {
+	-webkit-text-fill-color: white; 
+	-moz-text-fill-color: white;
+}
+.footer .bottom .column:nth-child(3) {margin: 15px 0px;}
+.footer .bottom .column .verticalline {
+	display: inline-block;
+	height: 15px;
+	width: 2px;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+	margin: 0 3px;
+}
+/* --------------- footer end --------------- */
+/* --------------- responsive start --------------- */
+/* --------------- reduce nav --------------- */
+@media only screen and (min-width: 1021px) and (max-width: 1200px) {
+	.topnav .dropdown {
+		padding-top: 14px;
+		float: right;
+		width: auto;
+	}
+	.topnav .dropdown .tutorials {
+		position: relative;
+		background-color: inherit;
+		font-family: Times New Roman, Times, serif;
+		color: black;
+		padding: 15px 10px;
+		font-size: 18px;
+		cursor: pointer;
+		text-align: center;
+		border: none;
+		outline: none;
+	}
+	.topnav .dropdown .tutorials:hover {
+		font-size: 20px;
+		padding: 12px 3.655px;
+	}
+	.topnav .dropdown .tutorials .border {
+		width: 134.47px;
+		margin-left: -3.6555px;
+		margin-top: 12px;
+	}
+	.topnav .dropdown .references {
+		background-color: inherit;
+		font-family: Times New Roman, Times, serif;
+		color: black;
+		padding: 15px 10px;
+		font-size: 18px;
+		cursor: pointer;
+		text-align: center;
+		margin: 0;
+		border: none;
+		outline: none;
+	}
+	.topnav .dropdown .references:hover {
+		font-size: 20px;
+		padding: 12px 2.905px;
+	}
+	.topnav .dropdown .references .border {
+		width: 147.83px;
+		margin-left: -2.9065px;
+		margin-top: 12px;
+	}
+	.topnav .dropdown .examples {
+		background-color: inherit;
+		font-family: Times New Roman, Times, serif;
+		color: black;
+		padding: 15px 10px;
+		font-size: 18px;
+		cursor: pointer;
+		text-align: center;
+		margin: 0;
+		border: none;
+		outline: none;
+	}
+	.topnav .dropdown .examples:hover {
+		font-size: 20px;
+		padding: 12px 3.9px;
+	}
+	.topnav .dropdown .examples .border {
+		width: 129.81px;
+		margin-left: -3.9065px;
+		margin-top: 12px;
+	}
+	.topnav .dropdown .exercises {
+		background-color: inherit;
+		font-family: Times New Roman, Times, serif;
+		color: black;
+		padding: 15px 10px;
+		font-size: 18px;
+		cursor: pointer;
+		text-align: center;
+		margin: 0;
+		border: none;
+		outline: none;
+	}
+	.topnav .dropdown .exercises:hover {
+		font-size: 20px;
+		padding: 12px 3.9px;
+	}
+	.topnav .dropdown .exercises .border {
+		width: 130.81px;
+		margin-left: -3.902px;
+		margin-top: 12px;
+	}
+	.topnav .dropdown .wrk{
+		color: black;
+		float: left;
+		text-align: center;
+		font-family: Times New Roman, Times, serif;
+		padding: 15px 10px;
+		text-decoration: none;
+		font-size: 18px;
+	}
+	.topnav .dropdown .wrk:hover {
+		font-size: 20px;
+		padding: 12px 5.5px;
+	}
+	.topnav .dropdown .wrk .border {
+		width: 99.83px;
+		margin-left: -5.501px;
+		margin-top: 12px;
+	}
+	.topnav .dropdown .aboutus{
+		color: black;
+		float: left;
+		text-align: center;
+		font-family: Times New Roman, Times, serif;
+		padding: 15px 10px;
+		text-decoration: none;
+		font-size: 18px;
+	}
+	.topnav .dropdown .aboutus:hover {
+		font-size: 20px;
+		padding: 12px 5px;
+	}
+	.topnav .dropdown .aboutus .border {
+		width: 109.19px;
+		margin-left: -5px;
+		margin-top: 12px;
+	}
+}
+/* --------------- hidden nav, tut by cat[valignment of header] --------------- */
+@media only screen and (min-width: 0px) and (max-width: 1020px) {
+	.topnav {height: 60px;}
+	.topnav a .logo {
+		margin: 6.3px 25px 6.2px 0px;
+		float: right;
+	}
+	.topnav .dropdown.responsive {
+		position: absolute;
+		margin-top: 60px;
+		background-color: #d9d9d9;
+		width: 100%;
+		height: 340px;
+		padding-top: 0px;
+	}
+	.topnav .dropdown.responsive.responsive2 {
+		height: 500px;
+		overflow-y: scroll;
+	}
+	.topnav .dropdown .tutorials {display: none;}
+	.topnav .dropdown.responsive .tutorials {
+		width: 100%;
+		display: block;
+	}
+	.topnav .dropdown .tutorials:hover {padding-bottom: 16.5px;}
+	.topnav .dropdown .tutorials .border {width: 100%;}
+	.topnav .dropdown .tutorialscontent {
+		position: relative;
+		height: 860px;
+		width: auto;
+		margin: -10px 20px 65px 20px;
+		background-color: #ffffff;
+	}
+	.topnav .dropdown .tutorialscontent .tutorialsrow {height: 860px;}
+	.topnav .dropdown .tutorialscontent .tutorialsrow .tutorialscolumn {
+		width: 50%;
+		margin-top: -35px;
+	}
+	.topnav .dropdown .tutorialscontent .tutorialsrow .tutorialscolumn a:hover {background-color: #ffffff;}
+	.topnav .dropdown .references {display: none;}
+	.topnav .dropdown.responsive .references {
+		width: 100%;
+		display: block;
+	}
+	.topnav .dropdown .references:hover {padding-bottom: 16.5px;}
+	.topnav .dropdown .references .border {width: 100%;}
+	.topnav .dropdown .referencescontent {
+		position: relative;
+		height: 655px;
+		width: auto;
+		margin: 45px 20px 65px 20px;
+		background-color: #ffffff;
+	}
+	.topnav .dropdown .referencescontent .referencesrow {height: 655px;}
+	.topnav .dropdown .referencescontent .referencesrow .referencescolumn {
+		width: 50%;
+		margin-top: -35px;
+	}
+	.topnav .dropdown .referencescontent .referencesrow .referencescolumn a:hover {background-color: #ffffff;}
+	.topnav .dropdown .examples {display: none;}
+	.topnav .dropdown.responsive .examples {
+		width: 100%;
+		display: block;
+	}
+	.topnav .dropdown .examples:hover {padding-bottom: 16.5px;}
+	.topnav .dropdown .examples .border {width: 100%;}
+	.topnav .dropdown .examplescontent {
+		margin-top: 100px;
+		position: relative;
+		height: 715px;
+		width: auto;
+		margin: 100px 20px 65px 20px;
+		background-color: #ffffff;
+	}
+	.topnav .dropdown .examplescontent .examplesrow {height: 715px;}
+	.topnav .dropdown .examplescontent .examplesrow .examplescolumn {
+		width: 50%;
+		margin-top: -35px;
+	}
+	.topnav .dropdown .examplescontent .examplesrow .examplescolumn a:hover {background-color: #ffffff;}
+	.topnav .dropdown .exercises {display: none;}
+	.topnav .dropdown.responsive .exercises {
+		width: 100%;
+		display: block;
+	}
+	.topnav .dropdown .exercises:hover {padding-bottom: 16.5px;}
+	.topnav .dropdown .exercises .border {width: 100%;}
+	.topnav .dropdown .exercisescontent {
+		margin-top: 155px;
+		position: relative;
+		height: 650px;
+		width: auto;
+		margin: 155px 20px 65px 20px;
+		background-color: #ffffff;
+	}
+	.topnav .dropdown .exercisescontent .exercisesrow {height: 860px;}
+	.topnav .dropdown .exercisescontent .exercisesrow .exercisescolumn {
+		width: 50%;
+		margin-top: -35px;
+	}
+	.topnav .dropdown .exercisescontent .exercisesrow .exercisescolumn a:hover {background-color: #ffffff;}
+	.topnav .dropdown .wrk {display: none;}
+	.topnav .dropdown.responsive .wrk {
+		width: 100%;
+		display: block;
+	}
+	.topnav .dropdown .wrk:hover {padding-bottom: 16.5px;}
+	.topnav .dropdown .wrk .border {width: 100%;}
+	.topnav .dropdown .aboutus {display: none;}
+	.topnav .dropdown.responsive .aboutus {
+		width: 100%;
+		display: block;
+	}
+	.topnav .dropdown .aboutus:hover {padding-bottom: 16.5px;}
+	.topnav .dropdown .aboutus .border {width: 100%;}
+	.topnav .menu {display: inline-block;}
+	.tutbycat .headingcontainer {width: auto;}
+	.tutbycat .list {width: -webkit-fill-available;}
+	.tutbycat .headingcontainer .heading {
+		-webkit-writing-mode: vertical-rl;
+		writing-mode: vertical-rl;
+	}
+	.tutbycat .headingcontainer .heading h1 {
+		transform: rotate(180deg);
+	}
+	.tutbycat .headingcontainer .heading p {display: none;}
+	.tutbycat .headingcontainer .heading ol {display: none;}
+}
+/* ---------- footer[bottom(width:100%)] ---------- */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+	.footer {height: 511px;}
+	.footer .bottom {height: 210px;}
+	.footer .bottom .column:nth-child(1) {width: 100%;}
+	.footer .bottom .column:nth-child(2) {width: 100%;}
+	.footer .bottom .column:nth-child(3) {width: 100%;}
+}
+/* --------------- nav[content(increase hight & width:100%)], main[swiper(width:320px)], footer[top(width:100%)] --------------- */
+@media only screen and (min-width: 0px) and (max-width: 550px) {
+	.topnav a .logo {
+		margin: 6.25px 10px 6.25px 0px;
+		float: right;
+	}	
+	.topnav .dropdown .tutorialscontent {height: 1480px;}
+	.topnav .dropdown .tutorialscontent .tutorialsrow .tutorialscolumn {width: 100%;}
+	.topnav .dropdown .referencescontent {height: 1120px;}
+	.topnav .dropdown .referencescontent .referencesrow .referencescolumn {width: 100%;}
+	.topnav .dropdown .examplescontent {height: 1085px;}
+	.topnav .dropdown .examplescontent .examplesrow .examplescolumn {width: 100%;}
+	.topnav .dropdown .exercisescontent {height: 1175px;}
+	.topnav .dropdown .exercisescontent .exercisesrow .exercisescolumn {width: 100%;}
+	.main .swiper-container .swiper-wrapper .swiper-slide {width: 320px;}
+	.main .swiper-container .swiper-wrapper .swiper-slide .card {width: 320px;}
+	.footertop {height: 212px;}
+	.footertop .outercolumn {
+		width: 100%;
+		height: 210px;
+		position: relative;
+	}
+	.footertop .outercolumn .column {width: 100%;}
+	.footertop .reporterror {overflow-y: scroll;}
+}
+/* --------------- nav[reduse logo] --------------- */
+@media only screen and (min-width: 0px) and (max-width: 330px) {
+	.topnav a .logo {
+		width: 225px; 
+		height: 45px; 
+		margin: 7.5px 0px;
+		float: right;
+	}
+}
+/* --------------- responsive end --------------- */

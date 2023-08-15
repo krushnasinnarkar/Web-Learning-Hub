@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>RK Fundamentals</title>       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../files/files_images/logoattitle.png" type="image/x-icon">
+		<link rel="stylesheet" href="../files/files_css/aos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../files/files_css/css.css">
+        <link rel="stylesheet" href="../files/files_css/code.css">
+    </head>
+    <body class="body">
+        <div class="logodiv">
+            <a href="../rk_fundamentals.html"><img class="logo" src="../files/files_images/logo.png"></a>
+        </div>
+        <nav class="topnav" id="topnavid">
+			<div class="menu" onclick="leftnav1(this), leftnav2()" href="javascript:void(0);">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <a href="../rk_fundamentals.html" class="home" title="HOME"><i class="fa fa-home"></i><div class="border"></div></a>
+            <a href="../html/default.html" class="html active" title="HTML Tutorial">HTML<div class="border"></div></a>
+            <a href="../css/default.html" class="css" title="CSS Tutorial">CSS<div class="border"></div></a>
+            <a href="../js/default.html" class="js" title="JavScript Tutorial">JAVASCRIPT<div class="border"></div></a>
+            <a href="../sql/default.html" class="sql" title="SQL Tutorial">SQL<div class="border"></div></a>
+            <a href="../php/default.html" class="php" title="PHP Tutorial">PHP<div class="border"></div></a>
+            <a href="../java/default.html" class="java" title="Java Tutorial">JAVA<div class="border"></div></a>
+            <a href="../cpp/default.html" class="cpp" title="C++ Tutorial">C++<div class="border"></div></a>
+            <a href="../python/default.html" class="python" title="Python Tutorial">PYTHON<div class="border"></div></a>
+            <a href="../how_to_do_it/default.html" class="htdi" title="How To Do It">HOW TO<div class="border"></div></a>
+            <a class="tutorials" id="tutorialsid" title="Tutorials" onclick="starttutorials(), closereferences(), closeexercises()">MORE
+				<i class="fa fa-caret-down" id="down1"></i>
+				<i class="fa fa-caret-up" id="up1"></i>
+				<div class="border"></div>
+			</a>
+			<div id="tutorialscontentid" class="tutorialscontent">
+				<a href="javascript:void(0)" class="closetutorials" onclick=closetutorials()>&times;</a>
+				<div class="tutorialsrow">
+					<div id="tutorialscolumnid" class="tutorialscolumn">
+						<h3>HTML and CSS</h3>
+						<a href="../html/default.html">Learn HTML</a>
+						<a href="../css/default.html">Learn CSS</a>
+						<a href="../bs/default.html">Learn BootStrap</a>
+						<a href="../sass/default.html">Learn Sass</a>
+						<a href="../graphics/default.html">Learn Graphics</a>
+						<a href="../character_sets/default.html">HTML Character sets</a>
+						<h3>Add<sup>n</sup> Tuts</h3>
+						<a href="../colors/default.html">Learn Colors</a>
+						<a href="../icons/default.html">Learn Icons</a>
+						<a href="../how_to_do_it/default.html">How to do it</a>
+						<a href="../number_systems/default.html">Number Systems</a>
+						<a href="../types_of_languages/default.html" title="Types Of Languages">Types of lang.</a>
+					</div>
+					<div id="tutorialscolumnid" class="tutorialscolumn">
+						<h3>JavaScript</h3>
+	                    <a href="../js/default.html">Learn JavaScript</a>
+						<a href="../jquery/default.html">Learn JQuery</a>
+						<a href="../react/default.html">Learn React</a>
+						<a href="../angularjs/default.html">Learn AngularJS</a>
+						<a href="../json/default.html">Learn JSON</a>
+	                    <a href="../ajax/default.html">Learn AJAX</a>
+						<h3>Server Side</h3>
+						<a href="../sql/default.html">Learn SQL</a>
+	                    <a href="../php/default.html">Learn PHP</a>
+						<a href="../asp/default.html">Learn ASP</a>
+						<a href="../nodejs/default.html">Learn Node.JS</a>
+	                    <a href="../jsp/default.html">Learn JSP</a>
+					</div>
+					<div id="tutorialscolumnid" class="tutorialscolumn">
+	                    <h3>Programing</h3>
+						<a href="../java/default.html">Learn Java</a>
+						<a href="../c/default.html">Learn C</a>
+						<a href="../python/default.html">Learn Python</a>
+						<a href="../cpp/default.html">Learn C++</a>
+	                    <a href="../vb/default.html" title="Learn Visual Basic">Learn VB</a>
+						<a href="../vbnet/default.html" title="Visual Basic .NET">Learn VB .NET</a>
+	                    <a href="../c_sharp/default.html" title="Learn C#">Learn C Sharp</a>
+	                    <a href="../objective-c/default.html">Learn Objactive-C</a>
+	                    <a href="../ruby/default.html">Learn Ruby</a>
+						<a href="../assembly/default.html">Learn Assembly</a>
+	                </div>
+					<div id="tutorialscolumnid" class="tutorialscolumn">
+						<h3>XML</h3>
+						<a href="../xml/default.html">Learn XML</a>
+						<a href="../xml/xml_ajax/default.html">Learn XML AJAX</a>
+						<a href="../xml/xml_dom/default.html">Learn XML DOM</a>
+						<a href="../xml/xml_dtd/default.html">Learn XML DTD</a>
+						<a href="../xml/xml_schema/default.html">Learn XML Schema</a>
+                    	<a href="../xml/xslt/default.html">Learn XSLT</a>
+                    	<a href="../xml/xpath/default.html">Learn XPath</a>
+                    	<a href="../xml/xquery/default.html">Learn XQuery</a>
+                	</div>
+            	</div>    
+			</div>
+			<a class="search" title="Search RK"><i class="fa fa-search"></i><div class="border"></div></a>
+			<a class="translate" title="Translate RK"><i class="fa fa-globe"></i><div class="border"></div></a>
+			<a class="exercises" id="exercisesid" onclick="startexercises(), closetutorials(), closereferences()">EXERCISES
+				<i class="fa fa-caret-down" id="down4"></i>
+				<i class="fa fa-caret-up" id="up4"></i>
+				<div class="border"></div>
+			</a> 
+			<div id="exercisescontentid" class="exercisescontent">
+				<a href="javascript:void(0)" class="closeexercises" onclick=closeexercises()>&times;</a>
+				<div class="exercisesrow">
+					<div id="exercisescolumnid" class="exercisescolumn">
+						<h3>Exercises</h3>
+						<a href="../html/exercises.html">HTML Exercises</a>
+						<a href="../css/exercises.html">CSS Exercises</a>
+						<a href="../bs/exercises.html">BootStrap Exercises</a>
+						<a href="../js/exercises.html">JavaScript Exercises</a>
+						<a href="../jquery/exercises.html">JQuery Exercises</a>
+						<a href="../sql/exercises.html">SQL Exercises</a>
+						<a href="../php/exercises.html">PHP Exercises</a>
+					</div>
+					<div id="exercisescolumnid" class="exercisescolumn">
+						<h3>&nbsp;</h3>
+						<a href="../java/exercises.html">JAVA Exercises</a>
+						<a href="../c/exercises.html">C Exercises</a>
+						<a href="../python/exercises.html">Python Exercises</a>
+						<a href="../cpp/exercises.html">C++ Exercises</a>
+						<a href="../vb/exercises.html" title="Visual Basics Exercise">VB Exercises</a>
+						<a href="../vbnet/exercises.html" title="Visual Basics .NET Exercise">VB .NET Exercises</a>
+						<a href="../c_sharp/exercises.html" title="C# Exercise">C Sharp Exercises</a>
+						<a href="../xml/exercises.html">XML Exercises</a>
+					</div>
+					<div id="exercisescolumnid" class="exercisescolumn">
+						<h3>Quizzes</h3>
+						<a href="../html/quiz.html">HTML Quiz</a>
+						<a href="../css/quiz.html">CSS Quiz</a>
+						<a href="../bs/quiz.html">BootStrap Quiz</a>
+						<a href="../js/quiz.html">JavaScript Quiz</a>
+						<a href="../jquery/quiz.html">JQuery Quiz</a>
+						<a href="../sql/quiz.html">SQL Quiz</a>
+						<a href="../php/quiz.html">PHP Quiz</a>
+					</div>
+					<div id="exercisescolumnid" class="exercisescolumn">
+						<h3>&nbsp;</h3>
+						<a href="../java/quiz.html">JAVA Quiz</a>
+						<a href="../c/quiz.html">C Quiz</a>
+						<a href="../python/quiz.html">Python Quiz</a>
+						<a href="../cpp/quiz.html">C++ Quiz</a>
+						<a href="../vb/quiz.html" title="Visual Basics Quiz">VB Quiz</a>
+						<a href="../vbnet/quiz.html" title="Visual Basics .NET Quiz">VB .NET Quiz</a>
+						<a href="../c_sharp/quiz.html" title="C# Quiz">C Sharp Quiz</a>
+						<a href="../xml/quiz.html">XML Quiz</a>
+					</div>
+				</div>
+			</div>
+			<a class="references" id="referencesid" onclick="startreferences(), closetutorials(), closeexercises()">REFERENCES
+				<i class="fa fa-caret-down" id="down2"></i>
+				<i class="fa fa-caret-up" id="up2"></i>
+				<div class="border"></div>
+			</a>
+			<div id="referencescontentid" class="referencescontent">
+				<a href="javascript:void(0)" class="closereferences" onclick=closereferences()>&times;</a>
+            	<div class="referencesrow">
+                	<div id="referencescolumnid" class="referencescolumn">
+                    	<h3>HTML and CSS</h3>
+                    	<a href="../html/html_ref/default.html">HTML Tag Reference</a>
+                    	<a href="../css/css_ref/default.html">CSS Reference</a>
+                    	<a href="../bs/bs_ref/default.html">Bootstrap Reference</a>
+                    	<a href="../sass/sass_ref/default.html">Sass Reference</a>
+                    	<a href="../icons/icons_ref/default.html">Icon Reference</a>
+                    	<a href="../graphics/graphics_ref/default.html">Graphics Reference</a>
+                	</div>
+                	<div id="referencescolumnid" class="referencescolumn">
+						<h3>JavaScript</h3>
+                    	<a href="../js/js_ref/default.html">JavaScript Reference</a>
+                    	<a href="../js/js_ref/default.html">HTML DOM Reference</a>
+                    	<a href="../jquery/jquery_ref/default.html">JQuery Reference</a>
+                    	<a href="../angularjs/angularjs_ref/default.html">AngularJS Reference</a>
+                    	<h3>Server Side</h3>
+                    	<a href="../sql/sql_ref/default.html">SQL Reference</a>
+						<a href="../php/php_ref/default.html">PHP Reference</a>
+                    	<a href="../asp/asp_ref/default.html">ASP Reference</a>
+                	</div>
+                	<div id="referencescolumnid" class="referencescolumn">
+						<h3>JavaScript</h3>
+                    	<a href="../java/java_ref/default.html">Java Reference</a>
+                    	<a href="../../python/python_ref/default.html">Python Reference</a>
+                    	<h3>XML</h3>
+                    	<a href="../xml/xml_ref/default.html">XML Reference</a>
+                    	<a href="../xml/xml_schema/xml_schema_ref/default.html">XML Schema Reference</a>
+                    	<a href="../xml/xslt/xslt_ref/default.html">XSLT Reference</a>
+                	</div>
+					<div id="referencescolumnid" class="referencescolumn">
+						<h3>Character Sets</h3>
+						<a href="../character_sets/default.html">HTML Character Sets</a>
+						<a href="../character_sets/html_ascii.html">HTML ASCII</a>
+						<a href="../character_sets/html_ansi.html">HTML ANSI</a>
+						<a href="../character_sets/html_iso-8859-1.html">HTML ISO-8859-1</a>
+						<a href="../character_sets/html_symbols.html">HTML Symbols</a>
+						<a href="../character_sets/html_utf-8.html">HTML UTF-8</a>
+					</div>
+				</div>    
+			</div>
+        </nav>
+		<div class="leftnav" id="leftnavid">
+			<div class="leftnavcontent">
+				<h2>HTML Tutorial</h2>
+				<a target="_top" href="default.html">HTML Introduction</a>
+				<a target="_top" href="html_editors.html" class="active">HTML Editors</a>
+				<a target="_top" href="html_tags.html">HTML Tags</a>
+				<a target="_top" href="html_attributes.html">HTML Attributes</a>
+				<a target="_top" href="html_structure.html">HTML Structure</a>
+				<a target="_top" href="html_basic.html">HTML Basic</a>
+				<a target="_top" href="html_formatting.html">HTML Formatting</a>
+				<a target="_top" href="html_phrase_tags.html">HTML Phrase Tags</a>
+				<a target="_top" href="html_style_attribute.html">HTML Style Attribute</a>
+				<a target="_top" href="html_meta_tag.html">HTML Meta Tag</a>
+				<a target="_top" href="html_comments.html">HTML Comments</a>
+				<a target="_top" href="html_css.html">HTML CSS</a>
+				<a target="_top" href="html_links.html">HTML Links</a>
+				<a target="_top" href="html_file_paths.html">HTML Flie Paths</a>
+				<a target="_top" href="html_images.html">HTML Images</a>
+				<a target="_top" href="html_tables.html">HTML Tables</a>
+				<a target="_top" href="html_lists.html">HTML Lists</a>
+				<a target="_top" href="html_element_types.html">HTML Element types</a>
+				<a target="_top" href="html_frames.html">HTML Frames</a>
+				<a target="_top" href="html_iframes.html">HTML Iframes</a>
+				<a target="_top" href="html_colors.html">HTML Colors</a>
+				<a target="_top" href="html_fonts.html">HTML Fonts</a>
+				<a target="_top" href="html_classes.html">HTML Classes</a>
+				<a target="_top" href="html_id.html">HTML Id</a>
+				<a target="_top" href="html_javascript.html">HTML JavaScript</a>
+				<a target="_top" href="html_layout.html">HTML Layout</a>
+				<a target="_top" href="html_responsive.html">HTML Responsive</a>
+				<a target="_top" href="html_code_element.html">HTML Code Element</a>
+				<a target="_top" href="html_guide.html">HTML Guide</a>
+				<a target="_top" href="html_vs._xhtml.html">HTML vs. XHTML</a>
+				<h2>HTML Forms</h2>
+				<a target="_top" href="html_forms.html">HTML Forms</a>
+				<a target="_top" href="html_form_elements.html">HTML Form Elements</a>
+				<a target="_top" href="html_input_types.html">HTML Input Types</a>
+				<a target="_top" href="html_input_attributes.html">HTML Input Attributes</a>
+				<a target="_top" href="html_input_form_attributes.html" title="HTML Input Form Attributes">HTML Input Form Att..</a>
+				<h2>HTML Graphics</h2>
+				<a target="_top" href="html_canvas.html">HTML Canvas</a>
+				<a target="_top" href="html_svg.html">HTML SVG</a>
+				<h2>HTML Media</h2>
+				<a target="_top" href="html_media.html">HTML Media</a>
+				<a target="_top" href="html_video.html">HTML Video</a>
+				<a target="_top" href="html_audio.html">HTML Audio</a>
+				<a target="_top" href="html_plug-ins.html">HTML Plug-ins</a>
+				<a target="_top" href="html_youtube.html">HTML YouTube</a>
+				<h2>HTML APIs</h2>
+				<a target="_top" href="html_geolocation.html">HTML Geolocation</a>
+				<a target="_top" href="html_dragdrop.html">HTML Drag/Drop</a>
+				<a target="_top" href="html_web_storage.html">HTML Web Storage</a>
+				<a target="_top" href="html_web_workers.html">HTML Web Workers</a>
+				<a target="_top" href="html_sse.html">HTML SSE</a>
+				<h2>HTML Examples</h2>
+				<a target="_top" href="examples.html">HTML Examples</a>
+				<a target="_top" href="quiz.html">HTML Quiz</a>
+				<a target="_top" href="exercises.html">HTML Exercises</a>
+				<a target="_top" href="html_summary.html">HTML Summary</a>
+				<h2>HTML References</h2>
+				<a target="_top" href="html_ref/default.html">HTML Tags</a>
+				<a target="_top" href="html_ref/html_tags_by_category.html">Tags By Category</a>
+				<a target="_top" href="html_ref/html_attributes.html">HTML Attributes</a>
+				<a target="_top" href="html_ref/html_global_attributes.html" title="HTML Global Attributes">HTML Global Att..</a>
+				<a target="_top" href="html_ref/html_browser_support.html" title="HTML Browser Support">HTML Browser Supp..</a>
+				<a target="_top" href="html_ref/html_events.html">HTML Events</a>
+				<a target="_top" href="../colors/default.html">HTML Colors</a>
+				<a target="_top" href="html_ref/html_canvas.html">HTML Canvas</a>
+				<a target="_top" href="html_ref/html_audiovideo.html">HTML Audio/Videio</a>
+				<a target="_top" href="html_ref/html_doctypes.html">HTML Doctypes</a>
+				<a target="_top" href="../character_sets/default.html">HTML Character sets</a>
+				<a target="_top" href="html_ref/html_entities.html">HTML Entities</a>
+				<a target="_top" href="html_ref/html_symbols.html">HTML Symbols</a>
+				<a target="_top" href="html_ref/html_emojis.html">HTML Emojis</a>
+				<a target="_top" href="html_ref/html_url_encode.html">HTML URL Encode</a>
+				<a target="_top" href="html_ref/html_language_codes.html" title="HTML Language Codes">HTML Lang.. Codes</a>
+				<a target="_top" href="html_ref/html_country_codes.html">HTML Country Codes</a>
+				<a target="_top" href="html_ref/http_messages.html">HTTP Masseges</a>
+				<a target="_top" href="html_ref/http_methods.html">HTTP Methods</a>
+				<a target="_top" href="html_ref/keyboard_shortcuts.html">Keybord Shortcuts</a>
+				<br><br>
+			</div>
+		</div>
+		<div class="main">
+			<div class="maincontent">
+				<div class="tutorial">
+					<h1 id="how_to_create_html_file" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">HTML Editors</h1>
+					<hr data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<div class="buttons">
+						<div class="Previous" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+							<a class="text" href="default.html" title="HTML Introduction">
+								<span>
+									<svg width="30px" height="40px" viewBox="0 0 66 43">
+										<g>
+											<path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 			24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+										</g>
+									</svg>
+								</span> 
+								<span>Previous</span>
+							</a>
+						</div>
+						<div class="next" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+							<a class="text" href="html_tags.html" title="HTML Tags">
+								<span>Next</span>
+								<span>
+									<svg width="30px" height="40px" viewBox="0 0 66 43">
+										<g>
+											<path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+										</g>
+									</svg>
+								</span> 
+							</a>
+						</div>
+					</div>
+					<hr data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">How to create HTML file?</h2>
+					<ul data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<li>As we all known that, HTML file is a text file, so to create an HTML file we can use any text editors.</li>
+						<li>There are professional text editors available which you can download, but for learning HTML we recommend the best text editor is Notepad (Windows) or TextEdit (Mac) or RK Editor (Online Editor).</li>
+						<li id="notepad">After learning the basics, you can easily use other professional text editors.</li>
+						<li>Follow the steps below to create your first web page with <a href="#notepad">Notepad</a> or <a href="#textedit">TextEdit</a> or <a href="#rk_editor">RK Editor.</a></li>
+					</ul>
+					<hr data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">1. How to open Notepad (Windows) and create HTML file?</h2>
+					<div>
+						<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">A. Click on Start or the Windows orb logo on the taskbar at the bottom of the desktop to show the Start menu.</p>
+						<img class="img" src="images/html_editors/start.jpg" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">B. Click on Programs or All Programs to show a menu of installed programs in Windows.</p>
+						<img class="img" src="images/html_editors/all_programs.png" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">C. Click on the Accessories folder to expand it.</p>
+						<img class="img" src="images/html_editors/accessories_folder.jpg" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">D. Click on the Notepad icon to open the program.</p>
+						<img class="img" src="images/html_editors/np_icon.png" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">E. On opening the notepad you can write some HTML document in notepad.</p>
+						<img class="img" src="images/html_editors/write_np.png" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">F. Then click on the file button at the left top. After that click on the save button to open the file saveing option.</p>
+						<img class="img" src="images/html_editors/file_np.png" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">G. Name the file with <b>.html or .htm</b> extension, for example <b>rk.html or rk.htm</b>. And then save the file by clicking save button.</p>
+						<img class="img" src="images/html_editors/save_file_np.png" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					</div>
+					<div class="note" id="textedit" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<svg viewBox="0 0 512 512">
+							<path d="M397.736,78.378c6.824,0,12.358-5.533,12.358-12.358V27.027C410.094,12.125,397.977,0,383.08,0H121.641c-3.277,0-6.42,1.303-8.739,3.62L10.527,105.995c-2.317,2.317-3.62,5.4613.62,8.738v370.239C6.908,499.875,19.032,512,33.935,512h349.144c14.897,0,27.014-12.125,27.014-27.027V296.289c0.001-6.824-5.532-12.358-12.357-12.358c-6.824,0-12.358,5.533-12.358,12.358v188.684c0,1.274-1.031,2.311-2.297,2.311H33.936c-1.274,0-2.311-1.037-2.311-2.311v-357.88h75.36c14.898,0,27.016-12.12,27.016-27.017V24.716H383.08c1.267,0,2.297,1.037,2.297,2.311V66.02C385.377,72.845,390.911,78.378,397.736,78.378z M109.285,100.075c0,1.269-1.032,2.301-2.3,2.301H49.107l60.178-60.18V100.075z"/>
+							<path d="M492.865,100.396l-14.541-14.539c-16.304-16.304-42.832-16.302-59.138,0L303.763,201.28H103.559c-6.825,0-12.358,5.533-12.358,12.358c0,6.825,5.533,12.358,12.358,12.358h175.488l-74.379,74.379H103.559c-6.825,0-12.358,5.533-12.358,12.358s5.533,12.358,12.358,12.358h76.392l-0.199,0.199c-1.508,1.508-2.598,3.379-3.169,5.433 l-19.088,68.747h-53.936c-6.825,0-12.358,5.53312.358,12.358s5.533,12.358,12.358,12.358h63.332c0.001,0,2.709-0.306,3.107-0.41c0.065-0.017,77.997-21.642,77.997-21.642c2.054-0.57,3.926-1.662,5.433-3.169l239.438-239.435C509.168,143.228,509.168,116.7,492.865,100.396z M184.644,394.073l10.087-36.326l26.24,26.24L184.644,394.073z M244.69,372.752l-38.721-38.721l197.648-197.648l38.722,38.721L244.69,372.752z M475.387,142.054l-15.571,15.571l-38.722-38.722l15.571-15.571c6.669-6.668,17.517-6.667,24.181,0l14.541,14.541C482.054,124.54,482.054,135.388,475.387,142.054z"/>
+						</svg>
+						<p><strong>NOTE :</strong> It is important that the extension .html or .htm is specified some text editors, such as Notepad, will automatically save it as .txt .</p>
+					</div>
+					<hr data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">2. How to open Textedit (Mac) and create HTML file?</h2>
+					<div>
+						<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">A. Click on launcher button on the taskbar at the bottom of the desktop to show the search bar and many more.</p>
+						<img class="img" src="images/html_editors/launchpad.jpg" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">B. Search textedit in the search bar which is at the top of the screen. and click on the textedit icon in the search results.</p>
+						<img class="img" src="images/html_editors/search_te.png" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">C. now after opening textedit click on the new document to create text file in which we can write our first program.</p>
+						<img class="img" src="images/html_editors/te.png" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">D. write some HTML document in textedit.</p>
+						<img class="img" src="images/html_editors/write_te.jpg" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">E. Then click on the file button at the left top to open file saving options.</p>
+						<img class="img" src="images/html_editors/file_te.jpg" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">F. Click on the save button. Name the file with <b>.html or .htm</b> extension, for example <b>rk.html</b> (or select the file format as html). And then save the file by clicking save button.</p>
+						<img class="img" src="images/html_editors/save_file_te.jpg" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					</div>
+					<div class="note" id="browser" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<svg viewBox="0 0 512 512">
+							<path d="M397.736,78.378c6.824,0,12.358-5.533,12.358-12.358V27.027C410.094,12.125,397.977,0,383.08,0H121.641c-3.277,0-6.42,1.303-8.739,3.62L10.527,105.995c-2.317,2.317-3.62,5.4613.62,8.738v370.239C6.908,499.875,19.032,512,33.935,512h349.144c14.897,0,27.014-12.125,27.014-27.027V296.289c0.001-6.824-5.532-12.358-12.357-12.358c-6.824,0-12.358,5.533-12.358,12.358v188.684c0,1.274-1.031,2.311-2.297,2.311H33.936c-1.274,0-2.311-1.037-2.311-2.311v-357.88h75.36c14.898,0,27.016-12.12,27.016-27.017V24.716H383.08c1.267,0,2.297,1.037,2.297,2.311V66.02C385.377,72.845,390.911,78.378,397.736,78.378z M109.285,100.075c0,1.269-1.032,2.301-2.3,2.301H49.107l60.178-60.18V100.075z"/>
+							<path d="M492.865,100.396l-14.541-14.539c-16.304-16.304-42.832-16.302-59.138,0L303.763,201.28H103.559c-6.825,0-12.358,5.533-12.358,12.358c0,6.825,5.533,12.358,12.358,12.358h175.488l-74.379,74.379H103.559c-6.825,0-12.358,5.533-12.358,12.358s5.533,12.358,12.358,12.358h76.392l-0.199,0.199c-1.508,1.508-2.598,3.379-3.169,5.433 l-19.088,68.747h-53.936c-6.825,0-12.358,5.53312.358,12.358s5.533,12.358,12.358,12.358h63.332c0.001,0,2.709-0.306,3.107-0.41c0.065-0.017,77.997-21.642,77.997-21.642c2.054-0.57,3.926-1.662,5.433-3.169l239.438-239.435C509.168,143.228,509.168,116.7,492.865,100.396z M184.644,394.073l10.087-36.326l26.24,26.24L184.644,394.073z M244.69,372.752l-38.721-38.721l197.648-197.648l38.722,38.721L244.69,372.752z M475.387,142.054l-15.571,15.571l-38.722-38.722l15.571-15.571c6.669-6.668,17.517-6.667,24.181,0l14.541,14.541C482.054,124.54,482.054,135.388,475.387,142.054z"/>
+						</svg>
+						<p><strong>NOTE :</strong> It is important that the extension .html or .htm is specified some text editors, such as 	textedit, will automatically save it as .txt .</p>
+					</div>
+					<hr data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">3. How to view file in browser?</h2>
+					<div>
+						<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out"> To open the saved HTML file in your browser. First go to the file where you have saved it. Then double click on the file, or right-click and choose Open with to open it in your favorite browser.</p>
+						<img class="img" src="images/html_editors/open_with.png" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<h3 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">output:</h3>
+						<img class="img" style="border: 2px solid black" src="images/html_editors/browser.png" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					</div>
+					<div class="note" id="rk_editor" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<svg viewBox="0 0 512 512">
+							<path d="M397.736,78.378c6.824,0,12.358-5.533,12.358-12.358V27.027C410.094,12.125,397.977,0,383.08,0H121.641c-3.277,0-6.42,1.303-8.739,3.62L10.527,105.995c-2.317,2.317-3.62,5.4613.62,8.738v370.239C6.908,499.875,19.032,512,33.935,512h349.144c14.897,0,27.014-12.125,27.014-27.027V296.289c0.001-6.824-5.532-12.358-12.357-12.358c-6.824,0-12.358,5.533-12.358,12.358v188.684c0,1.274-1.031,2.311-2.297,2.311H33.936c-1.274,0-2.311-1.037-2.311-2.311v-357.88h75.36c14.898,0,27.016-12.12,27.016-27.017V24.716H383.08c1.267,0,2.297,1.037,2.297,2.311V66.02C385.377,72.845,390.911,78.378,397.736,78.378z M109.285,100.075c0,1.269-1.032,2.301-2.3,2.301H49.107l60.178-60.18V100.075z"/>
+							<path d="M492.865,100.396l-14.541-14.539c-16.304-16.304-42.832-16.302-59.138,0L303.763,201.28H103.559c-6.825,0-12.358,5.533-12.358,12.358c0,6.825,5.533,12.358,12.358,12.358h175.488l-74.379,74.379H103.559c-6.825,0-12.358,5.533-12.358,12.358s5.533,12.358,12.358,12.358h76.392l-0.199,0.199c-1.508,1.508-2.598,3.379-3.169,5.433 l-19.088,68.747h-53.936c-6.825,0-12.358,5.53312.358,12.358s5.533,12.358,12.358,12.358h63.332c0.001,0,2.709-0.306,3.107-0.41c0.065-0.017,77.997-21.642,77.997-21.642c2.054-0.57,3.926-1.662,5.433-3.169l239.438-239.435C509.168,143.228,509.168,116.7,492.865,100.396z M184.644,394.073l10.087-36.326l26.24,26.24L184.644,394.073z M244.69,372.752l-38.721-38.721l197.648-197.648l38.722,38.721L244.69,372.752z M475.387,142.054l-15.571,15.571l-38.722-38.722l15.571-15.571c6.669-6.668,17.517-6.667,24.181,0l14.541,14.541C482.054,124.54,482.054,135.388,475.387,142.054z"/>
+						</svg>
+						<p><strong>NOTE :</strong> Some times on dubble click on file was open in notepad. So that time, right-click on the file and select open with your avorite browser.</p>
+					</div>
+					<hr data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">4. What is RK Editor?</h2>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">RK Editor is an online editor work on clients browser. With our free online editor, you can edit the HTML code and also view the output on same page. It is the perfect tool when you want to test code fast.</p>
+					<div class="example" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<h3>Example</h3>
+						<span class="code">
+							<span class="doctype">&lt;!DOCTYPE html&gt;</span><br>
+							<span class="tag">&lt;html&gt;</span><br>
+							<pre>	</pre><span class="tag">&lt;head&gt;</span><br>
+							<pre>	</pre><pre>	</pre><span class="tag">&lt;title&gt;</span>Page Title<span class="tag">&lt;/title&gt;</span><br>
+							<pre>	</pre><span class="tag">&lt;/head&gt;</span><br>
+							<pre>	</pre><span class="tag">&lt;body&gt;</span><br>
+							<pre>	</pre><pre>	</pre><span class="tag">&lt;h1&gt;</span>This is a Heading.<span class="tag">&lt;/h1&gt;</span><br>
+							<pre>	</pre><pre>	</pre><span class="tag">&lt;p&gt;</span>This is a paragraph.<span class="tag">&lt;/p&gt;</span><br>
+							<pre>	</pre><span class="tag">&lt;/body&gt;</span><br>
+							<span class="tag">&lt;/html&gt;</span><br>
+						</span>
+						<a class="output" id="outputid" onclick="openoutput()">Output
+							<i class="fa fa-caret-down"></i>
+							<i class="fa fa-caret-up"></i>
+						</a>
+						<div class="next">
+							<a class="text" target="_blank" href="../rk_editor/html/html_editor/html_document.html">
+								<span>RK Editor</span>
+								<span>
+									<svg width="30px" height="40px" viewBox="0 0 66 43">
+										<g>
+											<path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+										</g>
+									</svg>
+								</span> 
+							</a>
+						</div>
+					</div>
+					<h3 class="examploutputheading" id="examploutputheadingid">Output :</h3>
+					<div class="examploutput" id="examploutputid">
+						<h1>This is a Heading.</h1>
+						<p>This is a paragraph.</p>
+					</div>
+					<h3 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">Click on the "Output" button to see the output of above html document. Click on the "RK Editor" button to edit and play with code.</h3>
+					<hr data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<div class="buttons">
+						<div class="Previous" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+							<a class="text" href=../rk_fundamentals.html title="HTML Introduction">
+								<span>
+									<svg width="30px" height="40px" viewBox="0 0 66 43">
+										<g>
+											<path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 			24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+										</g>
+									</svg>
+								</span> 
+								<span>Previous</span>
+							</a>
+						</div>
+						<div class="next" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+							<a class="text" href="html_tags.html" title="HTML Tags">
+								<span>Next</span>
+								<span>
+									<svg width="30px" height="40px" viewBox="0 0 66 43">
+										<g>
+											<path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+										</g>
+									</svg>
+								</span> 
+							</a>
+						</div>
+					</div>
+					<hr data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+				</div>
+				<div class="rightnav">
+					<div class="tutlogo">
+						<a href="default.html">HTML
+							<svg viewBox="0 0 32 32">
+								<path d="M4.46 28.802L1.892.001h28.216l-2.57 28.797L15.982 32z" fill="#7b0099"/>
+								<path d="M25.337 26.964l2.197-24.608H16v27.197z" fill="#e600a6"/>
+								<path d="M15.988 5.888H7.142l.953 10.682H16v-3.532h-4.674l-.323-3.617H16V5.888zM16 22.2l-.015.004-3.934-1.062-.25-2.817H8.253l.495 5.546 7.236 2 .016-.005z" fill="#d9d9d9"/>
+								<path d="M15.988 16.57h4.35l-.4 4.58-3.94 1.063v3.675l7.242-2.007.97-10.845H16zm8.764-9.734l.084-.948h-8.85V9.42h8.532l.07-.794z" fill="#fff"/>
+							</svg>
+						</a>
+					</div>
+					<div class="content">
+						<h3 class="heading">Content</h3>
+						<a href="#how_to_create_html_file">How to create HTML file?</a>
+						<a href="#notepad">Notepad (Windows)</a>
+						<a href="#textedit">Textedit (Mac)</a>
+						<a href="#browser">View file in browser.</a>
+						<a href="#rk_editor">RK Editor.</a>
+					</div>
+					<div class="content">
+						<h3 class="heading">HTML References</h3>
+						<a target="_top" href="html_ref/default.html">HTML Tags</a>
+						<a target="_top" href="html_ref/html_tags_by_category.html">Tags By Category</a>
+						<a target="_top" href="html_ref/html_attributes.html">HTML Attributes</a>
+						<a target="_top" href="html_ref/html_global_attributes.html" title="HTML Global Attributes">HTML Global Att..</a>
+						<a target="_top" href="html_ref/html_browser_support.html" title="HTML Browser Support">HTML Browser Supp..</a>
+						<a target="_top" href="html_ref/html_events.html">HTML Events</a>
+						<a target="_top" href="../colors/default.html">HTML Colors</a>
+						<a target="_top" href="html_ref/html_canvas.html">HTML Canvas</a>
+						<a target="_top" href="html_ref/html_audiovideo.html">HTML Audio/Videio</a>
+						<a target="_top" href="html_ref/html_doctypes.html">HTML Doctypes</a>
+						<a target="_top" href="../character_sets/default.html">HTML Character sets</a>
+						<a target="_top" href="html_ref/html_entities.html">HTML Entities</a>
+						<a target="_top" href="html_ref/html_symbols.html">HTML Symbols</a>
+						<a target="_top" href="html_ref/html_emojis.html">HTML Emojis</a>
+						<a target="_top" href="html_ref/html_url_encode.html">HTML URL Encode</a>
+						<a target="_top" href="html_ref/html_language_codes.html" title="HTML Language Codes">HTML Lang.. Codes</a>
+						<a target="_top" href="html_ref/html_country_codes.html">HTML Country Codes</a>
+						<a target="_top" href="html_ref/http_messages.html">HTTP Masseges</a>
+						<a target="_top" href="html_ref/http_methods.html">HTTP Methods</a>
+						<a target="_top" href="html_ref/keyboard_shortcuts.html">Keybord Shortcuts</a>
+					</div>
+				</div>
+			</div>	
+			<footer style="background-image: url(../files/files_images/background.svg); background-color: #000000; width: 100%; float: left;">
+				<div class="footertop" id="footertopid">
+					<div class="hr"></div>
+					<div class="outercolumn">
+						<div class="column" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-out">           	  <div class="innercolumn">
+								<a onclick="report()">report error</a>
+							</div>
+						</div>
+						<div class="column" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-easing="ease-out">
+							<div class="innercolumn">
+								<a href="../about_us/default.html">about</a>
+							</div>
+						</div>
+						<div class="column" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-easing="ease-out">
+							<div class="innercolumn">
+								<a onclick="topFunction()" class="top">Go to top</a>
+							</div>
+						</div>
+					</div>    
+					<div class="hr"></div>
+					<div class="reporterror">
+						<h2>reporrt error <a href="javascript:void(0)" class="closereport" onclick="report()">&times;</a></h2>
+						<p>If you want to report an error, or if you want to make a suggestion, do not hesitate to send us an e-mail:</p>
+						<input type="text" value="mailid@gamil.com" class="mail" id="mailid">
+						<div class="tooltip">    
+							<a onclick="copytext()" onmouseout="outFunc()" class="copy">
+								<span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+								Copy
+							</a>
+						</div>    
+					</div>
+				</div>
+				<div class="footer">
+					<div class="outercolumn">
+						<div class="column"></div>
+						<div class="column"></div>
+						<div class="column"></div>
+					</div>
+					<div class="socialmedia">
+						<div class="text" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-out">
+							<i class="fa fa-handshake-o"></i>&nbsp;connect with us&nbsp;<i class="fa fa-handshake-o"></i>
+						</div>
+						<div class="icons">
+							<a href="#" class="fa fa-facebook" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200" data-aos-easing="ease-out">
+								<span class="tooltiptext">FB ID</span>
+							</a>
+							<a href="#" class="fa fa-twitter" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-out">
+								<span class="tooltiptext">TWITTER ID</span>
+							</a>
+							<a href="#" class="fa fa-instagram" data-aos="fade-up" data-aos-duration="500" data-aos-delay="250" data-aos-easing="ease-out">
+								<span class="tooltiptext">INSTA ID</span>
+							</a>
+							<a href="#" class="fa fa-youtube-play" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200" data-aos-easing="ease-out">
+								<span class="tooltiptext">YT ID</span>
+							</a>
+						</div>
+					</div>
+					<div class="hr"></div>
+					<div class="bottom">
+						<div class="column">
+							<div class="innercolumn">
+								<a href="../rk_fundamentals.html"><img class="logo" src="../files/files_images/logo.png"></a>
+							</div>
+						</div>    
+						<div class="column">
+							<div class="innercolumn">
+								<a href="../about_us/about_copyright.html">copyright &copy; 2020 RK Fundamentals</a>
+							</div>
+						</div>
+						<div class="column">
+							<div class="innercolumn">
+								<a href="../about_us/about_copyright.html">Terms of Use</a>
+								<div class="verticalline"></div>
+								<a href="../about_us/about_privay.html">Privacy Policy</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+        <script src="../files/files_js/aos.js"></script>
+		<script src="../files/files_js/js.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>RK Fundamentals</title>  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="files/files_images/logoattitle.png" type="image/x-icon">
+        <link rel="stylesheet" href="files/files_css/swiper.min.css">
+		<link rel="stylesheet" href="files/files_css/aos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link rel="stylesheet" href="rk.css">     
+    </head>
+    <body class="body">
+        <nav class="topnav" id="topnavid">
+            <a href="rk_fundamentals.html"><img class="logo" src="files/files_images/logo.png"></a>
+            <div class="dropdown" id="dropdownid">
+                <a class="tutorials" id="tutorialsid" onclick="starttutorials(), closereferences(), closeexamples(), closeexercises(), incdropdownhight()">TUTORIALS
+                    <i class="fa fa-caret-down" id="down1"></i>
+                    <i class="fa fa-caret-up" id="up1"></i>
+					<div class="border"></div>
+                </a>
+				<div id="tutorialscontentid" class="tutorialscontent">
+					<a href="javascript:void(0)" class="closetutorials" onclick="closetutorials(), incdropdownhight()">&times;</a>
+					<div class="tutorialsrow">
+						<div id="tutorialscolumnid" class="tutorialscolumn">
+							<h3>HTML and CSS</h3>
+							<a href="html/default.html">Learn HTML</a>
+							<a href="css/default.html">Learn CSS</a>
+							<a href="bs/default.html">Learn BootStrap</a>
+							<a href="sass/default.html">Learn Sass</a>
+							<a href="graphics/default.html">Learn Graphics</a>
+							<a href="character_sets/default.html">HTML Character sets</a>
+							<h3>Add<sup>n</sup> Tuts</h3>
+							<a href="colors/default.html">Learn Colors</a>
+							<a href="icons/default.html">Learn Icons</a>
+							<a href="how_to_do_it/default.html">How to do it</a>
+							<a href="number_systems/default.html">Number Systems</a>
+							<a href="types_of_languages/default.html" title="Types Of Languages">Types of lang.</a>
+						</div>
+						<div id="tutorialscolumnid" class="tutorialscolumn">
+							<h3>JavaScript</h3>
+							<a href="js/default.html">Learn JavaScript</a>
+							<a href="jquery/default.html">Learn JQuery</a>
+							<a href="react/default.html">Learn React</a>
+							<a href="angularjs/default.html">Learn AngularJS</a>
+							<a href="json/default.html">Learn JSON</a>
+							<a href="ajax/default.html">Learn AJAX</a>
+							<h3>Server Side</h3>
+							<a href="sql/default.html">Learn SQL</a>
+							<a href="php/default.html">Learn PHP</a>
+							<a href="asp/default.html">Learn ASP</a>
+							<a href="nodejs/default.html">Learn Node.JS</a>
+							<a href="jsp/default.html">Learn JSP</a>
+						</div>
+						<div id="tutorialscolumnid" class="tutorialscolumn">
+							<h3>Programing</h3>
+							<a href="java/default.html">Learn Java</a>
+							<a href="c/default.html">Learn C</a>
+							<a href="python/default.html">Learn Python</a>
+							<a href="cpp/default.html">Learn C++</a>
+							<a href="vb/default.html" title="Learn Visual Basic">Learn VB</a>
+							<a href="vbnet/default.html" title="Visual Basic .NET">Learn VB .NET</a>
+							<a href="c_sharp/default.html" title="Learn C#">Learn C Sharp</a>
+							<a href="objective-c/default.html">Learn Objactive-C</a>
+							<a href="ruby/default.html">Learn Ruby</a>
+							<a href="assembly/default.html">Learn Assembly</a>
+						</div>
+						<div id="tutorialscolumnid" class="tutorialscolumn">
+							<h3>XML</h3>
+							<a href="xml/default.html">Learn XML</a>
+							<a href="xml/xml_ajax/default.html">Learn XML AJAX</a>
+							<a href="xml/xml_dom/default.html">Learn XML DOM</a>
+							<a href="xml/xml_dtd/default.html">Learn XML DTD</a>
+							<a href="xml/xml_schema/default.html">Learn XML Schema</a>
+							<a href="xml/xslt/default.html">Learn XSLT</a>
+							<a href="xml/xpath/default.html">Learn XPath</a>
+							<a href="xml/xquery/default.html">Learn XQuery</a>
+						</div>
+					</div>    
+				</div>
+				<a class="references" id="referencesid" onclick="startreferences(), closetutorials(), closeexamples(), closeexercises(), incdropdownhight()">REFERENCES
+                    <i class="fa fa-caret-down" id="down2"></i>
+                    <i class="fa fa-caret-up" id="up2"></i>
+					<div class="border"></div>
+                </a>
+				<div id="referencescontentid" class="referencescontent">
+					<a href="javascript:void(0)" class="closereferences" onclick="closereferences(), incdropdownhight()">&times;</a>
+					<div class="referencesrow">
+						<div id="referencescolumnid" class="referencescolumn">
+							<h3>HTML and CSS</h3>
+							<a href="html/html_ref/default.html">HTML Tag Reference</a>
+							<a href="css/css_ref/default.html">CSS Reference</a>
+							<a href="bs/bs_ref/default.html">Bootstrap Reference</a>
+							<a href="sass/sass_ref/default.html">Sass Reference</a>
+		                    <a href="icons/icons_ref/default.html">Icon Reference</a>
+							<a href="graphics/graphics_ref/default.html">Graphics Reference</a>
+						</div>
+						<div id="referencescolumnid" class="referencescolumn">
+							<h3>JavaScript</h3>
+							<a href="js/js_ref/default.html">JavaScript Reference</a>
+							<a href="js/js_ref/default.html">HTML DOM Reference</a>
+							<a href="jquery/jquery_ref/default.html">JQuery Reference</a>
+							<a href="angularjs/angularjs_ref/default.html">AngularJS Reference</a>
+							<h3>Server Side</h3>
+							<a href="sql/sql_ref/default.html">SQL Reference</a>
+							<a href="php/php_ref/default.html">PHP Reference</a>
+							<a href="asp/asp_ref/default.html">ASP Reference</a>
+						</div>
+						<div id="referencescolumnid" class="referencescolumn">
+							<h3>JavaScript</h3>
+							<a href="java/java_ref/default.html">Java Reference</a>
+							<a href="python/python_ref/default.html">Python Reference</a>
+							<h3>XML</h3>
+							<a href="xml/xml_ref/default.html">XML Reference</a>
+							<a href="xml/xml_schema/xml_schema_ref/default.html">XML Schema Reference</a>
+							<a href="xml/xslt/xslt_ref/default.html">XSLT Reference</a>
+						</div>
+						<div id="referencescolumnid" class="referencescolumn">
+							<h3>Character Sets</h3>
+							<a href="character_sets/default.html">HTML Character Sets</a>
+							<a href="character_sets/html_ascii.html">HTML ASCII</a>
+							<a href="character_sets/html_ansi.html">HTML ANSI</a>
+							<a href="character_sets/html_iso-8859-1.html">HTML ISO-8859-1</a>
+							<a href="character_sets/html_symbols.html">HTML Symbols</a>
+							<a href="character_sets/html_utf-8.html">HTML UTF-8</a>
+						</div>
+					</div>    
+				</div>
+                <a class="examples" id="examplesid" onclick="startexamples(), closetutorials(), closereferences(), closeexercises(), incdropdownhight()">EXAMPLES
+                    <i class="fa fa-caret-down" id="down3"></i>
+                    <i class="fa fa-caret-up" id="up3"></i>
+					<div class="border"></div>
+                </a>
+                <div id="examplescontentid" class="examplescontent">
+					<a href="javascript:void(0)" class="closeexamples" onclick="closeexamples(), incdropdownhight()">&times;</a>
+					<div class="examplesrow">
+						<div id="examplescolumnid" class="examplescolumn">
+							<h3>HTML and CSS</h3>
+							<a href="html/examples.html">HTML Examples</a>
+							<a href="css/examples.html">CSS Examples</a>
+							<a href="bs/examples.html">Bootstrap Examples</a>
+							<a href="graphics/examples.html">Graphics Examples</a>
+						</div>
+						<div id="examplescolumnid" class="examplescolumn">
+							<h3>JavaScript</h3>
+							<a href="js/examples.html">JavaScript Examples</a>
+							<a href="js/html_dom_examples.html">HTML DOM Examples</a>
+							<a href="jquery/examples.html">JQuery Examples</a>
+							<a href="angularjs/examples.html">AngularJS Examples</a>
+							<a href="ajax/examples.html">AJAX Examples</a>
+							<h3>Server Side</h3>
+							<a href="sql/examples.html">SQL Examples</a>
+							<a href="php/examples.html">PHP Examples</a>
+							<a href="asp/examples.html">ASP Exam[les</a>
+						</div>
+						<div id="examplescolumnid" class="examplescolumn">
+							<h3>Programming</h3>
+							<a href="java/examples.html">Java Examples</a>
+							<a href="c/examples.html">C Examples</a>
+							<a href="python/examples.html">Python Examples</a>
+							<a href="cpp/examples.html">C++ Examples</a>
+							<a href="vb/examples.html" title="Visual Basic Examples">VB Examples</a>
+							<a href="vbnet/examples.html" title="Visual Basic .NET Examples">VB .NET Examples</a>
+							<a href="c_sharp/examples.html" title="C# Examples">C Sharp Examples</a>
+							<a href="objective-c/examples.html">Objective-C Examples</a>
+						</div>
+						<div id="examplescolumnid" class="examplescolumn">
+							<h3>XML</h3>
+							<a href="xml/examples.html">XML Examples</a>
+							<a href="xml/xml_ajax/examples.html">XMl AJAX Examples</a>
+                    		<a href="xml/xml_schema/examples.html">XML Schema Examples</a>
+							<a href="xml/xslt/examples.html">XML XSLT Examples</a>
+							<a href="xml/xpath/examples.html">Xpath Examples</a>
+						</div>
+					</div>
+				</div>
+				<a class="exercises" id="exercisesid" onclick="startexercises(), closetutorials(), closereferences(), closeexamples(), incdropdownhight()">EXERCISES
+                    <i class="fa fa-caret-down" id="down4"></i>
+                    <i class="fa fa-caret-up" id="up4"></i>
+					<div class="border"></div>
+                </a> 
+                <div id="exercisescontentid" class="exercisescontent">
+					<a href="javascript:void(0)" class="closeexercises" onclick="closeexercises(), incdropdownhight()">&times;</a>
+					<div class="exercisesrow">
+						<div id="exercisescolumnid" class="exercisescolumn">
+							<h3>Exercises</h3>
+							<a href="html/exercises.html">HTML Exercises</a>
+							<a href="css/exercises.html">CSS Exercises</a>
+							<a href="bs/exercises.html">BootStrap Exercises</a>
+							<a href="js/exercises.html">JavaScript Exercises</a>
+							<a href="jquery/exercises.html">JQuery Exercises</a>
+							<a href="sql/exercises.html">SQL Exercises</a>
+							<a href="php/exercises.html">PHP Exercises</a>
+						</div>
+						<div id="exercisescolumnid" class="exercisescolumn">
+							<h3>&nbsp;</h3>
+							<a href="java/exercises.html">JAVA Exercises</a>
+							<a href="c/exercises.html">C Exercises</a>
+							<a href="python/exercises.html">Python Exercises</a>
+							<a href="cpp/exercises.html">C++ Exercises</a>
+							<a href="vb/exercises.html" title="Visual Basics Exercise">VB Exercises</a>
+							<a href="vbnet/exercises.html" title="Visual Basics .NET Exercise">VB .NET Exercises</a>
+							<a href="c_sharp/exercises.html" title="C# Exercise">C Sharp Exercises</a>
+							<a href="xml/exercises.html">XML Exercises</a>
+						</div>
+						<div id="exercisescolumnid" class="exercisescolumn">
+							<h3>Quizzes</h3>
+							<a href="html/quiz.html">HTML Quiz</a>
+							<a href="css/quiz.html">CSS Quiz</a>
+							<a href="bs/quiz.html">BootStrap Quiz</a>
+							<a href="js/quiz.html">JavaScript Quiz</a>
+							<a href="jquery/quiz.html">JQuery Quiz</a>
+							<a href="sql/quiz.html">SQL Quiz</a>
+							<a href="php/quiz.html">PHP Quiz</a>
+						</div>
+						<div id="exercisescolumnid" class="exercisescolumn">
+							<h3>&nbsp;</h3>
+							<a href="java/quiz.html">JAVA Quiz</a>
+							<a href="c/quiz.html">C Quiz</a>
+							<a href="python/quiz.html">Python Quiz</a>
+							<a href="cpp/quiz.html">C++ Quiz</a>
+							<a href="vb/quiz.html" title="Visual Basics Quiz">VB Quiz</a>
+							<a href="vbnet/quiz.html" title="Visual Basics .NET Quiz">VB .NET Quiz</a>
+							<a href="c_sharp/quiz.html" title="C# Quiz">C Sharp Quiz</a>
+							<a href="xml/quiz.html">XML Quiz</a>
+						</div>
+					</div>
+				</div>
+				<a href="why_rk_fundamentals/default.html" class="wrk" title="WHY RK FUNDAMENTALS?">WHY RK?<div class="border"></div></a>
+                <a href="about_us/default.html" class="aboutus">ABOUT US<div class="border"></div></a>
+            </div>
+            <div class="menu" onclick="myMenu1(this), myMenu2(), closetutorials(), closereferences(), closeexamples(), closeexercises()" href="javascript:void(0);">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+        <main class="main">
+            <div class="topsection">
+                <div class="gradient1">
+                    <div class="overgradient1">
+                        <div class="overgradient11">
+                            <div class="text1" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-out">
+                                welcome to the world of <br> 
+                                RK Fundamentals
+                            </div>
+                            <div class="text2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-easing="ease-out">
+                                    Not sure where to begain? No need to worry,<br>
+                                    whatever your goals - we'll get you there
+                            </div>
+							<a href="#swiper-container-id" style="text-decoration: none;">	
+								<div class="next" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-out">
+									<a class="text" href="#swiper-container-id">
+										<span>let's go</span>
+										<span>
+											<svg width="30px" height="40px" viewBox="0 0 66 43" >
+												<g>
+													<path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+													<path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+													<path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+												</g>
+											</svg>
+										</span> 
+									</a>
+								</div>
+							</a>
+                        </div>
+                    </div>
+                    <div class="overgradient2">
+                        <div class="overgradient21"></div>
+                    </div>
+                </div>
+                <div class="gradient2"></div>
+            </div>
+            <div class="swiper-container" id="swiper-container-id">
+                <h1 style="text-align: center" class="swing" data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="300" data-aos-easing="ease-out">TUTORIALS</h1>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #E44D26">
+								<h3><a href="html/default.html">HTML</a></h3>
+                            </div>
+                            <div class="card-content">
+                                <p>Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. which is the most widely used markup language to develop web pages.</p>
+                                <a href="html/default.html">Read More</a>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #264de4">
+								<h3><a href="css/default.html">CSS</a></h3>
+                            </div>
+                            <div class="card-content">
+                                <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML. And CSS is easy to learn and understood.</p>
+                               <a href="css/default.html">Read More</a>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #F0DB4F">
+                                <h3><a href="js/default.html">JavaScript</a></h3>
+                            </div>
+                            <div class="card-content">
+                                <p>JavaScript is a client scripting language which is used for creating dynamic web pages and add special effects on pages like rollover, roll out and many types of graphics. It is a standalone language developed in Netscape.</p>
+                                <a href="js/default.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #00758F">
+                                <h3><a href="sql/default.html">SQL</a></h3>
+                            </div>
+                            <div class="card-content">
+                                <p>SQL stands for Structured Query Language. SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system.</p>
+                                <a href="sql/default.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-header" style="background-image: linear-gradient(180deg, #306998, #FFD43B)">
+                                <h3><a href="python/default.html">Python</a></h3>
+                            </div>
+                            <div class="card-content">
+                                <p>Python is a general purpose and high level programming language. You can use Python for developing desktop GUI applications, websites and web applications. Also, Python, as a high level programming language, allows you to focus on core functionality of the application by taking care of common programming tasks</p>
+                                <a href="python/default.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #787CB5">
+                                <h3><a href="php/default.html">PHP</a></h3>
+                            </div>
+                            <div class="card-content">
+                                <p>PHP stands for Hypertext Pre-processor, that earlier stood for Personal Home Pages. PHP is a server side scripting language. that is used to develop Static websites or Dynamic websites or Web applications.</p>
+                                <a href="php/default.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #fb5412">
+								<h3><a href="java/default.html">Java</a></h3>
+                            </div>
+                            <div class="card-content">
+                                <p>Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible.</p>
+                                <a href="java/default.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #7b0099">
+                                <h3><a href="c/default.html">C</a></h3>
+                            </div>
+                            <div class="card-content">
+                                <p>C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion. It can be used to develop software like operating systems, databases, compilers.</p>
+                                <a href="c/default.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #0078d7">
+                                <h3><a href="vb/default.html">VB</a></h3>
+                            </div>
+                            <div class="card-content">
+                                <p>DescriptionVisual Basic is a third-generation event-driven programming language from Microsoft. Visual Basic was derived from BASIC and enables the <span title="Rapid Application Development"> RAD </span> of <span title="Graphical User Interface"> GUI </span> applications.</p>
+                                <a href="vb/default.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #000000">
+                                <h3><a href="xml/default.html">XML</a></h3>
+                            </div>
+                            <div class="card-content">
+                                <p>XML is a markup language much like HTML. XML stands for Extensible Markup Language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. XML was designed to store and transport data.</p>
+                                <a href="xml/default.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+			<div class="tutbycat">
+				<h1 class="title" data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-out">tutorials by category</h1>
+				<div class="headingcontainer" data-aos="fade-right" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-out">
+					<div class="heading">
+						<h1><a href="types_of_languages/default.html">Markup Languages</a></h1>
+						<p>A computer language that consists of easily understood keywords, names, or tags that help format the overall view of a page and the data it contains. Examples of a markup language are HTML and XML.</p>
+					</div>
+				</div>
+				<div class="list" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-out">
+					<div class="tutcards">
+						<div class="tutcard">
+							<a href="html/default.html" class="tutname">HTML</a>
+							<div class="intro">
+								<p>Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. which is the most widely used markup language to develop web pages.</p>
+							</div>
+							<div class="links">
+								<a href="html/default.html">TUTORIAL</a>
+								<a href="html/html_ref/default.html">REFERENCES</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="xml/default.html" class="tutname">XML</a>
+							<div class="intro">
+								<p>XML is a markup language much like HTML. XML stands for Extensible Markup Language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.</p>
+							</div>
+							<div class="links">
+								<a href="xml/default.html">TUTORIAL</a>
+								<a href="xml/xml_ref/default.html">REFERENCES</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="editor/rk_editor.html" class="tutname">RK Editor</a>
+							<div class="intro">
+								<p>RK Editor is a standalone code editor. Our goal is to create a browser based editor that matches and extends the features, usability. Edit and view result live with "RK Editor". <b>Now, Easy Learning with "RK Editor"</b></p>
+							</div>
+							<div class="links">
+								<a href="rk_editor/default.html">RK Editor</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="headingcontainer" data-aos="fade-right" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-out">
+					<div class="heading">
+						<h1><a href="types_of_languages/style_sheets.html">Style Sheets</a></h1>
+						<p>A Style Sheet is a collection of style rules that that tells a browser how the various styles are to be applied to the HTML tags to present the document. Style Sheets can be external or internal to your Web site or Web pages. A Style Sheet is a text file that is stored on any Web server, within the same location as your Web pages.</p>
+					</div>
+				</div>
+				<div class="list" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-out">
+					<div class="tutcards">
+						<div class="tutcard">
+							<a href="css/default.html" class="tutname">CSS</a>
+							<div class="intro">
+								<p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML. And CSS is easy to learn and understood.</p><br>
+							</div>
+							<div class="links">
+								<a href="css/default.html">TUTORIAL</a>
+								<a href="css/css_ref/default.html">REFERENCES</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="bs/default.html" class="tutname">BootStrap</a>
+							<div class="intro">
+								<p>BootStrap is a css framework. The world's most popular an powerfull front-end framework for building responsive, mobile-first sites, with BootstrapCDN</p><br><br>
+							</div>
+							<div class="links">
+								<a href="bs/default.html">TUTORIAL</a>
+								<a href="bs/bs_ref/default.html">REFERENCES</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="sass/default.html" class="tutname">Sass</a>
+							<div class="intro">
+								<p>Sass stands for Syntactically Awesome Stylesheets. Sass and is basically just an extension to CSS that help us write more flexible styles.</p><br><br>
+							</div>
+							<div class="links">
+								<a href="sass/default.html">TUTORIAL</a>
+								<a href="sass/sass_ref/default.html">REFERENCES</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="headingcontainer" data-aos="fade-right" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-out">
+					<div class="heading">
+						<h1><a href="types_of_languages/libraries.html">Js Libraries / Frameworks</a></h1>
+						<p><b>JavaScript</b> is a client scripting language which is used for creating dynamic web pages and add special effects on pages. <b>A library</b> is a JavaScript file that contains a bunch of functions, and those functions accomplish some useful task for your webpage. <b>JS frameworks</b> are collections of JavaScript code libraries</p>
+					</div>
+				</div>
+				<div class="list" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-out">
+					<div class="tutcards">
+						<div class="tutcard">
+							<a href="js/default.html" class="tutname">JavaScript</a>
+							<div class="intro">
+								<p>JavaScript is a dynamic computer programming language which is used for creating dynamic web pages and add special effects on pages. It is lightweight and most commonly used as a part of web pages.</p>
+							</div>
+							<div class="links">
+								<a href="js/default.html">TUTORIAL</a>
+								<a href="js/js_ref/default.html">REFERENCES</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="jquery/default.html" class="tutname">JQuery</a>
+							<div class="intro">
+								<p>jQuery is a fast, small, feature-rich and One of the oldest JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation.</p><br>
+							</div>
+							<div class="links">
+								<a href="jquery/default.html">TUTORIAL</a>
+								<a href="jquery/jquery_ref/default.html">REFERENCES</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="react/default.html" class="tutname">React</a>
+							<div class="intro">
+								<p>React is a JavaScript library for building user interfaces(UI's). It is created by Facebook and a community of individual developers and companies. React can be used in the development of single-page or mobile applications.</p>
+							</div>
+							<div class="links">
+								<a href="react/default.html">TUTORIAL</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="angularjs/default.html" class="tutname">Angular.js</a>
+							<div class="intro">
+								<p>AngularJS is one of the most powerful, efficient, and open-source JavaScript frameworks mainly developed and maintained by Google. AngularJS had been designed for building web-apps.</p>
+							</div>
+							<div class="links">
+								<a href="angularjs/default.html">TUTORIAL</a>
+								<a href="angularjs/angularjs_ref/default.html">REFERENCES</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="json/default.html" class="tutname">JSON</a>
+							<div class="intro">
+								<p>JSON (JavaScript Object Notation) is an open standard file format, and data interchange format, that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and array data types</p>
+							</div>
+							<div class="links">
+								<a href="json/default.html">TUTORIAL</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="ajax/default.html" class="tutname">AJAX</a>
+							<div class="intro">
+								<p>AJAX stands for Asynchronous JavaScript and XML. AJAX is a set of web development techniques used by client-side frameworks and libraries to make asynchronous HTTP calls to the server.</p><br>
+							</div>
+							<div class="links">
+								<a href="ajax/default.html">TUTORIAL</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="nodejs/default.html" class="tutname">Node.js</a>
+							<div class="intro">
+								<p>Node. js is a runtime system for creating (mostly) server-side applications. It's best known as a popular means for JavaScript coders to build real-time Web APIs. but Node.js is not a JavaScript framework</p><br>
+							</div>
+							<div class="links">
+								<a href="nodejs/default.html">TUTORIAL</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="headingcontainer" data-aos="fade-right" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-out">
+					<div class="heading">
+						<h1><a href="types_of_languages/programming_languages.html">Programming languages</a></h1>
+						<p>A programming language is a formal language comprising a set of instructions that produce various kinds of output. Programming languages are used in computer programming to implement algorithms.</p>
+					</div>
+				</div>
+				<div class="list" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-out">
+					<div class="tutcards">
+						<div class="tutcard">
+							<a href="java/default.html" class="tutname">Java</a>
+							<div class="intro">
+								<p>Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible.</p><br>
+							</div>
+							<div class="links">
+								<a href="java/default.html">TUTORIAL</a>
+								<a href="java/java_ref/default.html">REFERENCES</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="c/default.html" class="tutname">C</a>
+							<div class="intro">
+								<p>C is a general-purpose, computer programming language supporting structured programming, lexical variable scope, and recursion. It can be used to develop software like operating systems, databases, compilers.</p>
+							</div>
+							<div class="links">
+								<a href="c/default.html">TUTORIAL</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="python/default.html" class="tutname">Python</a>
+							<div class="intro">
+								<p>Python is a general purpose and high level programming language. You can use Python for developing desktop GUI applications, websites and web applications.</p><br>
+							</div>
+							<div class="links">
+								<a href="python/default.html">TUTORIAL</a>
+								<a href="python/python_ref/default.html">REFERENCES</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="cpp/default.html" class="tutname">C++</a>
+							<div class="intro">
+								<p>C++ is a high-level, general-purpose object oriented programming language created by Bjarne Stroustrup as an     extension of the C programming language, or "C with Classes".</p><br><br>
+							</div>
+							<div class="links">
+								<a href="cpp/default.html">TUTORIAL</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="vb/default.html" class="tutname">Visual Basic</a>
+							<div class="intro">
+								<p>Visual Basic is a third-generation event-driven programming language from Microsoft. Visual Basic was derived from BASIC and enables the <span title="Rapid Application Development"> RAD </span> of <span title="Graphical User Interface"> GUI </span> applications.</p><br><br>
+							</div>
+							<div class="links">
+								<a href="vb/default.html">TUTORIAL</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="vbnet/default.html" class="tutname"><span title="Visual Basic .NET">VB.NET</span></a>
+							<div class="intro">
+								<p>Visual Basic .NET is a multi-paradigm, object-oriented programming language, implemented on the .NET Framework. With VB.NET, you can create applications that are fully object-oriented.</p><br>
+							</div>
+							<div class="links">
+								<a href="vbnet/default.html">TUTORIAL</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="c_sharp/default.html" class="tutname">C-SHARP (C#)</a>
+							<div class="intro">
+								<p>C-SHARP (C#) is a general purpose, multi-paradigm programming language developed by Microsoft that runs on the .NET Framework. C# used to make websites, mobile apps, video games, VR, and more!</p><br>
+							</div>
+							<div class="links">
+								<a href="c_sharp/default.html">TUTORIAL</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="objective-c/default.html" class="tutname">Objective-C</a>
+							<div class="intro">
+								<p>Objective-C is a general-purpose, object-oriented programming language that adds Smalltalk-style messaging to the C programming language. Objective-C is use when writing software for OS X and iOS.</p><br>
+							</div>
+							<div class="links">
+								<a href="objective-c/default.html">TUTORIAL</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="c/default.html" class="tutname">Ruby</a>
+							<div class="intro">
+								<p>Ruby is an interpreted, high-level, general-purpose programming language. Ruby is most used for building web applications. However, it is a general-purpose language similar to Python.</p><br>
+							</div>
+							<div class="links">
+								<a href="ruby/default.html">TUTORIAL</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="assembly/default.html" class="tutname">Assembly</a>
+							<div class="intro">
+								<p>Assembly language is low-level programming language designed for a specific type of processor.</p><br><br><br><br>
+							</div>
+							<div class="links">
+								<a href="assembly/default.html">TUTORIAL</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="headingcontainer" data-aos="fade-right" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-out">
+					<div class="heading">
+						<h1><a href="types_of_languages/server-side_languages.html">Server-sides</a></h1>
+						<p>Server-side means that the action takes place on a web server. Server-side languages do operations 0r querying over databases, Access/Write a file on server, Interact with other servers, Structure web applications and Process user input.
+						</p>
+					</div>
+				</div>
+				<div class="list" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-out">
+					<div class="tutcards">
+						<div class="tutcard">
+							<a href="sql/default.html" class="tutname">SQL</a>
+							<div class="intro">
+								<p>SQL stands for Structured Query Language. SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system.</p>
+							</div>
+							<div class="links">
+								<a href="sql/default.html">TUTORIAL</a>
+								<a href="sql/sql_ref/default.html">REFERENCES</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="php/default.html" class="tutname">PHP</a>
+							<div class="intro">
+								<p>PHP stands for Hypertext Pre-processor, that earlier stood for Personal Home Pages. PHP is a server side scripting language. that is used to develop Static websites or Dynamic websites or Web applications.</p>
+							</div>
+							<div class="links">
+								<a href="php/default.html">TUTORIAL</a>
+								<a href="php/php_ref/default.html">REFERENCES</a>
+						   </div>
+						</div>
+						<div class="tutcard">
+							<a href="asp/default.html" class="tutname">ASP</a>
+							<div class="intro">
+								<p>ASP stands for Active Server Pages. ASP is a development framework for building web pages. ASP is Microsoft's    first server-side script engine for dynamically generated web pages.</p>
+							</div>
+							<div class="links">
+								<a href="asp/default.html">TUTORIAL</a>
+								<a href="asp/asp_ref/default.html">REFERENCES</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="nodejs/default.html" class="tutname">Node.js</a>
+							<div class="intro">
+								<p>Node. js is a runtime system for creating (mostly) server-side applications. It's best known as a popular means for JavaScript coders to build real-time Web APIs. but Node.js is not a JavaScript framework</p><br>
+							</div>
+							<div class="links">
+								<a href="nodejs/default.html">TUTORIAL</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="jsp/default.html" class="tutname">JSP</a>
+							<div class="intro">
+								<p>JSP stands for Java Server Pages. JavaServer Pages is a collection of technologies that helps software developers create dynamically generated web pages based on HTML, XML, or other document types.</p><br>
+							</div>
+							<div class="links">
+								<a href="jsp/default.html">TUTORIAL</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="java/default.html" class="tutname">Java</a>
+							<div class="intro">
+								<p>Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible.</p><br>
+							</div>
+							<div class="links">
+								<a href="java/default.html">TUTORIAL</a>
+								<a href="java/java_ref/default.html">REFERENCES</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="c/default.html" class="tutname">C</a>
+							<div class="intro">
+								<p>C is a general-purpose, computer programming language supporting structured programming, lexical variable scope, and recursion. It can be used to develop software like operating systems, databases, compilers.</p>
+							</div>
+							<div class="links">
+								<a href="c/default.html">TUTORIAL</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="python/default.html" class="tutname">Python</a>
+							<div class="intro">
+								<p>Python is a general purpose and high level programming language. You can use Python for developing desktop GUI applications, websites and web applications.</p><br>
+							</div>
+							<div class="links">
+								<a href="python/default.html">TUTORIAL</a>
+								<a href="python/python_ref/default.html">REFERENCES</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="cpp/default.html" class="tutname">C++</a>
+							<div class="intro">
+								<p>C++ is a high-level, general-purpose object oriented programming language created by Bjarne Stroustrup as an     extension of the C programming language, or "C with Classes".</p><br><br>
+							</div>
+							<div class="links">
+								<a href="cpp/default.html">TUTORIAL</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="vb/default.html" class="tutname">Visual Basic</a>
+							<div class="intro">
+								<p>Visual Basic is a third-generation event-driven programming language from Microsoft. Visual Basic was derived from BASIC and enables the <span title="Rapid Application Development"> RAD </span> of <span title="Graphical User Interface"> GUI </span> applications.</p><br><br>
+							</div>
+							<div class="links">
+								<a href="vb/default.html">TUTORIAL</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="vbnet/default.html" class="tutname"><span title="Visual Basic .NET">VB.NET</span></a>
+							<div class="intro">
+								<p>Visual Basic .NET is a multi-paradigm, object-oriented programming language, implemented on the .NET Framework. With VB.NET, you can create applications that are fully object-oriented.</p><br>
+							</div>
+							<div class="links">
+								<a href="vbnet/default.html">TUTORIAL</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="c_sharp/default.html" class="tutname">C-SHARP (C#)</a>
+							<div class="intro">
+								<p>C-SHARP (C#) is a general purpose, multi-paradigm programming language developed by Microsoft that runs on the .NET Framework. C# used to make websites, mobile apps, video games, VR, and more!</p><br>
+							</div>
+							<div class="links">
+								<a href="c_sharp/default.html">TUTORIAL</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="c/default.html" class="tutname">Ruby</a>
+							<div class="intro">
+								<p>Ruby is an interpreted, high-level, general-purpose programming language. Ruby is most used for building web applications. However, it is a general-purpose language similar to Python.</p><br>
+							</div>
+							<div class="links">
+								<a href="ruby/default.html">TUTORIAL</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="headingcontainer" data-aos="fade-right" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-out">
+					<div class="heading">
+						<h1><a href="types_of_languages/client-side_languages.html">Client-side</a></h1>
+						<p>Client-side means that the action takes place on the user's (the client's) computer. Client-side languages Interact with temporary storage, Make interactive web pages,  Interact with local storage, Sending request for data to server, Send request to server, work as an interface between server and user.</p>
+					</div>
+				</div>
+				<div class="list" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-out">
+					<div class="tutcards">
+						<div class="tutcard">
+							<a href="html/default.html" class="tutname">HTML</a>
+							<div class="intro">
+								<p>Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. which is the most widely used markup language to develop web pages.</p>
+							</div>
+							<div class="links">
+								<a href="html/default.html">TUTORIAL</a>
+								<a href="html/html_ref/default.html">REFERENCES</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="css/default.html" class="tutname">CSS</a>
+							<div class="intro">
+								<p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML. And CSS is easy to learn and understood.</p><br>
+							</div>
+							<div class="links">
+								<a href="css/default.html">TUTORIAL</a>
+								<a href="css/css_ref/default.html">REFERENCES</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="js/default.html" class="tutname">JavaScript</a>
+							<div class="intro">
+								<p>JavaScript is a dynamic computer programming language which is used for creating dynamic web pages and add special effects on pages. It is lightweight and most commonly used as a part of web pages.</p>
+							</div>
+							<div class="links">
+								<a href="js/default.html">TUTORIAL</a>
+								<a href="js/js_ref/default.html">REFERENCES</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="react/default.html" class="tutname">React</a>
+							<div class="intro">
+								<p>React is a JavaScript library for building user interfaces(UI's). It is created by Facebook and a community of individual developers and companies. React can be used in the development of single-page or mobile applications.</p>
+							</div>
+							<div class="links">
+								<a href="react/default.html">TUTORIAL</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="angularjs/default.html" class="tutname">Angular.js</a>
+							<div class="intro">
+								<p>AngularJS is one of the most powerful, efficient, and open-source JavaScript frameworks mainly developed and maintained by Google. AngularJS had been designed for building web-apps.</p>
+							</div>
+							<div class="links">
+								<a href="angularjs/default.html">TUTORIAL</a>
+								<a href="angularjs/angularjs_ref/default.html">REFERENCES</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="ajax/default.html" class="tutname">AJAX</a>
+							<div class="intro">
+								<p>AJAX stands for Asynchronous JavaScript and XML. AJAX is a set of web development techniques used by client-side frameworks and libraries to make asynchronous HTTP calls to the server.</p><br>
+							</div>
+							<div class="links">
+								<a href="ajax/default.html">TUTORIAL</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="objective-c/default.html" class="tutname">Objective-C</a>
+							<div class="intro">
+								<p>Objective-C is a general-purpose, object-oriented programming language that adds Smalltalk-style messaging to the C programming language. Objective-C is use when writing software for OS X and iOS.</p><br>
+							</div>
+							<div class="links">
+								<a href="objective-c/default.html">TUTORIAL</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="headingcontainer" data-aos="fade-right" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-out">
+					<div class="heading">
+						<h1>Number Systems</h1>
+						<p>Every letter, symbol etc. that we write to computer, it gets converted into machine language. This machine language comprises of numbers. In order to understand the language used by digital systems it is crucial to have a better understanding of number system.</p>
+					</div>
+				</div>
+				<div class="list" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-out">
+					<div class="tutcards">
+						<div class="tutcard">
+							<a href="number_systems/default.html" class="tutname">Binary N. S.</a>
+							<div class="intro">
+								<p>The binary number system is base-2 number system. Binary Number System consists of two digits only i.e. 0 and 1. Thus, the base of the binary number system is 2 as the available digits in this number system is 2. The other numbers can be expressed with these two digits.</p>
+							</div>
+							<div class="links">
+								<a href="number_systems/default.html">Read More...</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="number_systems/octal_number_system.html" class="tutname">Octal N. S.</a>
+							<div class="intro">
+								<p>The Octal number system is base-8 number system. It consists of 8 digits i.e. from 0 to 7. Thus, the base of the Octal Number System is 8 as the available digits in this number system is 8. It is much easier to handle array of octal numbers in comparison to binary numbers.</p>
+							</div>
+							<div class="links">
+								<a href="number_systems/octal_number_system.html">Read More...</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="number_systems/decimal_number_system.html" class="tutname">Decimal N. S.</a>
+							<div class="intro">
+								<p>The Decimal Number System is base-10 number system. It consists of 10 digits i.e. from 0 to 10. Thus, the base of the Decimal N.S. is 10 as the available digits in this number system is 10. Using these 10 digits we can define any number in this system no matter how large it is.</p>
+							</div>
+							<div class="links">
+								<a href="number_systems/decimal_number_system.html">Read More...</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="number_systems/hexadecimal_number_system.html" class="tutname">Hexadecimal</a>
+							<div class="intro">
+								<p>The Hexadecimal N.S. is base-16 number system. It consists of 10 digits and 6 alphabets.The 10 digits from 0 to 9 and the alphabets A, B, C, D, E and F represents 10, 11, 12, 13, 14 and 15 respectively. Thus, It is mostly used in case of microprocessors and microcontrollers.</p>
+							</div>
+							<div class="links">
+								<a href="number_systems/hexadecimal_number_system.html">Read More...</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="headingcontainer" data-aos="fade-right" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-out">
+					<div class="heading">
+						<h1>Types Of Languages</h1>
+						<ol style="text-align: left;">
+							<li>Markup Languages</li>
+							<li>Style Sheets</li>
+							<li>Programming languages</li>
+							<li>Server-side Languages</li>
+							<li>Client-side Languages</li>
+							<li>What is Libraries</li>
+							<li>What is Frameworks</li>
+						</ol>
+					</div>
+				</div>
+				<div class="list" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200" data-aos-easing="ease-out">
+					<div class="tutcards">
+						<div class="tutcard">
+							<a href="types_of_languages/default.html" class="tutname">markup languages</a>
+							<div class="intro">
+								<p>A computer language that consists of easily understood keywords, names, or tags that help format the overall view of a page and the data it contains. Examples of a markup language are HTML and XML.</p>
+							</div>
+							<div class="links">
+								<a href="types_of_languages/default.html">Read More...</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="types_of_languages/style_sheets.html" class="tutname">Style Sheets</a>
+							<div class="intro">
+								<p>A Style Sheet is a collection of style rules that that tells a browser how the various styles are to be applied to the HTML tags to present the document. Style Sheets can be external or internal to your Web site or Web pages. A Style Sheet is a text file that is stored on any Web server.</p>
+							</div>
+							<div class="links">
+								<a href="types_of_languages/style_sheets.html">Read More...</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="types_of_languages/programming_languages.html" class="tutname">Programming languages</a>
+							<div class="intro">
+								<p>A programming language is a formal language comprising a set of instructions that produce various kinds of output. Programming languages are used in computer programming to implement algorithms.</p>
+							</div>
+							<div class="links">
+								<a href="types_of_languages/programming_languages.html">Read More...</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="types_of_languages/server-side_languages.html" class="tutname">Server-sides</a>
+							<div class="intro">
+								<p>Server-side means that the action takes place on a web server. Server-side languages do operations 0r querying over databases, Access/Write a file on server, Interact with other servers, Structure web applications and Process user input.</p>
+							</div>
+							<div class="links">
+								<a href="types_of_languages/server-side_languages.html">Read More...</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="types_of_languages/client-side_languages.html" class="tutname">Client-side</a>
+							<div class="intro">
+								<p>Client-side means that the action takes place on the user's (the client's) computer. Client-side languages Interact with temporary storage, Make interactive web pages,  Interact with local storage, Send request to server, work as an interface between server and user.</p>
+							</div>
+							<div class="links">
+								<a href="types_of_languages/client-side_languages.html">Read More...</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="types_of_languages/libraries.html" class="tutname">What is Libraries</a>
+							<div class="intro">
+								<p>Librarie is a collection of files. In programming, a library is a collection of precompiled routines that a program can use. In JavaScript, a library is a file that contains a bunch of functions.</p>
+							</div>
+							<div class="links">
+								<a href="types_of_languages/libraries.html">Read More...</a>
+							</div>
+						</div>
+						<div class="tutcard">
+							<a href="types_of_languages/frameworks.html" class="tutname">What is Frameworks</a>
+							<div class="intro">
+								<p>Framework is a set of pre-written code libraries designed to be used by developers. A framework is a cohesive set of library code that together simplifies programming in any given language.</p>
+							</div>
+							<div class="links">
+								<a href="types_of_languages/frameworks.html">Read More...</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </main>
+        <footer style="background-image: url(files/files_images/background.svg); background-color: #000000;">
+            <div class="footertop" id="footertopid">
+                <div class="hr"></div>
+                <div class="outercolumn">
+                    <div class="column" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-out"> 
+						<div class="innercolumn">
+                            <a onclick="report()">report error</a>
+                        </div>
+                    </div>
+                    <div class="column" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-easing="ease-out">
+                        <div class="innercolumn">
+                            <a href="about_us/default.html">about</a>
+                        </div>
+                    </div>
+                    <div class="column" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-easing="ease-out">
+                        <div class="innercolumn">
+                            <a onclick="topFunction()" class="top">Go to top</a>
+                        </div>
+                    </div>
+                </div>    
+                <div class="hr"></div>
+                <div class="reporterror">
+                    <h2>reporrt error <a href="javascript:void(0)" class="closereport" onclick="report()">&times;</a></h2>
+                    <p>If you want to report an error, or if you want to make a suggestion, do not hesitate to send us an e-mail:</p>
+                    <input type="text" value="mailid@gamil.com" class="mail" id="mailid">
+                    <div class="tooltip">    
+                        <a onclick="copytext()" onmouseout="outFunc()" class="copy">
+                            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>Copy
+                        </a>
+                    </div>    
+                </div>
+            </div>
+            <div class="footer">
+                <div class="outercolumn">
+                    <div class="column"></div>
+                    <div class="column"></div>
+                    <div class="column"></div>
+                </div>
+                <div class="socialmedia">
+                    <div class="text" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-out">
+						<i class="fa fa-handshake-o"></i>&nbsp;connect with us&nbsp;<i class="fa fa-handshake-o"></i>
+					</div>
+                    <div class="icons">
+                        <a href="#" class="fa fa-facebook" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200" data-aos-easing="ease-out">
+							<span class="tooltiptext">FB ID</span>
+						</a>
+                        <a href="#" class="fa fa-twitter" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-out">
+							<span class="tooltiptext">TWITTER ID</span>
+						</a>
+                        <a href="#" class="fa fa-instagram" data-aos="fade-up" data-aos-duration="500" data-aos-delay="250" data-aos-easing="ease-out">
+							<span class="tooltiptext">INSTA ID</span>
+						</a>
+                        <a href="#" class="fa fa-youtube-play" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200" data-aos-easing="ease-out">
+							<span class="tooltiptext">YT ID</span>
+						</a>
+                    </div>
+                </div>
+                <div class="hr"></div>
+                <div class="bottom">
+                    <div class="column">
+                        <div class="innercolumn">
+                            <a href="rk_fundamentals.html"><img class="logo" src="files/files_images/logo.png"></a>
+                        </div>
+                    </div>    
+                    <div class="column">
+                        <div class="innercolumn">
+                            <a href="about_us/about_copyright.html">copyright &copy; 2020 RK Fundamentals</a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="innercolumn">
+                            <a href="about_us/about_copyright.html">Terms of Use</a>
+                            <div class="verticalline"></div>
+                            <a href="about_us/about_privay.html">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="files/files_js/aos.js"></script>
+		<script src="files/files_js/swiper.min.js"></script>
+        <script src="rk.js"></script>
+    </body>
+</html>

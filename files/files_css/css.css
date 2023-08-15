@@ -1,0 +1,1356 @@
+* {
+	box-sizing: border-box;
+	font-family: "Segoe UI",Arial,sans-serif;
+	scroll-behavior: smooth;
+}
+.body {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	font-family: Times New Roman, Times, serif;
+	overflow-x: hidden;
+}
+/* --------------- scrollbar start --------------- */            
+::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+}
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: #d9d9d9; 
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:hover {background-image: linear-gradient(180deg, #e600a6, #7b0099);}
+/* --------------- scrollbar end --------------- */
+/* --------------- nav start --------------- */            
+.logodiv {
+	width: 100%;
+	height: 60px;
+	position: relative;
+}
+.logodiv .logo {
+	text-decoration: none;
+	float: left;
+	width: auto;
+	height: 60px; 
+}
+.topnav {
+	position: relative;
+	z-index: 99;
+	width: 100%;
+	height: 50px;
+	background-color: #d9d9d9;
+	float: left;
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.4);
+	transition: 2s;
+}
+.topnav.sticky {
+	position: fixed;
+	top: 0;
+}
+.topnav .menu {
+	background-color: #d9d9d9;
+	display: none;
+	cursor: pointer;
+	float: left;
+	margin: 10.5px 10px;
+}
+.topnav .menu .bar1, .topnav .menu .bar2, .topnav .menu .bar3 {
+	width: 25px;
+	height: 3px;
+	background-color: #333;
+	margin: 5px 0;
+	transition: 0.4s;
+}
+.topnav .menu.change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-8px, 4px);
+	transform: rotate(-45deg) translate(-8px, 4px);
+}
+.topnav .menu.change .bar2 {opacity: 0;}
+.topnav .menu.change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-7px, -4px);
+	transform: rotate(45deg) translate(-7px, -4px);
+}
+.topnav a {
+	float: left;
+	position: relative;
+	color: black;
+	text-align: center;
+	padding: 11.5px 12px;
+	text-decoration: none;
+	font-size: 20px;
+}
+.topnav .home {
+	font-size: 25px;
+	padding: 8.5px 10px;
+}
+.topnav .home:hover {
+	font-size: 27px;
+	padding: 5px 9.07px
+}
+.topnav .home .border {
+	display: none;
+	position: absolute;
+	width: 43.22px;
+	height: 4px;
+	margin-left: -9.07px;
+	margin-top: 5px;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.topnav .home:hover .border {display: block;}
+.topnav .html.active {
+	font-size: 23px;
+	padding: 9.5px 8.101px;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+	color: white;
+}
+.topnav .css:hover {
+	font-size: 23px;
+	color: black;
+	padding: 7.5px 9.478px;
+}
+.topnav .css .border {
+	display: none;
+	position: absolute;
+	width: 57.63px;
+	height: 4px;
+	margin-left: -9.47px;
+	margin-top: 7.5px;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.topnav .css:hover .border {
+	display: block;
+}
+.topnav .js:hover {
+	font-size: 23px;
+	color: black;
+	padding: 7.5px 3.955px;
+}
+.topnav .js .border {
+	display: none;
+	position: absolute;
+	width: 131.34px;
+	height: 4px;
+	margin-left: -3.17px;
+	margin-top: 7.5px;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.topnav .js:hover .border {display: block;}
+.topnav .sql:hover {
+	font-size: 23px;
+	color: black;
+	padding: 7.5px 9.382px;
+}
+.topnav .sql .border {
+	display: none;
+	position: absolute;
+	width: 59.14px;
+	height: 4px;
+	margin-left: -9.07px;
+	margin-top: 7.5px;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.topnav .sql:hover .border {display: block;}
+.topnav .php:hover {
+	font-size: 23px;
+	color: black;
+	padding: 7.5px 9.271px;
+}
+.topnav .php .border {
+	display: none;
+	position: absolute;
+	width: 60.63px;
+	height: 4px;
+	margin-left: -8.805px;
+	margin-top: 7.5px;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.topnav .php:hover .border {display: block;}
+.topnav .java:hover {
+	font-size: 23px;
+	color: black;
+	padding: 7.5px 8.607px;
+}
+.topnav .java .border {
+	display: none;
+	position: absolute;
+	width: 69.38px;
+	height: 4px;
+	margin-left: -7.68px;
+	margin-top: 7.5px;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.topnav .java:hover .border {display: block;}
+.topnav .cpp:hover {
+	font-size: 23px;
+	color: black;
+	padding: 7.5px 9.025px;
+}
+.topnav .cpp .border {
+	display: none;
+	position: absolute;
+	width: 63.75px;
+	height: 4px;
+	margin-left: -9px;
+	margin-top: 7.5px;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.topnav .cpp:hover .border {display: block;}
+.topnav .python:hover {
+	font-size: 23px;
+	color: black;
+	padding: 7.5px 6.226px;
+}
+.topnav .python .border {
+	display: none;
+	position: absolute;
+	width: 100.98px;
+	height: 4px;
+	margin-left: -6.225px;
+	margin-top: 7.5px;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.topnav .python:hover .border {display: block;}
+.topnav .htdi:hover {
+	font-size: 23px;
+	color: black;
+	padding: 7.5px 6.08px;
+}
+.topnav .htdi .border {
+	display: none;
+	position: absolute;
+	width: 103px;
+	height: 4px;
+	margin-left: -6.08px;
+	margin-top: 7.5px;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.topnav .htdi:hover .border {display: block;}
+.topnav .tutorials {
+	float: left;
+	position: relative;
+	color: black;
+	padding: 11.5px 12px;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: center;
+	border: none;
+}
+.topnav .tutorials:hover {
+	padding: 7.5px 6.605px;
+	font-size: 23px;
+}
+.topnav .tutorials #down1 {display: inline-block;}
+.topnav .tutorials.responsive #down1 {display: none;}
+.topnav .tutorials #up1 {display: none;}
+.topnav .tutorials.responsive #up1 {display: inline-block;}
+.topnav .tutorials .border {
+	display: none;
+	position: absolute;
+	width: 96.03px;
+	height: 4px;
+	margin-left: -5.1045px;
+	margin-top: 7.5px;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.topnav .tutorials:hover .border {display: block;}
+.topnav .tutorialscontent {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 470px;
+	top: 50px;
+	left: 0;
+	box-shadow: 0 3px 7px 0 rgba(0,0,0,0.5);
+	transition: 2s;
+	z-index: 99;
+	background-color: #d9d9d9;
+}
+.topnav .tutorialscontent.responsive {display: block;}  
+.topnav .tutorialscontent .closetutorials {
+	position: absolute;
+	display: inline-block;
+	z-index: 100;
+	top: 8px;
+	right: 20px;
+	padding: 0px 11.82px 5px 11.82px;
+	font-size: 30px;
+	border: none;
+	text-decoration: none;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+	transition:  transform 2s;
+}
+.topnav .tutorialscontent .closetutorials:hover {
+	transform: rotate(180deg);
+	-webkit-text-fill-color: #ffffff; 
+	-moz-text-fill-color: #ffffff;
+	background: linear-gradient(45deg, #e600a6, #7b0099);
+} 
+.topnav .tutorialscontent .tutorialsrow {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 500px;
+	z-index: 99;
+}
+.topnav .tutorialscontent .tutorialsrow .tutorialscolumn {
+	position: relative;
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+.topnav .tutorialscontent .tutorialsrow .tutorialscolumn a {
+	float: none;
+	color: black;
+	padding: 4px 0 4px 0;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	text-align: left;
+}
+.topnav .tutorialscontent .tutorialsrow .tutorialscolumn a:hover {
+	font-size: 19px;
+	border: none;
+	padding: 0.5px 0px 2.5px 6.5px;
+	transition: box-shadow .25s ease-out;
+	box-shadow: -3px 3px 3px 0 rgba(0,0,0,0.3);
+}
+.topnav .tutorialscontent .tutorialsrow .tutorialscolumn:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.topnav .references {
+	float: right;
+	position: relative;
+	color: black;
+	padding: 11.5px 12px;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: center;
+	border: none;
+}
+.topnav .references:hover {
+	font-size: 23px;
+	padding: 7.5px 2.324px;
+}
+.topnav .references #down2 {display: inline-block;}
+.topnav .references.responsive #down2 {display: none;}
+.topnav .references #up2 {display: none;}
+.topnav .references.responsive #up2 {display: inline-block;}
+.topnav .references .border {
+	display: none;
+	position: absolute;
+	width: 153.03px;
+	height: 4px;
+	margin-left: -2.3235px;
+	margin-top: 7.5px;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.topnav .references:hover .border {display: block;}
+.topnav .referencescontent {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 470px;
+	top: 50px;
+	left: 0;
+	box-shadow: 0 3px 7px 0 rgba(0,0,0,0.5);
+	transition: 2s;
+	z-index: 99;
+	background-color: #d9d9d9;
+}
+.topnav .referencescontent.responsive {display: block;} 
+.topnav .referencescontent .closereferences {
+	position: absolute;
+	display: inline-block;
+	z-index: 100;
+	top: 8px;
+	right: 20px;
+	padding: 0px 11.82px 5px 11.82px;
+	font-size: 30px;
+	border: none;
+	text-decoration: none;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+	transition:  transform 2s;
+}
+.topnav .referencescontent .closereferences:hover {
+	transform: rotate(180deg);
+	-webkit-text-fill-color: #ffffff; 
+	-moz-text-fill-color: #ffffff;
+	background: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.topnav .referencescontent .referencesrow {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 500px;
+	z-index: 99;
+}
+.topnav .referencescontent .referencesrow .referencescolumn {
+	position: relative;
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+.topnav .referencescontent .referencesrow .referencescolumn a {
+	float: none;
+	color: black;
+	padding: 4px 0 4px 0px;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	text-align: left;
+}
+.topnav .referencescontent .referencesrow .referencescolumn a:hover {
+	font-size: 19px;
+	border: none;
+	padding: 0.5px 0 2.5px 6.5px;
+	transition: box-shadow .25s ease-out;
+	box-shadow: -3px 3px 3px 0 rgba(0,0,0,0.3);
+}
+.topnav .referencescontent .referencesrow .referencescolumn:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.topnav .exercises {
+	float: right;
+	position: relative;
+	color: black;
+	padding: 11.5px 12px;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: center;
+	border: none;
+}
+.topnav .exercises:hover {
+	font-size: 23px;
+	padding: 7.5px 3.75px;
+}
+.topnav .exercises #down4 {display: inline-block;}
+.topnav .exercises.responsive #down4 {display: none;}
+.topnav .exercises #up4 {display: none;}
+.topnav .exercises.responsive #up4 {display: inline-block;}
+.topnav .exercises .border {
+	display: none;
+	position: absolute;
+	width: 133.98px;
+	height: 4px;
+	margin-left: -3.748px;
+	margin-top: 7.5px;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.topnav .exercises:hover .border {display: block;}
+.topnav .exercisescontent {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 470px;
+	top: 50px;
+	left: 0;
+	box-shadow: 0 3px 7px 0 rgba(0,0,0,0.5);
+	transition: 2s;
+	z-index: 99;
+	background-color: #d9d9d9;
+}  
+.topnav .exercisescontent.responsive {display: block;} 
+.topnav .exercisescontent .closeexercises {
+	position: absolute;
+	display: inline-block;
+	z-index: 100;
+	top: 8px;
+	right: 20px;
+	padding: 0px 11.82px 5px 11.82px;
+	font-size: 30px;
+	border: none;
+	text-decoration: none;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+	transition:  transform 2s;
+}
+.topnav .exercisescontent .closeexercises:hover {
+	transform: rotate(180deg);
+	-webkit-text-fill-color: #ffffff; 
+	-moz-text-fill-color: #ffffff;
+	background: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.topnav .exercisescontent .exercisesrow {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 500px;
+	z-index: 99;
+}
+.topnav .exercisescontent .exercisesrow .exercisescolumn {
+	float: left;
+	width: 25%;
+	padding: 10px;
+	background-color: #d9d9d9;
+	height: 400px;
+}
+.topnav .exercisescontent .exercisesrow .exercisescolumn a {
+	float: none;
+	color: black;
+	padding: 4px 0 4px 0px;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	text-align: left;
+}
+.topnav .exercisescontent .exercisesrow .exercisescolumn a:hover {
+	font-size: 19px;
+	border: none;
+	padding: 0.5px 0 2.5px 6.5px;
+	transition: box-shadow .25s ease-out;
+	box-shadow: -3px 2px 3px 0 rgba(0,0,0,0.3);
+}
+.topnav .exercisescontent .exercisesrow .exercisescolumn:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.topnav .search {
+	float: right;
+	font-size: 20px;
+	padding: 11.5px 12px;
+	margin-right: 10px;
+}
+.topnav .search:hover {
+	font-size: 25px;
+	padding: 6.5px 9.681px
+}
+.topnav .search .border {
+	display: none;
+	position: absolute;
+	width: 42.56px;
+	height: 4px;
+	margin-left: -9.6795px;
+	margin-top: 6.5px;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.topnav .search:hover .border {display: block;}
+.topnav .translate {
+	float: right;
+	font-size: 20px;
+	padding: 11.5px 12px;
+}
+.topnav .translate:hover {
+	font-size: 25px;
+	padding: 6.5px 9.861px
+}
+.topnav .translate .border {
+	display: none;
+	position: absolute;
+	width: 41.16px;
+	height: 4px;
+	margin-left: -9.863px;
+	margin-top: 6.5px;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.topnav .translate:hover .border {display: block;}
+/* --------------- nav end --------------- */
+/* --------------- leftnav start --------------- */
+.leftnav {
+	position: absolute;
+	margin-left: 0px;
+	z-index: 98;
+	width: 220px;
+	height: 100%;
+	background-color: #f2f2f2;
+	padding-top: 50px;
+	padding-bottom: 60px;
+	box-shadow: 3px 5px 5px 0 rgba(0,0,0,0.4);
+}
+.leftnav.sticky1 {padding-bottom: 45px;}
+.leftnav.sticky1.sticky2 {padding-bottom: 30px;}
+.leftnav.sticky1.sticky2.sticky3{padding-bottom: 15px;}
+.leftnav.sticky1.sticky2.sticky3.sticky4 {
+	position: fixed;
+	margin-top: -60px !important;
+	padding-bottom: 0px;
+}
+.leftnav .leftnavcontent {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #f2f2f2;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding-top: 10px;
+}
+.leftnav .leftnavcontent .subleft {
+	margin-left: 10px;
+	background-color: #d9d9d9;
+}
+.leftnav .leftnavcontent .subleft.responsive {display: none;}
+.leftnav .leftnavcontent h2 {
+	text-align: center;
+	margin: 10px 0;
+	font-size: 21px;
+	font-weight: 500;
+}
+.leftnav .leftnavcontent a {
+	padding: 3px 0 3px 10px;
+	text-decoration: none;
+	font-size: 17px;
+	color: black;
+	display: block;
+}
+.leftnav .leftnavcontent a:hover {
+	font-size: 19px;
+	padding: 0 0 2px 10px;
+	margin-left: 8px;
+	transition: box-shadow .25s ease-out;
+	box-shadow: -3px 2px 3px 0 rgba(0,0,0,0.3);
+}
+.leftnav .leftnavcontent a.active:hover {
+	margin-left: 0px;
+	box-shadow: none;
+}
+.leftnav .leftnavcontent a.active {
+	font-size: 19px;
+	padding: 0 0 2px 10px;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+	color: white;
+}
+/* --------------- leftnav end --------------- */
+/* --------------- main start --------------- */
+.main {
+	position: relative;
+	padding-left: 220px;
+	width: 100%;
+	margin-top: 50px;
+	z-index: 0;
+}
+.main .maincontent {
+	position: relative;
+	background-color: white;
+	width: 100%;
+}
+.main .maincontent .tutorial {
+	position: relative;
+	float: left;
+	border: 1px solid #d9d9d9;
+	width: 78%;
+	padding: 20px;
+}
+.main .maincontent .tutorial .buttons {
+	position: relative;
+	width: 100%;
+	height: 40px;
+}
+.Previous {
+	position: relative;
+	float: left;
+}
+.Previous .text {
+	position: relative;
+	padding: 5px 10px 5px 0;
+	text-decoration: none;
+	font-size: 22px;
+	margin-left: 20px;
+	color: white;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+	transition: 1s;
+	box-shadow: -6px 6px 0 black;
+	transform: skewX(-15deg);
+}
+.Previous .text:hover {
+	margin-left: 10px;
+	transition: 0.5s;
+	box-shadow: -8px 8px 2px 0 rgba(0,0,0,0.3);
+}
+.Previous .text span:nth-child(1) {
+	transition: 0.5s;
+	margin-left: 0px;
+}
+.Previous .text:hover  span:nth-child(1) {
+	transition: 0.5s;
+	margin-left: 20px;
+}
+.Previous .text span {
+	-ms-transform: skewx(25deg);
+	transform: skewX(25deg);
+}
+.Previous .text span:nth-child(1) {
+	width: 20px;
+	margin-right: 15px;
+	position: relative;
+	top: -3px;
+}
+.Previous .text span svg {
+	vertical-align: middle;
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+.Previous .text span svg path.one {
+	transition: 0.4s;
+	transform: translateX(-60%);
+}
+.Previous .text span svg path.two {
+	transition: 0.5s;
+	transform: translateX(-30%);
+}
+.Previous .text:hover span svg path.three {animation: color_anim 1s infinite 0.2s;}
+.Previous .text:hover span svg path.one {
+	transform: translateX(0%);
+	animation: color_anim 1s infinite 0.6s;
+}
+.Previous .text:hover span svg path.two {
+	transform: translateX(0%);
+	animation: color_anim 1s infinite 0.4s;
+}
+.next {
+	position: relative;
+	float: right;
+}
+.next .text {
+	position: relative;
+	padding: 5px 0 5px 10px;
+	text-decoration: none;
+	font-size: 22px;
+	margin-right: 20px;
+	color: white;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+	transition: 1s;
+	box-shadow: 6px 6px 0 black;
+	transform: skewX(-15deg);
+}
+.next .text:hover {
+	margin-right: 10px;
+	transition: 0.5s;
+	box-shadow: 8px 8px 2px 0 rgba(0,0,0,0.3);
+}
+.next .text span:nth-child(2) {
+	transition: 0.5s;
+	margin-right: 0px;
+}
+.next .text:hover  span:nth-child(2) {
+	transition: 0.5s;
+	margin-right: 20px;
+}
+.next .text span {
+	-ms-transform: skewx(25deg);
+	transform: skewX(25deg);
+}
+.next .text span:nth-child(2) {
+	width: 20px;
+	margin-left: 15px;
+	position: relative;
+	top: -3px;
+}
+.next .text span svg {vertical-align: middle;}
+.next .text span svg path.one {
+	transition: 0.4s;
+	transform: translateX(-60%);
+}
+.next .text span svg path.two {
+	transition: 0.5s;
+	transform: translateX(-30%);
+}
+.next .text:hover span svg path.three {animation: color_anim 1s infinite 0.2s;}
+.next .text:hover span svg path.one {
+	transform: translateX(0%);
+	animation: color_anim 1s infinite 0.6s;
+}
+.next .text:hover span svg path.two {
+	transform: translateX(0%);
+	animation: color_anim 1s infinite 0.4s;
+}
+@keyframes color_anim {
+	0% {fill: white;}
+	50% {fill: #7b0099;}
+	100% {fill: white;}
+}
+.main .maincontent .tutorial .note {
+	position: relative;
+	width: 100%;
+	display: flex;
+	margin: 15px 0;
+	background-color: #d9d9d9;
+	color: #000000;
+	border-radius: 4px;
+	border-left: 4px solid #b600a0;
+}
+.main .maincontent .tutorial .note svg {
+	position: relative;
+	padding: 5px;
+	width: 50px;
+	min-width: 40px;
+}
+.main .maincontent .tutorial .note p {
+	padding: 15px 0;
+	font-size: 16px;
+	margin: 5px 10px;
+}
+.main .maincontent .tutorial .img {
+	display: block;
+	width: 75%;
+	height: auto;
+	padding: 10px;
+	margin: auto;
+}
+.main .maincontent .tutorial .example, .main .maincontent .tutorial .syntax {
+	position: relative;
+	display: block;
+	background-color: #d9d9d9;
+	padding: 10px 20px;
+	margin: 15px 20px;
+}
+.main .maincontent .tutorial .example {
+	padding-bottom: 70px;
+}
+.main .maincontent .tutorial .example h3 {
+	position: relative;
+	margin: 0 0 10px 0;
+	font-weight: 400;
+	font-size: 24px;
+}
+.main .maincontent .tutorial .example .next {
+	margin: 15px 0 5px 0;
+	float: left;
+}
+.main .maincontent .tutorial .example .output {
+	float: right;
+	margin: 15px 10px 13px 10px;
+	font-size: 24px;
+	font-weight: 400;
+	cursor: pointer;
+}
+.main .maincontent .tutorial .example .output .fa.fa-caret-down {display: inline-block;}
+.main .maincontent .tutorial .example .output.responsive  .fa.fa-caret-down {display: none;}
+.main .maincontent .tutorial .example .output .fa.fa-caret-up{display: none;}
+.main .maincontent .tutorial .example .output.responsive  .fa.fa-caret-up{display: inline-block;}
+.main .maincontent .tutorial .examploutputheading {display: none;}
+.main .maincontent .tutorial .examploutputheading.responsive {display: block;}
+.main .maincontent .tutorial .examploutput {
+	display: none;
+	margin: 15px 20px;
+	padding: 5px 10px;
+	border: 2px solid black;
+}
+.main .maincontent .tutorial .examploutput.responsive {
+	display: block;
+}
+.main .maincontent .tutorial .examploutput h1 {
+	display: block;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+.main .maincontent .tutorial .examploutput p {
+	display: block;
+	margin: 1em 0;
+}
+.main .maincontent .tutorial h1 {
+	position: relative;
+	margin: 10px 5px;
+	font-weight: 450;
+	font-size: 40px; 
+}
+.main .maincontent .tutorial h2 {
+	position: relative;
+	margin: 10px 5px;
+	font-weight: 400;
+	font-size: 32px; 
+}
+.main .maincontent .tutorial h3 {
+	font-size: 20px;
+	font-weight: 500;
+	display: block;
+	margin: 0;
+	padding: 5px 20px;
+}
+.main .maincontent .tutorial p {
+	margin: 5px 20px;
+	font-size: 16px;
+}
+.main .maincontent .tutorial p a {
+	text-decoration: underline;
+	text-decoration-color: #000000;
+	text-decoration-style: solid;
+	color: #000000;
+}
+.main .maincontent .tutorial p a:hover {
+	text-decoration: none;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);	
+}
+.main .maincontent .tutorial ul {margin: 10px 0;}
+.main .maincontent .tutorial ul li {
+	padding: 2px;
+	font-size: 16px;
+}
+.main .maincontent .tutorial ul li a {
+	text-decoration: underline;
+	text-decoration-color: #000000;
+	text-decoration-style: solid;
+	color: #000000;
+	font-size: 16px;
+}
+.main .maincontent .tutorial ul li a:hover {
+	text-decoration: none;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);	
+}
+.main .maincontent .tutorial .tablecontainer {
+	margin: 5px 20px;
+}
+.main .maincontent .tutorial .tablecontainer table {
+	border-collapse: collapse;
+	border: 1px solid #d9d9d9;
+	width: 100%;
+}
+.main .maincontent .tutorial .tablecontainer table tr td, .main .maincontent .tutorial .tablecontainer table tr th {
+	text-align: left;
+	padding: 10px;
+}
+.main .maincontent .tutorial .tablecontainer table tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+.main .maincontent .tutorial .tablecontainer table a.taglink {
+	text-decoration: underline;
+	text-decoration-color: #BE53E6;
+	text-decoration-style: solid;
+}
+.main .maincontent .tutorial .tablecontainer table a.attributelink {
+	text-decoration: underline;
+	text-decoration-color: #6d79de;
+	text-decoration-style: solid;
+}
+.main .maincontent .tutorial .tablecontainer table a:hover {
+	text-decoration: none;
+}
+.main .maincontent .rightnav {
+	float: left;
+	width: 22%;
+}
+.main .maincontent .rightnav .tutlogo {
+	margin: auto;
+	margin-top: 20px;
+	max-width: 200px;
+	padding: 0 40px;
+}
+.main .maincontent .rightnav .tutlogo a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-size: 32px;
+	font-weight: 500;
+}
+.main .maincontent .rightnav .tutlogo a:hover {
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.main .maincontent .rightnav .tutlogo svg {
+	width: 100%;
+	height: auto;
+}
+.main .maincontent .rightnav .content {
+	position: relative;
+	background-color: #f2f2f2;
+	margin: 40px 10px;
+	padding-bottom: 10px;
+	box-shadow: -3px 5px 5px 0 rgba(0,0,0,0.4);
+}
+.main .maincontent .rightnav .content .heading {
+	margin: 0;
+	padding: 10px 0px;
+	font-weight: 500;
+	font-size: 21px;
+	text-align: center;
+	background-color: #d9d9d9;
+}
+.main .maincontent .rightnav .content a {
+	padding: 3px 0;
+	text-decoration: none;
+	text-align: center;
+	font-size: 17px;
+	color: black;
+	display: block;
+}
+.main .maincontent .rightnav .content a:hover {
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-decoration-color: #000000;
+}
+/* --------------- footer start --------------- */
+.footertop {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.footertop.responsive {height: auto;}
+.footertop .hr {
+	position: relative;
+	width: 95%;
+	height: 1px;
+	margin: auto;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.footertop .outercolumn{
+	width: 100%;
+	height: 70px;
+	position: relative;
+}
+.footertop .outercolumn .column {
+	position: relative;
+	width: 33.33%;
+	float: left;
+	padding: 10px;
+	height: auto;
+	text-align: center;
+}
+.footertop .outercolumn .column .innercolumn {padding: 8.5px;}
+.footertop .outercolumn .column .innercolumn a{
+	cursor: pointer;
+	text-decoration: none;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	text-transform: capitalize;
+	font-size: 25px;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.footertop .outercolumn .column .innercolumn a:hover {
+	-webkit-text-fill-color: #ffffff; 
+	-moz-text-fill-color: #ffffff;
+}
+.footertop .reporterror {
+	position: relative;
+	display: none;
+	margin: auto;
+	margin: 20px;
+	background-color: #ffffff;
+}
+.footertop.responsive .reporterror {display: block;}
+.footertop .reporterror h2 {
+	position: relative;
+	margin: auto 0px;
+	padding: 10px;
+	width: 100%;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+.footertop .reporterror h2 .closereport {
+	position: absolute;
+	top: 8px;
+	right: 20px;
+	padding: 0px 10.82px 5px 10.82px;
+	font-size: 25px;
+	border: none;
+	text-decoration: none;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+	transition:  transform 2s;
+}
+.footertop .reporterror h2 .closereport:hover {
+	transform: rotate(180deg);
+	-webkit-text-fill-color: #ffffff; 
+	-moz-text-fill-color: #ffffff;
+	background: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.footertop .reporterror p {
+	position: relative;
+	margin: auto 0px;
+	padding: 10px;
+	width: 100%;
+}
+.footertop .reporterror .mail {
+	position: relative;
+	margin: 10px;
+	border: none;
+	font-size: 15px;
+}
+.footertop .reporterror .tooltip {
+	position: relative;
+	display: inline-block;
+	margin-left: -20px;
+}
+.footertop .reporterror .tooltip .copy {
+	cursor: pointer;
+	font-size: 15px;
+	padding: 5px;
+	background-color: #111111;
+	color: white;
+	border-radius: 5px;
+}
+.footertop .reporterror .tooltip .tooltiptext {
+	visibility: hidden;
+	width: 140px;
+	background-color: #111111;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -75px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+.footertop .reporterror .tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+.footertop .reporterror .tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+.footer {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+.footer .outercolumn {
+	width: 100%;
+	height: 200px;
+	position: relative;
+}
+.footer .outercolumn .column { 
+	position: relative;
+	width: 33.33%;
+	float: left;
+	height: 200px;
+	padding: 10px;
+	text-align: center;
+}
+.footer .outercolumn .column:nth-child(1) {}
+.footer .outercolumn .column:nth-child(2) {}
+.footer .outercolumn .column:nth-child(3) {}
+.footer .socialmedia {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.footer .socialmedia .text {
+	width: 100%;
+	height: auto;
+	position: relative;
+	color: white;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 25px;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.footer .socialmedia .icons {
+	width: 100%;
+	height: auto;
+	position: relative;
+	text-align: center;
+}
+.footer .socialmedia .icons .fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.footer .socialmedia .icons .fa .tooltiptext {
+	visibility: hidden;
+	background-color: transparent;
+	color: #ffffff;
+	font-size: 15px;
+	margin-left: -20px;
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px 5px;
+	position: absolute;
+	z-index: 1;
+}
+.footer .socialmedia .icons .fa:hover .tooltiptext {visibility: visible;}
+.footer .socialmedia .icons .fa:hover {
+	-webkit-text-fill-color: white; 
+	-moz-text-fill-color: white;
+}
+.footer .hr {
+	position: relative;
+	width: 95%;
+	height: 1px;
+	margin: auto;
+	background-image: linear-gradient(90deg, #e600a6, #7b0099);
+}
+.footer .bottom {
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+}
+.footer .bottom .column {
+	position: relative;
+	width: 33.33%;
+	float: left;
+	height: auto;
+}
+.footer .bottom .column .innercolumn {
+	width: 100%;
+	float: none;
+	text-align: center;
+	padding: 10px 0;
+}
+.footer .bottom .column a .logo {
+	position: relative;
+	text-decoration: none;
+	width: auto; 
+	height: 50px;
+}
+.footer .bottom .column:nth-child(2) {
+	position: relative;
+	width: 33.33%;
+	float: left;
+	margin: 15px auto;
+	height: auto;
+}
+.footer .bottom .column a {
+	text-align: center;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 15px;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+}
+.footer .bottom .column a:hover {
+	-webkit-text-fill-color: white; 
+	-moz-text-fill-color: white;
+}
+.footer .bottom .column:nth-child(3) {
+	position: relative;
+	width: 33.33%;
+	float: left;
+	margin: 15px 0px;
+	height: auto;
+}
+.footer .bottom .column .verticalline {
+	display: inline-block;
+	height: 15px;
+	width: 2px;
+	background-image: linear-gradient(45deg, #e600a6, #7b0099);
+	margin: 0 3px;
+}
+/* --------------- footer end --------------- */
+/* --------------- main end --------------- */
+/* --------------- responsive start --------------- */
+/* --------------- hide nav elements wrt widtht --------------- */
+@media only screen and (min-width: 0) and (max-width: 1260px) {.topnav .python {display: none;}}
+@media only screen and (min-width: 0) and (max-width: 1160px) {.topnav .cpp {display: none;}}
+@media only screen and (min-width: 0) and (max-width: 1100px) {.topnav .java {display: none;}}
+@media only screen and (min-width: 0) and (max-width: 1020px) {.topnav .php {display: none;}}
+/* ---------- nav[sql{hide}], leftnav[width:100%;] ---------- */
+@media only screen and (min-width: 0) and (max-width: 1000px) {
+	.topnav .menu {display: block;}
+	.topnav .sql {display: none;}
+	.leftnav {display: none;}
+	.leftnav.responsive {display: block;}
+	.main {padding-left: 0px;}
+}
+@media only screen and (min-width: 0) and (max-width: 950px) {.topnav .htdi {display: none;}}
+/* ---------- nav[cources{widht:50%;}] ---------- */
+@media only screen and (min-width: 0) and (max-width: 870px) {
+	.topnav .tutorialscontent {overflow-y: scroll;}
+	.topnav .tutorialscontent .tutorialsrow .tutorialscolumn {width: 50%;}
+	.topnav .referencescontent {overflow-y: scroll;}
+	.topnav .referencescontent .referencesrow .referencescolumn {width: 50%;}
+	.topnav .exercisescontent {overflow-y: scroll;}
+	.topnav .exercisescontent .exercisesrow .exercisescolumn {
+		width: 50%;
+		height: 270px;
+	}
+}
+@media only screen and (min-width: 0) and (max-width: 850px) {.topnav .exercises {display: none;}}
+/* ---------- tutorial[width{100%}], rightnav[width{100%}], footer[bottom(width:100%)] ---------- */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+	.main .maincontent .tutorial {
+		float: none;
+		width: 100%;
+	}
+	.main .maincontent .rightnav {
+		float: none;
+		width: 100%;
+	}
+	.footer {height: 511px;}
+	.footer .bottom {height: 210px;}
+	.footer .bottom .column:nth-child(1) {width: 100%;}
+	.footer .bottom .column:nth-child(2) {width: 100%;}
+	.footer .bottom .column:nth-child(3) {width: 100%;}
+}
+@media only screen and (min-width: 0) and (max-width: 710px) {.topnav .references {display: none;}}
+/* ---------- nav[javascript{hide}], footer[top(width:100%)] ---------- */
+@media only screen and (min-width: 0) and (max-width: 560px) {
+	.topnav .js {display: none;}
+	.footertop {height: 212px;}
+	.footertop .outercolumn {
+		width: 100%;
+		height: 210px;
+		position: relative;
+	}
+	.footertop .outercolumn .column {width: 100%;}
+	.footertop .reporterror {overflow-y: scroll;}
+}
+/* ---------- nav[css{hide}, content{width:100%;}], main[tutorial{padding: 5px;}, example{buttons(float: none;)}]---------- */
+@media only screen and (min-width: 0) and (max-width: 425px) {
+	.topnav .css {display: none;}
+	.topnav .tutorialscontent .tutorialsrow .tutorialscolumn {width: 100%;}
+	.main .maincontent .tutorial {padding: 5px;}
+	.main .maincontent .tutorial .example {padding-bottom: 10px;}
+	.main .maincontent .tutorial .example .output {float: none;}
+	.main .maincontent .tutorial .example .next {float: none;}
+}
+@media only screen and (min-width: 0) and (max-width: 370px) {.topnav .html {display: none;}}
+@media only screen and (min-width: 0) and (max-width: 290px) {.topnav .translate {display: none;}}
+@media only screen and (min-width: 0) and (max-width: 250px) {.topnav .search {display: none;}}

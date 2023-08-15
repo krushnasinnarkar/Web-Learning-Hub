@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>RK Fundamentals</title>       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../files/files_images/logoattitle.png" type="image/x-icon">
+		<link rel="stylesheet" href="../files/files_css/aos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../files/files_css/css.css">
+        <link rel="stylesheet" href="../files/files_css/code.css">
+    </head>
+    <body class="body">
+        <div class="logodiv">
+            <a href="../rk_fundamentals.html"><img class="logo" src="../files/files_images/logo.png"></a>
+        </div>
+        <nav class="topnav" id="topnavid">
+			<div class="menu" onclick="leftnav1(this), leftnav2()" href="javascript:void(0);">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <a href="../rk_fundamentals.html" class="home" title="HOME"><i class="fa fa-home"></i><div class="border"></div></a>
+            <a href="../html/default.html" class="html active" title="HTML Tutorial">HTML<div class="border"></div></a>
+            <a href="../css/default.html" class="css" title="CSS Tutorial">CSS<div class="border"></div></a>
+            <a href="../js/default.html" class="js" title="JavScript Tutorial">JAVASCRIPT<div class="border"></div></a>
+            <a href="../sql/default.html" class="sql" title="SQL Tutorial">SQL<div class="border"></div></a>
+            <a href="../php/default.html" class="php" title="PHP Tutorial">PHP<div class="border"></div></a>
+            <a href="../java/default.html" class="java" title="Java Tutorial">JAVA<div class="border"></div></a>
+            <a href="../cpp/default.html" class="cpp" title="C++ Tutorial">C++<div class="border"></div></a>
+            <a href="../python/default.html" class="python" title="Python Tutorial">PYTHON<div class="border"></div></a>
+            <a href="../how_to_do_it/default.html" class="htdi" title="How To Do It">HOW TO<div class="border"></div></a>
+            <a class="tutorials" id="tutorialsid" title="Tutorials" onclick="starttutorials(), closereferences(), closeexercises()">MORE
+				<i class="fa fa-caret-down" id="down1"></i>
+				<i class="fa fa-caret-up" id="up1"></i>
+				<div class="border"></div>
+			</a>
+			<div id="tutorialscontentid" class="tutorialscontent">
+				<a href="javascript:void(0)" class="closetutorials" onclick=closetutorials()>&times;</a>
+				<div class="tutorialsrow">
+					<div id="tutorialscolumnid" class="tutorialscolumn">
+						<h3>HTML and CSS</h3>
+						<a href="../html/default.html">Learn HTML</a>
+						<a href="../css/default.html">Learn CSS</a>
+						<a href="../bs/default.html">Learn BootStrap</a>
+						<a href="../sass/default.html">Learn Sass</a>
+						<a href="../graphics/default.html">Learn Graphics</a>
+						<a href="../character_sets/default.html">HTML Character sets</a>
+						<h3>Add<sup>n</sup> Tuts</h3>
+						<a href="../colors/default.html">Learn Colors</a>
+						<a href="../icons/default.html">Learn Icons</a>
+						<a href="../how_to_do_it/default.html">How to do it</a>
+						<a href="../number_systems/default.html">Number Systems</a>
+						<a href="../types_of_languages/default.html" title="Types Of Languages">Types of lang.</a>
+					</div>
+					<div id="tutorialscolumnid" class="tutorialscolumn">
+						<h3>JavaScript</h3>
+	                    <a href="../js/default.html">Learn JavaScript</a>
+						<a href="../jquery/default.html">Learn JQuery</a>
+						<a href="../react/default.html">Learn React</a>
+						<a href="../angularjs/default.html">Learn AngularJS</a>
+						<a href="../json/default.html">Learn JSON</a>
+	                    <a href="../ajax/default.html">Learn AJAX</a>
+						<h3>Server Side</h3>
+						<a href="../sql/default.html">Learn SQL</a>
+	                    <a href="../php/default.html">Learn PHP</a>
+						<a href="../asp/default.html">Learn ASP</a>
+						<a href="../nodejs/default.html">Learn Node.JS</a>
+	                    <a href="../jsp/default.html">Learn JSP</a>
+					</div>
+					<div id="tutorialscolumnid" class="tutorialscolumn">
+	                    <h3>Programing</h3>
+						<a href="../java/default.html">Learn Java</a>
+						<a href="../c/default.html">Learn C</a>
+						<a href="../python/default.html">Learn Python</a>
+						<a href="../cpp/default.html">Learn C++</a>
+	                    <a href="../vb/default.html" title="Learn Visual Basic">Learn VB</a>
+						<a href="../vbnet/default.html" title="Visual Basic .NET">Learn VB .NET</a>
+	                    <a href="../c_sharp/default.html" title="Learn C#">Learn C Sharp</a>
+	                    <a href="../objective-c/default.html">Learn Objactive-C</a>
+	                    <a href="../ruby/default.html">Learn Ruby</a>
+						<a href="../assembly/default.html">Learn Assembly</a>
+	                </div>
+					<div id="tutorialscolumnid" class="tutorialscolumn">
+						<h3>XML</h3>
+						<a href="../xml/default.html">Learn XML</a>
+						<a href="../xml/xml_ajax/default.html">Learn XML AJAX</a>
+						<a href="../xml/xml_dom/default.html">Learn XML DOM</a>
+						<a href="../xml/xml_dtd/default.html">Learn XML DTD</a>
+						<a href="../xml/xml_schema/default.html">Learn XML Schema</a>
+                    	<a href="../xml/xslt/default.html">Learn XSLT</a>
+                    	<a href="../xml/xpath/default.html">Learn XPath</a>
+                    	<a href="../xml/xquery/default.html">Learn XQuery</a>
+                	</div>
+            	</div>    
+			</div>
+			<a class="search" title="Search RK"><i class="fa fa-search"></i><div class="border"></div></a>
+			<a class="translate" title="Translate RK"><i class="fa fa-globe"></i><div class="border"></div></a>
+			<a class="exercises" id="exercisesid" onclick="startexercises(), closetutorials(), closereferences()">EXERCISES
+				<i class="fa fa-caret-down" id="down4"></i>
+				<i class="fa fa-caret-up" id="up4"></i>
+				<div class="border"></div>
+			</a> 
+			<div id="exercisescontentid" class="exercisescontent">
+				<a href="javascript:void(0)" class="closeexercises" onclick=closeexercises()>&times;</a>
+				<div class="exercisesrow">
+					<div id="exercisescolumnid" class="exercisescolumn">
+						<h3>Exercises</h3>
+						<a href="../html/exercises.html">HTML Exercises</a>
+						<a href="../css/exercises.html">CSS Exercises</a>
+						<a href="../bs/exercises.html">BootStrap Exercises</a>
+						<a href="../js/exercises.html">JavaScript Exercises</a>
+						<a href="../jquery/exercises.html">JQuery Exercises</a>
+						<a href="../sql/exercises.html">SQL Exercises</a>
+						<a href="../php/exercises.html">PHP Exercises</a>
+					</div>
+					<div id="exercisescolumnid" class="exercisescolumn">
+						<h3>&nbsp;</h3>
+						<a href="../java/exercises.html">JAVA Exercises</a>
+						<a href="../c/exercises.html">C Exercises</a>
+						<a href="../python/exercises.html">Python Exercises</a>
+						<a href="../cpp/exercises.html">C++ Exercises</a>
+						<a href="../vb/exercises.html" title="Visual Basics Exercise">VB Exercises</a>
+						<a href="../vbnet/exercises.html" title="Visual Basics .NET Exercise">VB .NET Exercises</a>
+						<a href="../c_sharp/exercises.html" title="C# Exercise">C Sharp Exercises</a>
+						<a href="../xml/exercises.html">XML Exercises</a>
+					</div>
+					<div id="exercisescolumnid" class="exercisescolumn">
+						<h3>Quizzes</h3>
+						<a href="../html/quiz.html">HTML Quiz</a>
+						<a href="../css/quiz.html">CSS Quiz</a>
+						<a href="../bs/quiz.html">BootStrap Quiz</a>
+						<a href="../js/quiz.html">JavaScript Quiz</a>
+						<a href="../jquery/quiz.html">JQuery Quiz</a>
+						<a href="../sql/quiz.html">SQL Quiz</a>
+						<a href="../php/quiz.html">PHP Quiz</a>
+					</div>
+					<div id="exercisescolumnid" class="exercisescolumn">
+						<h3>&nbsp;</h3>
+						<a href="../java/quiz.html">JAVA Quiz</a>
+						<a href="../c/quiz.html">C Quiz</a>
+						<a href="../python/quiz.html">Python Quiz</a>
+						<a href="../cpp/quiz.html">C++ Quiz</a>
+						<a href="../vb/quiz.html" title="Visual Basics Quiz">VB Quiz</a>
+						<a href="../vbnet/quiz.html" title="Visual Basics .NET Quiz">VB .NET Quiz</a>
+						<a href="../c_sharp/quiz.html" title="C# Quiz">C Sharp Quiz</a>
+						<a href="../xml/quiz.html">XML Quiz</a>
+					</div>
+				</div>
+			</div>
+			<a class="references" id="referencesid" onclick="startreferences(), closetutorials(), closeexercises()">REFERENCES
+				<i class="fa fa-caret-down" id="down2"></i>
+				<i class="fa fa-caret-up" id="up2"></i>
+				<div class="border"></div>
+			</a>
+			<div id="referencescontentid" class="referencescontent">
+				<a href="javascript:void(0)" class="closereferences" onclick=closereferences()>&times;</a>
+            	<div class="referencesrow">
+                	<div id="referencescolumnid" class="referencescolumn">
+                    	<h3>HTML and CSS</h3>
+                    	<a href="../html/html_ref/default.html">HTML Tag Reference</a>
+                    	<a href="../css/css_ref/default.html">CSS Reference</a>
+                    	<a href="../bs/bs_ref/default.html">Bootstrap Reference</a>
+                    	<a href="../sass/sass_ref/default.html">Sass Reference</a>
+                    	<a href="../icons/icons_ref/default.html">Icon Reference</a>
+                    	<a href="../graphics/graphics_ref/default.html">Graphics Reference</a>
+                	</div>
+                	<div id="referencescolumnid" class="referencescolumn">
+						<h3>JavaScript</h3>
+                    	<a href="../js/js_ref/default.html">JavaScript Reference</a>
+                    	<a href="../js/js_ref/default.html">HTML DOM Reference</a>
+                    	<a href="../jquery/jquery_ref/default.html">JQuery Reference</a>
+                    	<a href="../angularjs/angularjs_ref/default.html">AngularJS Reference</a>
+                    	<h3>Server Side</h3>
+                    	<a href="../sql/sql_ref/default.html">SQL Reference</a>
+						<a href="../php/php_ref/default.html">PHP Reference</a>
+                    	<a href="../asp/asp_ref/default.html">ASP Reference</a>
+                	</div>
+                	<div id="referencescolumnid" class="referencescolumn">
+						<h3>JavaScript</h3>
+                    	<a href="../java/java_ref/default.html">Java Reference</a>
+                    	<a href="../../python/python_ref/default.html">Python Reference</a>
+                    	<h3>XML</h3>
+                    	<a href="../xml/xml_ref/default.html">XML Reference</a>
+                    	<a href="../xml/xml_schema/xml_schema_ref/default.html">XML Schema Reference</a>
+                    	<a href="../xml/xslt/xslt_ref/default.html">XSLT Reference</a>
+                	</div>
+					<div id="referencescolumnid" class="referencescolumn">
+						<h3>Character Sets</h3>
+						<a href="../character_sets/default.html">HTML Character Sets</a>
+						<a href="../character_sets/html_ascii.html">HTML ASCII</a>
+						<a href="../character_sets/html_ansi.html">HTML ANSI</a>
+						<a href="../character_sets/html_iso-8859-1.html">HTML ISO-8859-1</a>
+						<a href="../character_sets/html_symbols.html">HTML Symbols</a>
+						<a href="../character_sets/html_utf-8.html">HTML UTF-8</a>
+					</div>
+				</div>    
+			</div>
+        </nav>
+		<div class="leftnav" id="leftnavid">
+			<div class="leftnavcontent">
+				<h2>HTML Tutorial</h2>
+				<a target="_top" href="default.html">HTML Introduction</a>
+				<a target="_top" href="html_editors.html">HTML Editors</a>
+				<a target="_top" href="html_tags.html">HTML Tags</a>
+				<a target="_top" href="html_attributes.html" class="active">HTML Attributes</a>
+				<a target="_top" href="html_structure.html">HTML Structure</a>
+				<a target="_top" href="html_basic.html">HTML Basic</a>
+				<a target="_top" href="html_formatting.html">HTML Formatting</a>
+				<a target="_top" href="html_phrase_tags.html">HTML Phrase Tags</a>
+				<a target="_top" href="html_style_attribute.html">HTML Style Attribute</a>
+				<a target="_top" href="html_meta_tag.html">HTML Meta Tag</a>
+				<a target="_top" href="html_comments.html">HTML Comments</a>
+				<a target="_top" href="html_css.html">HTML CSS</a>
+				<a target="_top" href="html_links.html">HTML Links</a>
+				<a target="_top" href="html_file_paths.html">HTML Flie Paths</a>
+				<a target="_top" href="html_images.html">HTML Images</a>
+				<a target="_top" href="html_tables.html">HTML Tables</a>
+				<a target="_top" href="html_lists.html">HTML Lists</a>
+				<a target="_top" href="html_element_types.html">HTML Element types</a>
+				<a target="_top" href="html_frames.html">HTML Frames</a>
+				<a target="_top" href="html_iframes.html">HTML Iframes</a>
+				<a target="_top" href="html_colors.html">HTML Colors</a>
+				<a target="_top" href="html_fonts.html">HTML Fonts</a>
+				<a target="_top" href="html_classes.html">HTML Classes</a>
+				<a target="_top" href="html_id.html">HTML Id</a>
+				<a target="_top" href="html_javascript.html">HTML JavaScript</a>
+				<a target="_top" href="html_layout.html">HTML Layout</a>
+				<a target="_top" href="html_responsive.html">HTML Responsive</a>
+				<a target="_top" href="html_code_element.html">HTML Code Element</a>
+				<a target="_top" href="html_guide.html">HTML Guide</a>
+				<a target="_top" href="html_vs._xhtml.html">HTML vs. XHTML</a>
+				<h2>HTML Forms</h2>
+				<a target="_top" href="html_forms.html">HTML Forms</a>
+				<a target="_top" href="html_form_elements.html">HTML Form Elements</a>
+				<a target="_top" href="html_input_types.html">HTML Input Types</a>
+				<a target="_top" href="html_input_attributes.html">HTML Input Attributes</a>
+				<a target="_top" href="html_input_form_attributes.html" title="HTML Input Form Attributes">HTML Input Form Att..</a>
+				<h2>HTML Graphics</h2>
+				<a target="_top" href="html_canvas.html">HTML Canvas</a>
+				<a target="_top" href="html_svg.html">HTML SVG</a>
+				<h2>HTML Media</h2>
+				<a target="_top" href="html_media.html">HTML Media</a>
+				<a target="_top" href="html_video.html">HTML Video</a>
+				<a target="_top" href="html_audio.html">HTML Audio</a>
+				<a target="_top" href="html_plug-ins.html">HTML Plug-ins</a>
+				<a target="_top" href="html_youtube.html">HTML YouTube</a>
+				<h2>HTML APIs</h2>
+				<a target="_top" href="html_geolocation.html">HTML Geolocation</a>
+				<a target="_top" href="html_dragdrop.html">HTML Drag/Drop</a>
+				<a target="_top" href="html_web_storage.html">HTML Web Storage</a>
+				<a target="_top" href="html_web_workers.html">HTML Web Workers</a>
+				<a target="_top" href="html_sse.html">HTML SSE</a>
+				<h2>HTML Examples</h2>
+				<a target="_top" href="examples.html">HTML Examples</a>
+				<a target="_top" href="quiz.html">HTML Quiz</a>
+				<a target="_top" href="exercises.html">HTML Exercises</a>
+				<a target="_top" href="html_summary.html">HTML Summary</a>
+				<h2>HTML References</h2>
+				<a target="_top" href="html_ref/default.html">HTML Tags</a>
+				<a target="_top" href="html_ref/html_tags_by_category.html">Tags By Category</a>
+				<a target="_top" href="html_ref/html_attributes.html">HTML Attributes</a>
+				<a target="_top" href="html_ref/html_global_attributes.html" title="HTML Global Attributes">HTML Global Att..</a>
+				<a target="_top" href="html_ref/html_browser_support.html" title="HTML Browser Support">HTML Browser Supp..</a>
+				<a target="_top" href="html_ref/html_events.html">HTML Events</a>
+				<a target="_top" href="../colors/default.html">HTML Colors</a>
+				<a target="_top" href="html_ref/html_canvas.html">HTML Canvas</a>
+				<a target="_top" href="html_ref/html_audiovideo.html">HTML Audio/Videio</a>
+				<a target="_top" href="html_ref/html_doctypes.html">HTML Doctypes</a>
+				<a target="_top" href="../character_sets/default.html">HTML Character sets</a>
+				<a target="_top" href="html_ref/html_entities.html">HTML Entities</a>
+				<a target="_top" href="html_ref/html_symbols.html">HTML Symbols</a>
+				<a target="_top" href="html_ref/html_emojis.html">HTML Emojis</a>
+				<a target="_top" href="html_ref/html_url_encode.html">HTML URL Encode</a>
+				<a target="_top" href="html_ref/html_language_codes.html" title="HTML Language Codes">HTML Lang.. Codes</a>
+				<a target="_top" href="html_ref/html_country_codes.html">HTML Country Codes</a>
+				<a target="_top" href="html_ref/http_messages.html">HTTP Masseges</a>
+				<a target="_top" href="html_ref/http_methods.html">HTTP Methods</a>
+				<a target="_top" href="html_ref/keyboard_shortcuts.html">Keybord Shortcuts</a>
+				<br><br>
+			</div>
+		</div>
+		<div class="main">
+			<div class="maincontent">
+				<div class="tutorial">
+					<h1 id="what_is_html_attribute" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">HTML Attributes</h1>
+					<hr data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<div class="buttons">
+						<div class="Previous" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+							<a class="text" href="html_tags.html" title="HTML Tags">
+								<span>
+									<svg width="30px" height="40px" viewBox="0 0 66 43">
+										<g>
+											<path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 			24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+										</g>
+									</svg>
+								</span> 
+								<span>Previous</span>
+							</a>
+						</div>
+						<div class="next" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+							<a class="text" href="html_structure.html" title="HTML Structure">
+								<span>Next</span>
+								<span>
+									<svg width="30px" height="40px" viewBox="0 0 66 43">
+										<g>
+											<path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+										</g>
+									</svg>
+								</span> 
+							</a>
+						</div>
+					</div>
+					<hr data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">What is HTML Attribute?</h2>
+					<ul data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<li>All elements can have attributes. And every attributes containes additional pieces of information about tags.</li>
+						<li>We can also say that attributes are the spesial words that can modifie the elements.</li>
+						<li>An attribute used to define the characteristics of an HTML element.</li>
+						<li>Attribute should always be specified in start tag of HTML Element.</li> 
+						<li>All attributes are made up of two parts − </li>
+						<ol>
+							<li>Attribute Name</li>
+							<li>Attribute Value</li>
+						</ol>
+					</ul>
+					<h3 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">Syntax:</h3>
+					<div class="syntax" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<span class="code">
+							<span class="tag">&lt;tag name <span class="attribute">attribute_name</span><span class="operators">=</span><span class="attributevalue">"attribute_value"</span>&gt;</span>
+							<span class="text">Some Content</span>
+							<span class="tag">&lt;/tag name&gt;</span>
+						</span>
+					</div>
+					<div class="example" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<h3>Example</h3>
+						<span class="code">
+							<span class="tag">&lt;h1 <span class="attribute">style</span><span class="operators">=</span><span class="attributevalue">"color: blueviolet"</span>&gt;</span>
+							<span class="text">This is heading with blueviolet text color.</span>
+							<span class="tag">&lt;/h1&gt;</span><br>
+							<span class="tag">&lt;p <span class="attribute">style</span><span class="operators">=</span><span class="attributevalue">"background-color: blue"</span>&gt;</span>
+							<span class="text">This is paragraph with blue background.</span>
+							<span class="tag">&lt;/p&gt;</span>
+						</span>
+						<a class="output output" id="outputid" onclick="openoutput()">Output
+							<i class="fa fa-caret-down"></i>
+							<i class="fa fa-caret-up"></i>
+						</a>
+						<div class="next">
+							<a class="text" target="_blank" href="../rk_editor/html/html_attributes/attribute.html">
+								<span>RK Editor</span>
+								<span>
+									<svg width="30px" height="40px" viewBox="0 0 66 43">
+										<g>
+											<path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+										</g>
+									</svg>
+								</span> 
+							</a>
+						</div>
+					</div>
+					<h3 class="examploutputheading examploutputheading" id="examploutputheadingid">Output :</h3>
+					<div class="examploutput examploutput" id="examploutputid">
+						<h1 style="color: blueviolet"> This is heading with blueviolet text color. </h1>
+						<p style="background-color: blue"> This is paragraph with blue background. </p>
+					</div>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">The style attribute is used to add styles to an element, such as text color, background color, text alignment, text size and more.</p>
+					<div id="boolean_attributes" class="note" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<svg viewBox="0 0 24 24">
+							<g>
+								<path d="m13.5 24h-3c-.7 0-1.5-.6-1.5-1.8v-2.1c0-1-.5-1.9-1.3-2.6-1.8-1.4-2.7-3.4-2.7-5.6.1-3.8 3.2-6.8 6.9-6.9 1.9 0 3.7.7 5 2s2.1 3.1 2.1 5c0 2.1-.9 4.1-2.6 5.4-.9.7-1.4 1.8-1.4 2.8v2.3c0 .8-.7 1.5-1.5 1.5zm-1.5-18c-3.2 0-5.9 2.7-6 5.9 0 1.9.8 3.7 2.3 4.8 1.1.9 1.7 2.1 1.7 3.4v2.1c0 .2 0 .8.5.8h3c.3 0 .5-.2.5-.5v-2.3c0-1.3.7-2.7 1.8-3.6 1.4-1.1 2.2-2.8 2.2-4.6 0-1.6-.6-3.1-1.8-4.3-1.1-1.1-2.6-1.7-4.2-1.7z"/>
+							</g>
+							<g>
+								<path d="m14.5 21h-5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h5c.3 0 .5.2.5.5s-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m12 3c-.3 0-.5-.2-.5-.5v-2c0-.3.2-.5.5-.5s.5.2.5.5v2c0 .3-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m18.7 5.8c-.1 0-.3 0-.4-.1-.2-.2-.2-.5 0-.7l1.4-1.4c.2-.2.5-.2.7 0s.2.5 0 .7l-1.4 1.4s-.2.1-.3.1z"/>
+							</g>
+							<g>
+								<path d="m23.5 12.5h-2c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h2c.3 0 .5.2.5.5s-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m20.1 20.6c-.1 0-.3 0-.4-.1l-1.4-1.4c-.2-.2-.2-.5 0-.7s.5-.2.7 0l1.4 1.4c.2.2.2.5 0 .7 0 .1-.1.1-.3.1z"/>
+							</g>
+							<g>
+								<path d="m3.9 20.6c-.1 0-.3 0-.4-.1-.2-.2-.2-.5 0-.7l1.4-1.4c.2-.2.5-.2.7 0s.2.5 0 .7l-1.4 1.4c-.1.1-.2.1-.3.1z"/>
+							</g>
+							<g>
+								<path d="m2.5 12.5h-2c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h2c.3 0 .5.2.5.5s-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m5.3 5.8c-.1 0-.3 0-.4-.1l-1.4-1.5c-.2-.2-.2-.5 0-.7s.5-.2.7 0l1.4 1.4c.2.2.2.5 0 .7-.1.1-.2.2-.3.2z"/>
+							</g>
+							<g>
+								<path d="m16 12.5c-.3 0-.5-.2-.5-.5 0-1.9-1.6-3.5-3.5-3.5-.3 0-.5-.2-.5-.5s.2-.5.5-.5c2.5 0 4.5 2 4.5 4.5 0 .3-.2.5-.5.5z"/>
+							</g>
+						</svg>
+						<p><strong>Tip :</strong> You can learn much more about styles in our <a href="html_style_attribute.html">HTML Style Attribute</a> chapter.</p>
+					</div>
+					<hr data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">Boolean Attributes</h2>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">There are several attributes in HTML5 that are consists of just name or its value must either be the empty string or a value that is an ASCII case-insensitive match for the attribute's canonical name, with no whitespace. Such attributes are called Boolean attributes.</p>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">The presence of a boolean attribute on an element represents the true value, and the absence of the attribute represents the false value.</p>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">The values "true" and "false" are not allowed on boolean attributes. To represent a false value, the attribute has to be omitted altogether.</p>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">This means that <span class="tag">&lt;div hidden="true"&gt;</span> is not allowed in HTML5.<br>Correct would be either <span class="tag">&lt;div hidden&gt;</span> or <span class="tag">&lt;div hidden=""&gt;</span> or <span class="tag">&lt;div hidden="hidden"&gt;</span> or case-insensitive and single quotes/unquoted variations of any of them.</p>
+					<div id="guide_lines_for_attributes" class="syntax" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<span class="code">
+							<span class="comment">&lt;!--Attribute with just name--&gt;</span><br>
+							<span class="tag">&lt;div <span class="attribute">hidden</span>&gt;</span>This is valid HTML but invalid XML.<span class="tag">&lt;/div&gt;</span><br>
+							<span class="comment">&lt;!--Attribute value as empty string--&gt;</span><br>
+							<span class="tag">&lt;div <span class="attribute">hidden</span><span class="operators">=</span><span class="attributevalue">""</span>&gt;</span>This is valid HTML and also valid XML.<span class="tag">&lt;/div&gt;</span><br>
+							<span class="comment">&lt;!--Attribute value that is an ASCII case-insensitive match for the attribute's canonical name--&gt;</span><br>
+							<span class="tag">&lt;div <span class="attribute">hidden</span><span class="operators">=</span><span class="attributevalue">"hidden"</span>&gt;</span>This is also valid HTML and XML<span class="tag">&lt;/div&gt;</span><br>
+							<span class="tag">&lt;div <span class="attribute">hidden</span><span class="operators">=</span><span class="attributevalue">hidden</span>&gt;</span>This is also valid HTML but invalid XML.<span class="tag">&lt;/div&gt;</span>
+						</span>
+					</div>
+					<hr data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">Guide lines for Attributes</h2>
+					<h3 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">1. Always use lowercase attributes</h3>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">HTML Attributes are not case sensitive. Means all attributes can be written with lowercase or uppercase like <span class="attribute">href</span> or <span class="attribute">HREF</span>.</p>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">However, <abbr title="World Wide Web Consortium">W3C</abbr> recommended to use lowercase attributes in HTML. And for stricter document types like XHTML lowercase attributes are strickly demanded.</p>
+					<h3 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">2. Always Quote Attribute Values</h3>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">According to the HTML standard attribute values does not require quotes around it. </p>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">However, <abbr title="World Wide Web Consortium">W3C</abbr> recommended that always quote attribute values. And for stricter document types like XHTML quote attribute values are always required.</p>
+					<div class="syntax" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<h3>Good:</h3>
+						<span class="code">
+							<span class="tag">&lt;p <span class="attribute">title</span><span class="operators">=</span><span class="attributevalue">"RK Fundamentals"</span>&gt;</span>At RK Fundamentals we always use quotes around attribute values.<span class="tag">&lt;/p&gt;</span>
+						</span>
+					</div>
+					<div class="syntax" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<h3>Bad:</h3>
+						<span class="code">
+							<span class="tag">&lt;p <span class="attribute">title</span><span class="operators">=</span><span class="attributevalue">RK Fundamentals</span>&gt;</span>This example will not display the title attribute correctly, because it contains a space.<span class="tag">&lt;/p&gt;</span>
+						</span>
+					</div>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">Double quotes around attribute values are the most common in HTML, but some people might use single quotes in HTML. So use of single quotes with HTML attribute, is also allowed.</p>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:</p>
+					<div class="syntax" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<span class="code">
+							<span class="tag">&lt;p <span class="attribute">title</span><span class="operators">=</span><span class="attributevalue">"This is 'Paragraph' tag"</span>&gt;</span><span class="tag">&lt;/p&gt;</span>
+						</span>
+					</div>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">Or vice versa:</p>
+					<div id="href_attribute" class="syntax" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<span class="code">
+							<span class="tag">&lt;p <span class="attribute">title</span><span class="operators">=</span><span class="attributevalue">'This is "Paragraph" tag'</span>&gt;</span><span class="tag">&lt;/p&gt;</span>
+						</span>
+					</div>
+					<hr data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<p data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">following are some of the most commonly used Attributes in HTML:</p>
+					<hr data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">1. href Attribute</h2>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">The <span class="attribute">href</span> refers to hypertext reference. The anchor (<span class="tag">&lt;a&gt;</span>) tag defines a hyperlink. The <span class="attribute">href</span> attribute is the main attribute of anchor (<span class="tag">&lt;a&gt;</span>) tag. It defines <abbr title="Uniform Resource Locator">URL</abbr> of the destination file. It provides the hyperlink, and if it is blank, then it will remain in same page.</p>
+					<div class="example" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<h3>Example</h3>
+						<span class="code">
+							<span class="tag">&lt;a <span class="attribute">href</span><span class="operators">=</span><span class="attributevalue">"html_links.html"</span>&gt;</span>
+							<span class="text">visit HTML Links for information about anchor tag.</span>
+							<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;br&gt;</span><br>
+							<span class="tag">&lt;a <span class="attribute">href</span><span class="operators">=</span><span class="attributevalue">""</span>&gt;</span>
+							<span class="text">link with on value.</span>
+							<span class="tag">&lt;/a&gt;</span>
+						</span>
+						<a class="output output2" id="output2id" onclick="openoutput2()">Output
+							<i class="fa fa-caret-down"></i>
+							<i class="fa fa-caret-up"></i>
+						</a>
+						<div class="next">
+							<a class="text" target="_blank" href="../rk_editor/html/html_attributes/href_attribute.html">
+								<span>RK Editor</span>
+								<span>
+									<svg width="30px" height="40px" viewBox="0 0 66 43">
+										<g>
+											<path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+										</g>
+									</svg>
+								</span> 
+							</a>
+						</div>
+					</div>
+					<h3 class="examploutputheading examploutputheading2" id="examploutputheading2id">Output :</h3>
+					<div class="examploutput examploutput2" id="examploutput2id">
+						<a href="html_links.html"> visit HTML Links for information about anchor tag. </a><br>
+						<a href=""> link with on value. </a>
+					</div>
+					<div id="src_and_alt_attributes" class="note" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<svg viewBox="0 0 24 24">
+							<g>
+								<path d="m13.5 24h-3c-.7 0-1.5-.6-1.5-1.8v-2.1c0-1-.5-1.9-1.3-2.6-1.8-1.4-2.7-3.4-2.7-5.6.1-3.8 3.2-6.8 6.9-6.9 1.9 0 3.7.7 5 2s2.1 3.1 2.1 5c0 2.1-.9 4.1-2.6 5.4-.9.7-1.4 1.8-1.4 2.8v2.3c0 .8-.7 1.5-1.5 1.5zm-1.5-18c-3.2 0-5.9 2.7-6 5.9 0 1.9.8 3.7 2.3 4.8 1.1.9 1.7 2.1 1.7 3.4v2.1c0 .2 0 .8.5.8h3c.3 0 .5-.2.5-.5v-2.3c0-1.3.7-2.7 1.8-3.6 1.4-1.1 2.2-2.8 2.2-4.6 0-1.6-.6-3.1-1.8-4.3-1.1-1.1-2.6-1.7-4.2-1.7z"/>
+							</g>
+							<g>
+								<path d="m14.5 21h-5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h5c.3 0 .5.2.5.5s-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m12 3c-.3 0-.5-.2-.5-.5v-2c0-.3.2-.5.5-.5s.5.2.5.5v2c0 .3-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m18.7 5.8c-.1 0-.3 0-.4-.1-.2-.2-.2-.5 0-.7l1.4-1.4c.2-.2.5-.2.7 0s.2.5 0 .7l-1.4 1.4s-.2.1-.3.1z"/>
+							</g>
+							<g>
+								<path d="m23.5 12.5h-2c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h2c.3 0 .5.2.5.5s-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m20.1 20.6c-.1 0-.3 0-.4-.1l-1.4-1.4c-.2-.2-.2-.5 0-.7s.5-.2.7 0l1.4 1.4c.2.2.2.5 0 .7 0 .1-.1.1-.3.1z"/>
+							</g>
+							<g>
+								<path d="m3.9 20.6c-.1 0-.3 0-.4-.1-.2-.2-.2-.5 0-.7l1.4-1.4c.2-.2.5-.2.7 0s.2.5 0 .7l-1.4 1.4c-.1.1-.2.1-.3.1z"/>
+							</g>
+							<g>
+								<path d="m2.5 12.5h-2c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h2c.3 0 .5.2.5.5s-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m5.3 5.8c-.1 0-.3 0-.4-.1l-1.4-1.5c-.2-.2-.2-.5 0-.7s.5-.2.7 0l1.4 1.4c.2.2.2.5 0 .7-.1.1-.2.2-.3.2z"/>
+							</g>
+							<g>
+								<path d="m16 12.5c-.3 0-.5-.2-.5-.5 0-1.9-1.6-3.5-3.5-3.5-.3 0-.5-.2-.5-.5s.2-.5.5-.5c2.5 0 4.5 2 4.5 4.5 0 .3-.2.5-.5.5z"/>
+							</g>
+						</svg>
+						<p><strong>Tip :</strong> You can learn much more about anchor tag and it's attribute in our <a href="html_links.html">HTML Links</a> chapter.</p>
+					</div>
+					<hr data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">2. src and alt Attributes</h2>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">The <span class="tag">&lt;img&gt;</span> tag's purpose is to includ an graphical image in the body of the web page. Generally <span class="attribute">src</span> and <span class="attribute">alt</span> attributes are always used with image (<span class="tag">&lt;img&gt;</span>) tag.</p>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out"><span class="attribute">src</span> attribute includes appropriate path of image file. If any browser doesn't support image formate or unable to find it then the alternative text cotained inside <span class="attribute">alt</span> attribute is displayed insted of the image.</p>
+					<div class="example" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<h3>Example</h3>
+						<span class="code">
+							<span class="tag">&lt;img <span class="attribute">src</span><span class="operators">=</span><span class="attributevalue">"demo.jpg"</span> <span class="attribute">alt</span><span class="operators">=</span><span class="attributevalue">"HTML 5 logo"</span>&gt;</span><br>
+							<span class="tag">&lt;img <span class="attribute">src</span><span class="operators">=</span><span class="attributevalue">"demo1.jpg"</span> <span class="attribute">alt</span><span class="operators">=</span><span class="attributevalue">"HTML 5 logo"</span>&gt;</span>
+						</span>
+						<a class="output output3" id="output3id" onclick="openoutput3()">Output
+							<i class="fa fa-caret-down"></i>
+							<i class="fa fa-caret-up"></i>
+						</a>
+						<div class="next">
+							<a class="text" target="_blank" href="../rk_editor/html/html_attributes/src_alt_attributes.html">
+								<span>RK Editor</span>
+								<span>
+									<svg width="30px" height="40px" viewBox="0 0 66 43">
+										<g>
+											<path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+										</g>
+									</svg>
+								</span> 
+							</a>
+						</div>
+					</div>
+					<h3 class="examploutputheading examploutputheading3" id="examploutputheading3id">Output :</h3>
+					<div class="examploutput examploutput3" id="examploutput3id">
+						<img src="../rk_editor/html/html_attributes/demo.JPG" alt="HTML 5 logo">
+						<img src="../rk_editor/html/html_attributes/demo1.JPG" alt="HTML 5 logo">
+					</div>
+					<div id="widht_and_height_attributes" class="note" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<svg viewBox="0 0 24 24">
+							<g>
+								<path d="m13.5 24h-3c-.7 0-1.5-.6-1.5-1.8v-2.1c0-1-.5-1.9-1.3-2.6-1.8-1.4-2.7-3.4-2.7-5.6.1-3.8 3.2-6.8 6.9-6.9 1.9 0 3.7.7 5 2s2.1 3.1 2.1 5c0 2.1-.9 4.1-2.6 5.4-.9.7-1.4 1.8-1.4 2.8v2.3c0 .8-.7 1.5-1.5 1.5zm-1.5-18c-3.2 0-5.9 2.7-6 5.9 0 1.9.8 3.7 2.3 4.8 1.1.9 1.7 2.1 1.7 3.4v2.1c0 .2 0 .8.5.8h3c.3 0 .5-.2.5-.5v-2.3c0-1.3.7-2.7 1.8-3.6 1.4-1.1 2.2-2.8 2.2-4.6 0-1.6-.6-3.1-1.8-4.3-1.1-1.1-2.6-1.7-4.2-1.7z"/>
+							</g>
+							<g>
+								<path d="m14.5 21h-5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h5c.3 0 .5.2.5.5s-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m12 3c-.3 0-.5-.2-.5-.5v-2c0-.3.2-.5.5-.5s.5.2.5.5v2c0 .3-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m18.7 5.8c-.1 0-.3 0-.4-.1-.2-.2-.2-.5 0-.7l1.4-1.4c.2-.2.5-.2.7 0s.2.5 0 .7l-1.4 1.4s-.2.1-.3.1z"/>
+							</g>
+							<g>
+								<path d="m23.5 12.5h-2c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h2c.3 0 .5.2.5.5s-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m20.1 20.6c-.1 0-.3 0-.4-.1l-1.4-1.4c-.2-.2-.2-.5 0-.7s.5-.2.7 0l1.4 1.4c.2.2.2.5 0 .7 0 .1-.1.1-.3.1z"/>
+							</g>
+							<g>
+								<path d="m3.9 20.6c-.1 0-.3 0-.4-.1-.2-.2-.2-.5 0-.7l1.4-1.4c.2-.2.5-.2.7 0s.2.5 0 .7l-1.4 1.4c-.1.1-.2.1-.3.1z"/>
+							</g>
+							<g>
+								<path d="m2.5 12.5h-2c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h2c.3 0 .5.2.5.5s-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m5.3 5.8c-.1 0-.3 0-.4-.1l-1.4-1.5c-.2-.2-.2-.5 0-.7s.5-.2.7 0l1.4 1.4c.2.2.2.5 0 .7-.1.1-.2.2-.3.2z"/>
+							</g>
+							<g>
+								<path d="m16 12.5c-.3 0-.5-.2-.5-.5 0-1.9-1.6-3.5-3.5-3.5-.3 0-.5-.2-.5-.5s.2-.5.5-.5c2.5 0 4.5 2 4.5 4.5 0 .3-.2.5-.5.5z"/>
+							</g>
+						</svg>
+						<p><strong>Tip :</strong> You can learn much more about image tag and it's attribute in our <a href="html_images.html">HTML Images</a> chapter.</p>
+					</div>
+					<hr data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">3. widht and height Attributes</h2>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">The <span class="tag">&lt;img&gt;</span> tag should also contain the <span class="attribute">widht</span> and <span class="attribute">height</span> attributes. This attributes are used to specifie the width and height of an image(or any other tag). Values of this attributes are numericals of pixals(px), or a percentage(%) of the page or parent element. Default values of this attributes are in pixals(px).</p>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">If values are in percentage(%) then one of them is considered as percentage value(by defalt width) and other as auto. but this doesn't done with pixal(px) values.</p>
+					<div class="example" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<h3>Example</h3>
+						<span class="code">
+							<span class="tag">&lt;img <span class="attribute">src</span><span class="operators">=</span><span class="attributevalue">"demo.jpg"</span> <span class="attribute">width</span><span class="operators">=</span><span class="attributevalue">"100"</span> <span class="attribute">height</span><span class="operators">=</span><span class="attributevalue">"100"</span>&gt;</span><br>
+							<span class="tag">&lt;img <span class="attribute">src</span><span class="operators">=</span><span class="attributevalue">"demo.jpg"</span> <span class="attribute">width</span><span class="operators">=</span><span class="attributevalue">"100"</span> <span class="attribute">height</span><span class="operators">=</span><span class="attributevalue">"200"</span>&gt;</span><br>
+							<span class="tag">&lt;img <span class="attribute">src</span><span class="operators">=</span><span class="attributevalue">"demo.jpg"</span> <span class="attribute">width</span><span class="operators">=</span><span class="attributevalue">"20%"</span> <span class="attribute">height</span><span class="operators">=</span><span class="attributevalue">"20%"</span>&gt;</span><br>
+							<span class="tag">&lt;img <span class="attribute">src</span><span class="operators">=</span><span class="attributevalue">"demo.jpg"</span> <span class="attribute">width</span><span class="operators">=</span><span class="attributevalue">"20%"</span> <span class="attribute">height</span><span class="operators">=</span><span class="attributevalue">"50%"</span>&gt;</span><br>
+						</span>
+						<a class="output output4" id="output4id" onclick="openoutput4()">Output
+							<i class="fa fa-caret-down"></i>
+							<i class="fa fa-caret-up"></i>
+						</a>
+						<div class="next">
+							<a class="text" target="_blank" href="../rk_editor/html/html_attributes/width_height_attributes.html">
+								<span>RK Editor</span>
+								<span>
+									<svg width="30px" height="40px" viewBox="0 0 66 43">
+										<g>
+											<path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+										</g>
+									</svg>
+								</span> 
+							</a>
+						</div>
+					</div>
+					<h3 class="examploutputheading examploutputheading4" id="examploutputheading4id">Output :</h3>
+					<div class="examploutput examploutput4" id="examploutput4id">
+						<img src="../rk_editor/html/html_attributes/demo.jpg" width="100" height="100">
+						<img src="../rk_editor/html/html_attributes/demo.jpg" width="100" height="200">
+						<img src="../rk_editor/html/html_attributes/demo.jpg" width="20%" height="20%">
+						<img src="../rk_editor/html/html_attributes/demo.jpg" width="20%" height="50%">
+					</div>
+					<p id="title_attribute" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">If you change the percentage value of height in above example then there in no change occures because it is consided as auto and This is occures to maintain the shape of your content(here image). but if you change the pixal value then it changes the shape of image according to the values.</p>
+					<hr data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">4. title Attribute</h2>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">The <span class="attribute">title</span> attribute gives some additional information about element or it's content. The value of <span class="attribute">title</span> attribute is displayed as tooltip when cursor comes over the element.</p>
+					<div class="example" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<h3>Example</h3>
+						<span class="code">
+							<span class="tag">&lt;h1 <span class="attribute">title</span><span class="operators">=</span><span class="attributevalue">"Heading with title attribute."</span>&gt;</span>Move the cursor over this text to see the value of title attribute as a tooltip.<span class="tag">&lt;/h1&gt;</span><br>
+							<span class="tag">&lt;p <span class="attribute">title</span><span class="operators">=</span><span class="attributevalue">"Paragraph with title attribute."</span>&gt;</span>Move the cursor over this text to see the value of title attribute as a tooltip.<span class="tag">&lt;/p&gt;</span>
+						</span>
+						<a class="output output5" id="output5id" onclick="openoutput5()">Output
+							<i class="fa fa-caret-down"></i>
+							<i class="fa fa-caret-up"></i>
+						</a>
+						<div id="id_attribute" class="next">
+							<a class="text" target="_blank" href="../rk_editor/html/html_attributes/title_attribute.html">
+								<span>RK Editor</span>
+								<span>
+									<svg width="30px" height="40px" viewBox="0 0 66 43">
+										<g>
+											<path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+										</g>
+									</svg>
+								</span> 
+							</a>
+						</div>
+					</div>
+					<h3 class="examploutputheading examploutputheading5" id="examploutputheading5id">Output :</h3>
+					<div class="examploutput examploutput5" id="examploutput5id">
+						<h1 title="Heading with title attribute.">Move the cursor over this text to see the value of title attribute as a tooltip.</h1>
+						<p title="Paragraph with title attribute.">Move the cursor over this text to see the value of title attribute as a tooltip.</p>
+					</div>
+					<hr data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">5. id Attribute</h2>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">The <span class="attribute">id</span> attribute is used to give an unique identification to an element within a web page. The <span class="attribute">id</span> attribute of an element must be unique within a web page. No two elements have the same <span class="attribute">id</span> and each element can have only one <span class="attribute">id</span>. You can use the <span class="attribute">id</span> attribute to distinguish between elements that have the same name.</p>
+					<div class="example" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<h3>Example</h3>
+						<span class="code">
+							<span class="tag">&lt;h1 <span class="attribute">id</span><span class="operators">=</span><span class="attributevalue">"heading"</span>&gt;</span>RK Fundamentals.<span class="tag">&lt;/h1&gt;</span><br>
+							<span class="tag">&lt;p <span class="attribute">id</span><span class="operators">=</span><span class="attributevalue">"info"</span>&gt;</span>Let's learn HTML with RK Fundamentals<span class="tag">&lt;/p&gt;</span><br>
+						</span>
+						<a class="output output6" id="output6id" onclick="openoutput6()">Output
+							<i class="fa fa-caret-down"></i>
+							<i class="fa fa-caret-up"></i>
+						</a>
+						<div class="next">
+							<a class="text" target="_blank" href="../rk_editor/html/html_attributes/id_attribute.html">
+								<span>RK Editor</span>
+								<span>
+									<svg width="30px" height="40px" viewBox="0 0 66 43">
+										<g>
+											<path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+										</g>
+									</svg>
+								</span> 
+							</a>
+						</div>
+					</div>
+					<h3 class="examploutputheading examploutputheading6" id="examploutputheading6id">Output :</h3>
+					<div class="examploutput examploutput6" id="examploutput6id">
+						<h1 id="heading">RK Fundamentals.</h1>
+						<p id="info">Let's learn HTML with RK Fundamentals</p>
+					</div>
+					<div id="class_attribute" class="note" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<svg viewBox="0 0 24 24">
+							<g>
+								<path d="m13.5 24h-3c-.7 0-1.5-.6-1.5-1.8v-2.1c0-1-.5-1.9-1.3-2.6-1.8-1.4-2.7-3.4-2.7-5.6.1-3.8 3.2-6.8 6.9-6.9 1.9 0 3.7.7 5 2s2.1 3.1 2.1 5c0 2.1-.9 4.1-2.6 5.4-.9.7-1.4 1.8-1.4 2.8v2.3c0 .8-.7 1.5-1.5 1.5zm-1.5-18c-3.2 0-5.9 2.7-6 5.9 0 1.9.8 3.7 2.3 4.8 1.1.9 1.7 2.1 1.7 3.4v2.1c0 .2 0 .8.5.8h3c.3 0 .5-.2.5-.5v-2.3c0-1.3.7-2.7 1.8-3.6 1.4-1.1 2.2-2.8 2.2-4.6 0-1.6-.6-3.1-1.8-4.3-1.1-1.1-2.6-1.7-4.2-1.7z"/>
+							</g>
+							<g>
+								<path d="m14.5 21h-5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h5c.3 0 .5.2.5.5s-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m12 3c-.3 0-.5-.2-.5-.5v-2c0-.3.2-.5.5-.5s.5.2.5.5v2c0 .3-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m18.7 5.8c-.1 0-.3 0-.4-.1-.2-.2-.2-.5 0-.7l1.4-1.4c.2-.2.5-.2.7 0s.2.5 0 .7l-1.4 1.4s-.2.1-.3.1z"/>
+							</g>
+							<g>
+								<path d="m23.5 12.5h-2c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h2c.3 0 .5.2.5.5s-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m20.1 20.6c-.1 0-.3 0-.4-.1l-1.4-1.4c-.2-.2-.2-.5 0-.7s.5-.2.7 0l1.4 1.4c.2.2.2.5 0 .7 0 .1-.1.1-.3.1z"/>
+							</g>
+							<g>
+								<path d="m3.9 20.6c-.1 0-.3 0-.4-.1-.2-.2-.2-.5 0-.7l1.4-1.4c.2-.2.5-.2.7 0s.2.5 0 .7l-1.4 1.4c-.1.1-.2.1-.3.1z"/>
+							</g>
+							<g>
+								<path d="m2.5 12.5h-2c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h2c.3 0 .5.2.5.5s-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m5.3 5.8c-.1 0-.3 0-.4-.1l-1.4-1.5c-.2-.2-.2-.5 0-.7s.5-.2.7 0l1.4 1.4c.2.2.2.5 0 .7-.1.1-.2.2-.3.2z"/>
+							</g>
+							<g>
+								<path d="m16 12.5c-.3 0-.5-.2-.5-.5 0-1.9-1.6-3.5-3.5-3.5-.3 0-.5-.2-.5-.5s.2-.5.5-.5c2.5 0 4.5 2 4.5 4.5 0 .3-.2.5-.5.5z"/>
+							</g>
+						</svg>
+						<p><strong>Tip :</strong> You can learn more about <span class="attribute">id</span> attribute in our <a href="html_id.html">HTML Id</a> chapter.</p>
+					</div>
+					<hr data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">6. class Attribute</h2>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">The <span class="attribute">class</span> attribute specifies the class of element. Like <span class="attribute">id</span> attribute, the <span class="attribute">class</span> attribute is also used to identify elements. But the <span class="attribute">class</span> attribute does not have to be unique in the web page like <span class="attribute">id</span> attribute. This means you can apply same <span class="attribute">class</span> to multiple elements. Also you can apply multiple classes to single element.</p>
+					<h3 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">Syntax for applying multiple classes to single element:</h3>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">When you have to apply multiple classes to single element then the value of the attribute is written in space-separated list of class names.</p>
+					<div class="syntax" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<span class="code">
+							<span class="tag">&lt;tag name <span class="attribute">class</span><span class="operators">=</span><span class="attributevalue">" classname1 classname2 classname3 ..."</span>&gt;</span><span class="tag">&lt;/tag name&gt;</span>
+						</span>
+					</div>
+					<div class="example" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<h3>Example</h3>
+						<span class="code">
+							<span class="tag">&lt;div <span class="attribute">class</span><span class="operators">=</span><span class="attributevalue">"header block"</span>&gt;</span>RK Fundamentals.<span class="tag">&lt;/div&gt;</span><br>
+							<span class="tag">&lt;p <span class="attribute">class</span><span class="operators">=</span><span class="attributevalue">"block"</span>&gt;</span>Let's learn HTML with RK Fundamentals<span class="tag">&lt;/p&gt;</span><br>
+						</span>
+						<a class="output output7" id="output7id" onclick="openoutput7()">Output
+							<i class="fa fa-caret-down"></i>
+							<i class="fa fa-caret-up"></i>
+						</a>
+						<div id="lang_attribute" class="next">
+							<a class="text" target="_blank" href="../rk_editor/html/html_attributes/class_attribute.html">
+								<span>RK Editor</span>
+								<span>
+									<svg width="30px" height="40px" viewBox="0 0 66 43">
+										<g>
+											<path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+										</g>
+									</svg>
+								</span> 
+							</a>
+						</div>
+					</div>
+					<h3 class="examploutputheading examploutputheading7" id="examploutputheading7id">Output :</h3>
+					<div class="examploutput examploutput7" id="examploutput7id">
+						<div class="header block">RK Fundamentals.</div>
+						<p class="block">Let's learn HTML with RK Fundamentals</p>
+					</div>
+					<div class="note" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<svg viewBox="0 0 24 24">
+							<g>
+								<path d="m13.5 24h-3c-.7 0-1.5-.6-1.5-1.8v-2.1c0-1-.5-1.9-1.3-2.6-1.8-1.4-2.7-3.4-2.7-5.6.1-3.8 3.2-6.8 6.9-6.9 1.9 0 3.7.7 5 2s2.1 3.1 2.1 5c0 2.1-.9 4.1-2.6 5.4-.9.7-1.4 1.8-1.4 2.8v2.3c0 .8-.7 1.5-1.5 1.5zm-1.5-18c-3.2 0-5.9 2.7-6 5.9 0 1.9.8 3.7 2.3 4.8 1.1.9 1.7 2.1 1.7 3.4v2.1c0 .2 0 .8.5.8h3c.3 0 .5-.2.5-.5v-2.3c0-1.3.7-2.7 1.8-3.6 1.4-1.1 2.2-2.8 2.2-4.6 0-1.6-.6-3.1-1.8-4.3-1.1-1.1-2.6-1.7-4.2-1.7z"/>
+							</g>
+							<g>
+								<path d="m14.5 21h-5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h5c.3 0 .5.2.5.5s-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m12 3c-.3 0-.5-.2-.5-.5v-2c0-.3.2-.5.5-.5s.5.2.5.5v2c0 .3-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m18.7 5.8c-.1 0-.3 0-.4-.1-.2-.2-.2-.5 0-.7l1.4-1.4c.2-.2.5-.2.7 0s.2.5 0 .7l-1.4 1.4s-.2.1-.3.1z"/>
+							</g>
+							<g>
+								<path d="m23.5 12.5h-2c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h2c.3 0 .5.2.5.5s-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m20.1 20.6c-.1 0-.3 0-.4-.1l-1.4-1.4c-.2-.2-.2-.5 0-.7s.5-.2.7 0l1.4 1.4c.2.2.2.5 0 .7 0 .1-.1.1-.3.1z"/>
+							</g>
+							<g>
+								<path d="m3.9 20.6c-.1 0-.3 0-.4-.1-.2-.2-.2-.5 0-.7l1.4-1.4c.2-.2.5-.2.7 0s.2.5 0 .7l-1.4 1.4c-.1.1-.2.1-.3.1z"/>
+							</g>
+							<g>
+								<path d="m2.5 12.5h-2c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h2c.3 0 .5.2.5.5s-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m5.3 5.8c-.1 0-.3 0-.4-.1l-1.4-1.5c-.2-.2-.2-.5 0-.7s.5-.2.7 0l1.4 1.4c.2.2.2.5 0 .7-.1.1-.2.2-.3.2z"/>
+							</g>
+							<g>
+								<path d="m16 12.5c-.3 0-.5-.2-.5-.5 0-1.9-1.6-3.5-3.5-3.5-.3 0-.5-.2-.5-.5s.2-.5.5-.5c2.5 0 4.5 2 4.5 4.5 0 .3-.2.5-.5.5z"/>
+							</g>
+						</svg>
+						<p><strong>Tip :</strong> You can learn more about <span class="attribute">class</span> attribute in our <a href="html_id.html">HTML Classes</a> chapter.</p>
+					</div>
+					<hr data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">7. lang Attribute</h2>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">The <span class="attribute">lang</span> attribute declare the main language used in a web page. Declaring a language is can be important for assist search engines and browsers.</p>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">The values of the lang attribute are ISO-639 standard two-character language codes. Check <a href="html_ref/html_language_codes.html">HTML Language Codes: ISO 639</a> for a complete list of language codes.</p>
+					<div class="syntax" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<span class="code">
+							<span class="doctype">&lt;!DOCTYPE html&gt;</span><br>
+							<span class="tag">&lt;html <span class="attribute">lang</span><span class="operators">=</span><span class="attributevalue">"en"</span>&gt;</span><br>
+							<pre class="pre">	</pre><span class="tag">&lt;body&gt;</span><br>
+							<pre class="pre">	</pre><pre class="pre">	</pre><span class="text">...</span><br>
+							<pre class="pre">	</pre><span class="tag">&lt;/body&gt;</span><br>
+							<span class="tag">&lt;/html&gt;</span>
+						</span>
+					</div>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">The country codes can also be added to the language code in the <span class="attribute">lang</span> attribute. So, the first two characters define the language of the web page, and the last two characters define the country.</p>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">Check <a href="html_ref/html_country_codes.html">HTML Country Codes</a> for a complete list of country codes.</p>
+					<div id="chapter_summery" class="syntax" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<span class="code">
+							<span class="doctype">&lt;!DOCTYPE html&gt;</span><br>
+							<span class="tag">&lt;html <span class="attribute">lang</span><span class="operators">=</span><span class="attributevalue">"en-IN"</span>&gt;</span><br>
+							<pre class="pre">	</pre><span class="tag">&lt;body&gt;</span><br>
+							<pre class="pre">	</pre><pre class="pre">	</pre><span class="text">...</span><br>
+							<pre class="pre">	</pre><span class="tag">&lt;/body&gt;</span><br>
+							<span class="tag">&lt;/html&gt;</span>
+						</span>
+					</div>
+					<hr data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">Chapter Summery</h2>
+					<ul data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<li>Attributes containes additional pieces of information about tags.</li>
+						<li>There are several attributes in HTML5 that are consists of just name or its value must either be the empty string or a value that is an ASCII case-insensitive match for the attribute's canonical name. Such attributes are called Boolean attributes.</li>
+						<li>HTML Attributes are not case sensitive. Means all attributes can be written with lowercase or uppercases.</li>
+						<li>Always Quote Attribute Values</li>
+						<li>some of the most commonly used Attributes in HTML:</li>
+						<ol>
+							<li><span class="attribute">href</span> attribute.</li>
+							<li><span class="attribute">src</span> and <span class="attribute">alt</span> attributes.</li>
+							<li><span class="attribute">width</span> and <span class="attribute">height</span> attributes.</li>
+							<li><span class="attribute">title</span> attribute.</li>
+							<li><span class="attribute">id</span> attribute.</li>
+							<li id="html_reference"><span class="attribute">class</span> attribute.</li>
+							<li><span class="attribute">lang</span> attribute.</li>
+						</ol>
+					</ul>
+					<hr data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">HTML Reference</h2>
+					<p data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">Our HTML Tag/Attribute Reference contains more information about each and every tag/Attribute. Following are the tags/Attributes that we have used in this topic.</p>
+					<div class="tablecontainer" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<table>
+							<tr>
+								<th>Tag</th>
+								<th colspan="3">Description</th>
+							</tr>
+							<tr>
+								<td><a href="html_ref/html_tags/div.html" class="taglink"><span class="tag">&lt;div&gt;</span></a></td>
+								<td colspan="3">specifies a division or section within HTML document.</td>
+							</tr>
+							<tr>
+								<td><a href="html_ref/html_tags/a.html" class="taglink"><span class="tag">&lt;a&gt;</span></a></td>
+								<td colspan="3">specifies a hyperlnk.</td>
+							</tr>
+							<tr>
+								<td><a href="html_ref/html_tags/img.html" class="taglink"><span class="tag">&lt;img&gt;</span></a></td>
+								<td colspan="3">specifies an inline image.</td>								
+							</tr>
+							<tr>
+								<th>Attribute</th>
+								<th>Values</th>
+								<th>Belongs to</th>
+								<th>Description</th>
+							</tr>
+							<tr>
+								<td><a href="html_ref/html_attributes/style.html" class="attributelink"><span class="attribute">style</span></a></td>
+								<td><span class="attributevalue">styles</span></td>
+								<td><a href="html_ref/html_global_attributes.html" class="taglink"><span class="tag">Globle Attribute</span></a></td>
+								<td>specifies an inline style for an element.</td>
+							</tr>
+							<tr>
+								<td><a href="html_ref/html_attributes/href.html" class="attributelink"><span class="attribute">href</span></a></td>
+								<td><span class="attributevalue"><abbr title="Uniform Resource Locator">URL</abbr></span></td>
+								<td>
+									<a href="html_ref/html_tags/a.html" class="taglink"><span class="tag">&lt;a&gt;</span></a>,
+									<a href="html_ref/html_tags/area.html" class="taglink"><span class="tag">&lt;area&gt;</span></a>,
+									<a href="html_ref/html_tags/base.html" class="taglink"><span class="tag">&lt;base&gt;</span></a>,
+									<a href="html_ref/html_tags/link.html" class="taglink"><span class="tag">&lt;link&gt;</span></a>
+								</td>
+								<td>Specifies the <abbr title="Uniform Resource Locator">URL</abbr> of the linked resourese.</td>
+							</tr>
+							<tr>
+								<td><a href="html_ref/html_attributes/src.html" class="attributelink"><span class="attribute">src</span></a></td>
+								<td><span class="attributevalue"><abbr title="Uniform Resource Locator">URL</abbr></span></td>
+								<td>
+									<a href="html_ref/html_tags/audio.html" class="taglink"><span class="tag">&lt;audio&gt;</span></a>,
+									<a href="html_ref/html_tags/embed.html" class="taglink"><span class="tag">&lt;embed&gt;</span></a>,
+									<a href="html_ref/html_tags/iframe.html" class="taglink"><span class="tag">&lt;iframe&gt;</span></a>,
+									<a href="html_ref/html_tags/img.html" class="taglink"><span class="tag">&lt;img&gt;</span></a>,
+									<a href="html_ref/html_tags/input.html" class="taglink"><span class="tag">&lt;input&gt;</span></a>,
+									<a href="html_ref/html_tags/script.html" class="taglink"><span class="tag">&lt;script&gt;</span></a>,
+									<a href="html_ref/html_tags/source.html" class="taglink"><span class="tag">&lt;source&gt;</span></a>,
+									<a href="html_ref/html_tags/track.html" class="taglink"><span class="tag">&lt;track&gt;</span></a>,
+									<a href="html_ref/html_tags/video.html" class="taglink"><span class="tag">&lt;video&gt;</span></a>
+								</td>
+								<td>Specifies the <abbr title="Uniform Resource Locator">URL</abbr> of the embeddable content.</td>
+							</tr>
+							<tr>
+								<td><a href="html_ref/html_attributes/alt.html" class="attributelink"><span class="attribute">alt</span></a></td>
+								<td><span class="attributevalue">Text Value</span></td>
+								<td>
+									<a href="html_ref/html_tags/area.html" class="taglink"><span class="tag">&lt;area&gt;</span></a>,
+									<a href="html_ref/html_tags/img.html" class="taglink"><span class="tag">&lt;img&gt;</span></a>,
+									<a href="html_ref/html_tags/input.html" class="taglink"><span class="tag">&lt;input&gt;</span></a>
+								</td>
+								<td>Specifie an alternative text in case original element fails to display.</td>
+							</tr>
+							<tr>
+								<td><a href="html_ref/html_attributes/width.html" class="attributelink"><span class="attribute">widht</span></a></td>
+								<td><span class="attributevalue">Numerical Value</span></td>
+								<td>
+									<a href="html_ref/html_tags/canvas.html" class="taglink"><span class="tag">&lt;canvas&gt;</span></a>,
+									<a href="html_ref/html_tags/embed.html" class="taglink"><span class="tag">&lt;embed&gt;</span></a>,
+									<a href="html_ref/html_tags/iframe.html" class="taglink"><span class="tag">&lt;iframe&gt;</span></a>,
+									<a href="html_ref/html_tags/img.html" class="taglink"><span class="tag">&lt;img&gt;</span></a>,
+									<a href="html_ref/html_tags/input.html" class="taglink"><span class="tag">&lt;input&gt;</span></a>,
+									<a href="html_ref/html_tags/object.html" class="taglink"><span class="tag">&lt;object&gt;</span></a>,
+									<a href="html_ref/html_tags/video.html" class="taglink"><span class="tag">&lt;video&gt;</span></a>
+								</td>
+								<td>Specifie the width of the element.</td>
+							</tr>
+							<tr>
+								<td><a href="html_ref/html_attributes/height.html" class="attributelink"><span class="attribute">height</span></a></td>
+								<td><span class="attributevalue">Numerical Value</span></td>
+								<td>
+									<a href="html_ref/html_tags/canvas.html" class="taglink"><span class="tag">&lt;canvas&gt;</span></a>,
+									<a href="html_ref/html_tags/embed.html" class="taglink"><span class="tag">&lt;embed&gt;</span></a>,
+									<a href="html_ref/html_tags/iframe.html" class="taglink"><span class="tag">&lt;iframe&gt;</span></a>,
+									<a href="html_ref/html_tags/img.html" class="taglink"><span class="tag">&lt;img&gt;</span></a>,
+									<a href="html_ref/html_tags/input.html" class="taglink"><span class="tag">&lt;input&gt;</span></a>,
+									<a href="html_ref/html_tags/object.html" class="taglink"><span class="tag">&lt;object&gt;</span></a>,
+									<a href="html_ref/html_tags/video.html" class="taglink"><span class="tag">&lt;video&gt;</span></a>
+								</td>
+								<td>Specifie the height of the element.</td>
+							</tr>
+							<tr>
+								<td><a href="html_ref/i.html" class="attributelink"><span class="attribute">title</span></a></td>
+								<td><span class="attributevalue">Text Value</span></td>
+								<td><a href="html_ref/html_global_attributes.html" class="taglink"><span class="tag">Globle Attribute</span></a></td>
+								<td>Provides some additional information about element.</td>
+							</tr>
+							<tr>
+								<td><a href="html_ref/i.html" class="attributelink"><span class="attribute">id</span></a></td>
+								<td><span class="attributevalue">id Name</span></td>
+								<td><a href="html_ref/html_global_attributes.html" class="taglink"><span class="tag">Globle Attribute</span></a></td>
+								<td>Specifies an unique identification to an element within a web page.</td>
+							</tr>
+							<tr>
+								<td><a href="html_ref/i.html" class="attributelink"><span class="attribute">class</span></a></td>
+								<td><span class="attributevalue">Class Name</span></td>
+								<td><a href="html_ref/html_global_attributes.html" class="taglink"><span class="tag">Globle Attribute</span></a></td>
+								<td>Specifies a class names to an element.</td>
+							</tr>
+							<tr>
+								<td><a href="html_ref/i.html" class="attributelink"><span class="attribute">lang</span></a></td>
+								<td><span class="attributevalue">language-code</span></td>
+								<td><a href="html_ref/html_global_attributes.html" class="taglink"><span class="tag">Globle Attribute</span></a></td>
+								<td>Specifies the main language of elements content.</td>
+							</tr>
+						</table>
+					</div>
+					<div class="note" id="end_tag" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+						<svg viewBox="0 0 24 24">
+							<g>
+								<path d="m13.5 24h-3c-.7 0-1.5-.6-1.5-1.8v-2.1c0-1-.5-1.9-1.3-2.6-1.8-1.4-2.7-3.4-2.7-5.6.1-3.8 3.2-6.8 6.9-6.9 1.9 0 3.7.7 5 2s2.1 3.1 2.1 5c0 2.1-.9 4.1-2.6 5.4-.9.7-1.4 1.8-1.4 2.8v2.3c0 .8-.7 1.5-1.5 1.5zm-1.5-18c-3.2 0-5.9 2.7-6 5.9 0 1.9.8 3.7 2.3 4.8 1.1.9 1.7 2.1 1.7 3.4v2.1c0 .2 0 .8.5.8h3c.3 0 .5-.2.5-.5v-2.3c0-1.3.7-2.7 1.8-3.6 1.4-1.1 2.2-2.8 2.2-4.6 0-1.6-.6-3.1-1.8-4.3-1.1-1.1-2.6-1.7-4.2-1.7z"/>
+							</g>
+							<g>
+								<path d="m14.5 21h-5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h5c.3 0 .5.2.5.5s-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m12 3c-.3 0-.5-.2-.5-.5v-2c0-.3.2-.5.5-.5s.5.2.5.5v2c0 .3-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m18.7 5.8c-.1 0-.3 0-.4-.1-.2-.2-.2-.5 0-.7l1.4-1.4c.2-.2.5-.2.7 0s.2.5 0 .7l-1.4 1.4s-.2.1-.3.1z"/>
+							</g>
+							<g>
+								<path d="m23.5 12.5h-2c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h2c.3 0 .5.2.5.5s-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m20.1 20.6c-.1 0-.3 0-.4-.1l-1.4-1.4c-.2-.2-.2-.5 0-.7s.5-.2.7 0l1.4 1.4c.2.2.2.5 0 .7 0 .1-.1.1-.3.1z"/>
+							</g>
+							<g>
+								<path d="m3.9 20.6c-.1 0-.3 0-.4-.1-.2-.2-.2-.5 0-.7l1.4-1.4c.2-.2.5-.2.7 0s.2.5 0 .7l-1.4 1.4c-.1.1-.2.1-.3.1z"/>
+							</g>
+							<g>
+								<path d="m2.5 12.5h-2c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h2c.3 0 .5.2.5.5s-.2.5-.5.5z"/>
+							</g>
+							<g>
+								<path d="m5.3 5.8c-.1 0-.3 0-.4-.1l-1.4-1.5c-.2-.2-.2-.5 0-.7s.5-.2.7 0l1.4 1.4c.2.2.2.5 0 .7-.1.1-.2.2-.3.2z"/>
+							</g>
+							<g>
+								<path d="m16 12.5c-.3 0-.5-.2-.5-.5 0-1.9-1.6-3.5-3.5-3.5-.3 0-.5-.2-.5-.5s.2-.5.5-.5c2.5 0 4.5 2 4.5 4.5 0 .3-.2.5-.5.5z"/>
+							</g>
+						</svg>
+						<p><strong>Tip :</strong>1. For complete list of all HTML Tags, visit our <a href="html_ref/default.html">HTML Tag Reference</a>.<br>2. For complete list of all HTML Attributes, visit our <a href="html_ref/html_attributes.html">HTML Attribute Reference</a>.</p>
+					</div>
+					<hr data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+					<div class="buttons">
+						<div class="Previous" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+							<a class="text" href=html_tags.html title="HTML Tags">
+								<span>
+									<svg width="30px" height="40px" viewBox="0 0 66 43">
+										<g>
+											<path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 			24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+										</g>
+									</svg>
+								</span> 
+								<span>Previous</span>
+							</a>
+						</div>
+						<div class="next" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+							<a class="text" href="html_structure.html" title="HTML Structure">
+								<span>Next</span>
+								<span>
+									<svg width="30px" height="40px" viewBox="0 0 66 43">
+										<g>
+											<path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+											<path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+										</g>
+									</svg>
+								</span> 
+							</a>
+						</div>
+					</div>
+					<hr data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" data-aos-easing="ease-out">
+				</div>
+				<div class="rightnav">
+					<div class="tutlogo">
+						<a href="default.html">HTML
+							<svg viewBox="0 0 32 32">
+								<path d="M4.46 28.802L1.892.001h28.216l-2.57 28.797L15.982 32z" fill="#7b0099"/>
+								<path d="M25.337 26.964l2.197-24.608H16v27.197z" fill="#e600a6"/>
+								<path d="M15.988 5.888H7.142l.953 10.682H16v-3.532h-4.674l-.323-3.617H16V5.888zM16 22.2l-.015.004-3.934-1.062-.25-2.817H8.253l.495 5.546 7.236 2 .016-.005z" fill="#d9d9d9"/>
+								<path d="M15.988 16.57h4.35l-.4 4.58-3.94 1.063v3.675l7.242-2.007.97-10.845H16zm8.764-9.734l.084-.948h-8.85V9.42h8.532l.07-.794z" fill="#fff"/>
+							</svg>
+						</a>
+					</div>
+					<div class="content">
+						<h3 class="heading">Content</h3>
+						<a href="#what_is_html_attribute">What is Attribute?</a>
+						<a href="#boolean_attributes">Boolean Attributes</a>
+						<a href="#guide_lines_for_attributes">Attribute Guide lines</a>
+						<a href="#href_attribute">href Attribute</a>
+						<a href="#src_and_alt_attributes">src, alt Attributes</a>
+						<a href="#widht_and_height_attributes">widht, height Attributes</a>
+						<a href="#title_attribute">title Attribute</a>
+						<a href="#id_attribute">id Attribute</a>
+						<a href="#class_attribute">class Attribute</a>
+						<a href="#lang_attribute">lang Attribute</a>
+						<a href="#chapter_summery">Chapter Summery</a>
+						<a href="#html_reference">Html Reference</a>
+					</div>
+					<div class="content">
+						<h3 class="heading">HTML References</h3>
+						<a target="_top" href="html_ref/default.html">HTML Tags</a>
+						<a target="_top" href="html_ref/html_tags_by_category.html">Tags By Category</a>
+						<a target="_top" href="html_ref/html_attributes.html">HTML Attributes</a>
+						<a target="_top" href="html_ref/html_global_attributes.html" title="HTML Global Attributes">HTML Global Att..</a>
+						<a target="_top" href="html_ref/html_browser_support.html" title="HTML Browser Support">HTML Browser Supp..</a>
+						<a target="_top" href="html_ref/html_events.html">HTML Events</a>
+						<a target="_top" href="../colors/default.html">HTML Colors</a>
+						<a target="_top" href="html_ref/html_canvas.html">HTML Canvas</a>
+						<a target="_top" href="html_ref/html_audiovideo.html">HTML Audio/Videio</a>
+						<a target="_top" href="html_ref/html_doctypes.html">HTML Doctypes</a>
+						<a target="_top" href="../character_sets/default.html">HTML Character sets</a>
+						<a target="_top" href="html_ref/html_entities.html">HTML Entities</a>
+						<a target="_top" href="html_ref/html_symbols.html">HTML Symbols</a>
+						<a target="_top" href="html_ref/html_emojis.html">HTML Emojis</a>
+						<a target="_top" href="html_ref/html_url_encode.html">HTML URL Encode</a>
+						<a target="_top" href="html_ref/html_language_codes.html" title="HTML Language Codes">HTML Lang.. Codes</a>
+						<a target="_top" href="html_ref/html_country_codes.html">HTML Country Codes</a>
+						<a target="_top" href="html_ref/http_messages.html">HTTP Masseges</a>
+						<a target="_top" href="html_ref/http_methods.html">HTTP Methods</a>
+						<a target="_top" href="html_ref/keyboard_shortcuts.html">Keybord Shortcuts</a>
+					</div>
+				</div>
+			</div>	
+			<footer style="background-image: url(../files/files_images/background.svg); background-color: #000000; width: 100%; float: left;">
+				<div class="footertop" id="footertopid">
+					<div class="hr"></div>
+					<div class="outercolumn">
+						<div class="column" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-out">           	  <div class="innercolumn">
+								<a onclick="report()">report error</a>
+							</div>
+						</div>
+						<div class="column" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-easing="ease-out">
+							<div class="innercolumn">
+								<a href="../about_us/default.html">about</a>
+							</div>
+						</div>
+						<div class="column" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-easing="ease-out">
+							<div class="innercolumn">
+								<a onclick="topFunction()" class="top">Go to top</a>
+							</div>
+						</div>
+					</div>    
+					<div class="hr"></div>
+					<div class="reporterror">
+						<h2>reporrt error <a href="javascript:void(0)" class="closereport" onclick="report()">&times;</a></h2>
+						<p>If you want to report an error, or if you want to make a suggestion, do not hesitate to send us an e-mail:</p>
+						<input type="text" value="mailid@gamil.com" class="mail" id="mailid">
+						<div class="tooltip">    
+							<a onclick="copytext()" onmouseout="outFunc()" class="copy">
+								<span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+								Copy
+							</a>
+						</div>    
+					</div>
+				</div>
+				<div class="footer">
+					<div class="outercolumn">
+						<div class="column"></div>
+						<div class="column"></div>
+						<div class="column"></div>
+					</div>
+					<div class="socialmedia">
+						<div class="text" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-out">
+							<i class="fa fa-handshake-o"></i>&nbsp;connect with us&nbsp;<i class="fa fa-handshake-o"></i>
+						</div>
+						<div class="icons">
+							<a href="#" class="fa fa-facebook" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200" data-aos-easing="ease-out">
+								<span class="tooltiptext">FB ID</span>
+							</a>
+							<a href="#" class="fa fa-twitter" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-easing="ease-out">
+								<span class="tooltiptext">TWITTER ID</span>
+							</a>
+							<a href="#" class="fa fa-instagram" data-aos="fade-up" data-aos-duration="500" data-aos-delay="250" data-aos-easing="ease-out">
+								<span class="tooltiptext">INSTA ID</span>
+							</a>
+							<a href="#" class="fa fa-youtube-play" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200" data-aos-easing="ease-out">
+								<span class="tooltiptext">YT ID</span>
+							</a>
+						</div>
+					</div>
+					<div class="hr"></div>
+					<div class="bottom">
+						<div class="column">
+							<div class="innercolumn">
+								<a href="../rk_fundamentals.html"><img class="logo" src="../files/files_images/logo.png"></a>
+							</div>
+						</div>    
+						<div class="column">
+							<div class="innercolumn">
+								<a href="../about_us/about_copyright.html">copyright &copy; 2020 RK Fundamentals</a>
+							</div>
+						</div>
+						<div class="column">
+							<div class="innercolumn">
+								<a href="../about_us/about_copyright.html">Terms of Use</a>
+								<div class="verticalline"></div>
+								<a href="../about_us/about_privay.html">Privacy Policy</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+        <script src="../files/files_js/aos.js"></script>
+		<script src="../files/files_js/js.js"></script>
+    </body>
+</html>
